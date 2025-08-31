@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "S:\\STUDY\\6th semester Summer 24-25\\C#\\Visual Studio\\ProjectTest2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21E468F7-6F3E-444A-A762-75BED31C5C10}|ProjectTest2\\ProjectTest2.csproj|s:\\study\\6th semester summer 24-25\\c#\\visual studio\\projecttest2\\projecttest2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21E468F7-6F3E-444A-A762-75BED31C5C10}|ProjectTest2\\ProjectTest2.csproj|solutionrelative:projecttest2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\Visual Studio\\ProjectTest2\\ProjectTest2\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjectTest2\\Form1.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\Visual Studio\\ProjectTest2\\ProjectTest2\\Form1.cs [Design]",
+              "RelativeToolTip": "ProjectTest2\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T17:45:44.889Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
