@@ -71,7 +71,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess.cs" />
-    <Compile Include="AnotherUI.cs" />
+    <Compile Include="AnotherUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AnotherUI.Designer.cs">
       <DependentUpon>AnotherUI.cs</DependentUpon>
     </Compile>
@@ -83,6 +85,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receptionist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Receptionist.Designer.cs">
+      <DependentUpon>Receptionist.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReceptionistDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +113,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Receptionist.resx">
+      <DependentUpon>Receptionist.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReceptionistDashboard.resx">
       <DependentUpon>ReceptionistDashboard.cs</DependentUpon>
     </EmbeddedResource>

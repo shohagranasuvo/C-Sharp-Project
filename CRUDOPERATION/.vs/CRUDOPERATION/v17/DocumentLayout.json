@@ -30,8 +30,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -41,8 +49,7 @@
               "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.resx",
               "RelativeToolTip": "CRUDOPERATION\\Form1.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-09-08T19:11:27.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T19:11:27.964Z"
             },
             {
               "$type": "Document",
@@ -52,7 +59,7 @@
               "RelativeDocumentMoniker": "CRUDOPERATION\\Form1.cs",
               "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.cs",
               "RelativeToolTip": "CRUDOPERATION\\Form1.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAuwDsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-04T05:44:47.408Z",
               "EditorCaption": ""
@@ -67,8 +74,7 @@
               "RelativeToolTip": "CRUDOPERATION\\DataAccess.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAmwA8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T06:23:00.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-04T06:23:00.274Z"
             },
             {
               "$type": "Document",
@@ -79,8 +85,7 @@
               "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.cs [Design]",
               "RelativeToolTip": "CRUDOPERATION\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T05:19:24.078Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-04T05:19:24.078Z"
             },
             {
               "$type": "Document",
@@ -92,8 +97,7 @@
               "RelativeToolTip": "CRUDOPERATION\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsBAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T19:11:30.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T19:11:30.238Z"
             }
           ]
         }

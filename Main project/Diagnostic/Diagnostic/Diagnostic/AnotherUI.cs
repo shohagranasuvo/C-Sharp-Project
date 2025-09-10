@@ -12,9 +12,10 @@ using System.Windows.Forms;
 
 
 
+
 namespace Diagnostic
 {
-    public partial class AnotherUI 
+    public partial class AnotherUI : Form
     {
         public AnotherUI()
         {

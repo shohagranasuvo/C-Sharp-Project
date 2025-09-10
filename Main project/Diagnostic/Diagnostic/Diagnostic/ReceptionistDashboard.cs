@@ -23,7 +23,7 @@ namespace Diagnostic
             
             InitializeComponent();
 
-            this.lblWelcomeName.Text ="Welcome, "+UserName;
+            this.lblWelcomeName.Text +=", "+UserName.ToUpper();
 
         }
 
@@ -36,6 +36,12 @@ namespace Diagnostic
         {
             this.Visible=false;
             mainWindow.Visible = true;
+        }
+
+        private void lblDashBoard_Click(object sender, EventArgs e)
+        {
+            Receptionist receptionistGridView = new Receptionist();
+            this.pnlDashBoard.Controls.Add(receptionistGridView);
         }
     }
 }
