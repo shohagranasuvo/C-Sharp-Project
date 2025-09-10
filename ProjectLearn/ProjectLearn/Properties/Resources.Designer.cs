@@ -63,6 +63,16 @@ namespace ProjectLearn.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ImgMainBackground {
+            get {
+                object obj = ResourceManager.GetObject("ImgMainBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_life_of_pix_7919 {
             get {
                 object obj = ResourceManager.GetObject("pexels-life-of-pix-7919", resourceCulture);

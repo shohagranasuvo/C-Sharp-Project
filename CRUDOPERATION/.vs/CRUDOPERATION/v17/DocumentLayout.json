@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA8541F-539C-4544-B9D6-1473EF5EA235}|CRUDOPERATION\\CRUDOPERATION.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\crudoperation\\crudoperation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA8541F-539C-4544-B9D6-1473EF5EA235}|CRUDOPERATION\\CRUDOPERATION.csproj|solutionrelative:crudoperation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA8541F-539C-4544-B9D6-1473EF5EA235}|CRUDOPERATION\\CRUDOPERATION.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\crudoperation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7BA8541F-539C-4544-B9D6-1473EF5EA235}|CRUDOPERATION\\CRUDOPERATION.csproj|solutionrelative:crudoperation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA8541F-539C-4544-B9D6-1473EF5EA235}|CRUDOPERATION\\CRUDOPERATION.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\crudoperation\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA8541F-539C-4544-B9D6-1473EF5EA235}|CRUDOPERATION\\CRUDOPERATION.csproj|solutionrelative:crudoperation\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA8541F-539C-4544-B9D6-1473EF5EA235}|CRUDOPERATION\\CRUDOPERATION.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\crudoperation\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA8541F-539C-4544-B9D6-1473EF5EA235}|CRUDOPERATION\\CRUDOPERATION.csproj|solutionrelative:crudoperation\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA8541F-539C-4544-B9D6-1473EF5EA235}|CRUDOPERATION\\CRUDOPERATION.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\crudoperation\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{7BA8541F-539C-4544-B9D6-1473EF5EA235}|CRUDOPERATION\\CRUDOPERATION.csproj|solutionrelative:crudoperation\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.resx",
+              "RelativeDocumentMoniker": "CRUDOPERATION\\Form1.resx",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.resx",
+              "RelativeToolTip": "CRUDOPERATION\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-09-08T19:11:27.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.cs",
+              "RelativeDocumentMoniker": "CRUDOPERATION\\Form1.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.cs",
+              "RelativeToolTip": "CRUDOPERATION\\Form1.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAuwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T05:44:47.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\DataAccess.cs",
+              "RelativeDocumentMoniker": "CRUDOPERATION\\DataAccess.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\DataAccess.cs",
+              "RelativeToolTip": "CRUDOPERATION\\DataAccess.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAmwA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T06:23:00.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.cs",
+              "RelativeDocumentMoniker": "CRUDOPERATION\\Form1.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.cs [Design]",
+              "RelativeToolTip": "CRUDOPERATION\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T05:19:24.078Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "CRUDOPERATION\\Form1.Designer.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\CRUDOPERATION\\CRUDOPERATION\\Form1.Designer.cs",
+              "RelativeToolTip": "CRUDOPERATION\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T19:11:30.238Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
