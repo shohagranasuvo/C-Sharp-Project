@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WFADBCRUDN;
+//using WFADBCRUDN;
 
 namespace Diagnostic
 {
@@ -24,8 +24,12 @@ namespace Diagnostic
             da = new DataAccess();
 
             InitializeComponent();
-            
-           
+            ReceptionistDashboard rd = new ReceptionistDashboard(this.txtName.Text, this);
+            this.txtName.Text = "";
+
+            rd.Visible = true;
+
+
         }
 
         
@@ -53,11 +57,22 @@ namespace Diagnostic
                         this.txtPassword.Text = "";
                        
                         this.Visible= false;
-                        
-                        ReceptionistDashboard rd = new ReceptionistDashboard(this.txtName.Text, this);
-                        this.txtName.Text = "";
+                        if (ds.Tables[0].Rows[0]["Role"].ToString() == "Receptionist")
+                        {
 
-                        rd.Visible = true;
+                            ReceptionistDashboard rd = new ReceptionistDashboard(this.txtName.Text, this);
+                            this.txtName.Text = "";
+
+                            rd.Visible = true;
+                        }
+                        else if (ds.Tables[0].Rows[0]["Role"].ToString() == "Admin")
+                            {
+
+                            AdminInterface rd = new AdminInterface(this.txtName.Text, this);
+                                this.txtName.Text = "";
+
+                                rd.Visible = true;
+                            }
                     }
                     else
                     {

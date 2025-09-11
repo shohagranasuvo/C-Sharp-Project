@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{57510821-5EFC-4138-A8E4-F5FC0F4628B4}|UserControl\\UserControl.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\usercontrol\\usercontrol\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{57510821-5EFC-4138-A8E4-F5FC0F4628B4}|UserControl\\UserControl.csproj|solutionrelative:usercontrol\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{57510821-5EFC-4138-A8E4-F5FC0F4628B4}|UserControl\\UserControl.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\usercontrol\\usercontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{57510821-5EFC-4138-A8E4-F5FC0F4628B4}|UserControl\\UserControl.csproj|solutionrelative:usercontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -27,11 +31,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserControl1.cs [Design]",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\UserControl\\UserControl1.cs",
+              "RelativeDocumentMoniker": "UserControl\\UserControl1.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\UserControl\\UserControl1.cs [Design]",
+              "RelativeToolTip": "UserControl\\UserControl1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T05:59:27.484Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\UserControl\\Form1.cs",
               "RelativeDocumentMoniker": "UserControl\\Form1.cs",
-              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\UserControl\\Form1.cs [Design]",
-              "RelativeToolTip": "UserControl\\Form1.cs [Design]",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\UserControl\\Form1.cs [Design]*",
+              "RelativeToolTip": "UserControl\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-10T05:57:44.551Z",
               "EditorCaption": " [Design]"

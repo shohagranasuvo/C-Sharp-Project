@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{57510821-5EFC-4138-A8E4-F5FC0F4628B4}|UserControl\\UserControl.csproj|solutionrelative:usercontrol\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57510821-5EFC-4138-A8E4-F5FC0F4628B4}|UserControl\\UserControl.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\usercontrol\\usercontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{57510821-5EFC-4138-A8E4-F5FC0F4628B4}|UserControl\\UserControl.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\usercontrol\\usercontrol\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57510821-5EFC-4138-A8E4-F5FC0F4628B4}|UserControl\\UserControl.csproj|solutionrelative:usercontrol\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57510821-5EFC-4138-A8E4-F5FC0F4628B4}|UserControl\\UserControl.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\usercontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{57510821-5EFC-4138-A8E4-F5FC0F4628B4}|UserControl\\UserControl.csproj|solutionrelative:usercontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,6 +31,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\UserControl\\Program.cs",
+              "RelativeDocumentMoniker": "UserControl\\Program.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\UserControl\\Program.cs",
+              "RelativeToolTip": "UserControl\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T17:47:56.603Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -42,12 +59,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\UserControl\\Form1.cs",
               "RelativeDocumentMoniker": "UserControl\\Form1.cs",
-              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\UserControl\\Form1.cs [Design]*",
-              "RelativeToolTip": "UserControl\\Form1.cs [Design]*",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\UserControl\\UserControl\\Form1.cs [Design]",
+              "RelativeToolTip": "UserControl\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-10T05:57:44.551Z",
               "EditorCaption": " [Design]"
