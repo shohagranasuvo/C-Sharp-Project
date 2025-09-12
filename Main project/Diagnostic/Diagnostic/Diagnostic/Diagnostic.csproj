@@ -70,11 +70,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddReceptionist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddReceptionist.Designer.cs">
+      <DependentUpon>AddReceptionist.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminInterface.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AdminInterface.Designer.cs">
       <DependentUpon>AdminInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmisFirstDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmisFirstDashBoard.Designer.cs">
+      <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess.cs" />
     <Compile Include="AnotherUI.cs">
@@ -118,8 +130,20 @@
     <Compile Include="UcAdminDashBoard.Designer.cs">
       <DependentUpon>UcAdminDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UcReciptionist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcReciptionist.Designer.cs">
+      <DependentUpon>UcReciptionist.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddReceptionist.resx">
+      <DependentUpon>AddReceptionist.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminInterface.resx">
       <DependentUpon>AdminInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmisFirstDashBoard.resx">
+      <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnotherUI.resx">
       <DependentUpon>AnotherUI.cs</DependentUpon>
@@ -146,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UcAdminDashBoard.resx">
       <DependentUpon>UcAdminDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcReciptionist.resx">
+      <DependentUpon>UcReciptionist.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DiagnosticDataSet.xsc">
       <DependentUpon>DiagnosticDataSet.xsd</DependentUpon>

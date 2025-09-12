@@ -48,16 +48,18 @@
             this.pnlWelcome.Controls.Add(this.lblName);
             this.pnlWelcome.Controls.Add(this.lblWelcome);
             this.pnlWelcome.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.pnlWelcome.Location = new System.Drawing.Point(372, 133);
+            this.pnlWelcome.Location = new System.Drawing.Point(343, 136);
+            this.pnlWelcome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlWelcome.Name = "pnlWelcome";
-            this.pnlWelcome.Size = new System.Drawing.Size(681, 604);
+            this.pnlWelcome.Size = new System.Drawing.Size(438, 345);
             this.pnlWelcome.TabIndex = 8;
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(297, 408);
+            this.btnLogIn.Location = new System.Drawing.Point(148, 212);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(147, 46);
+            this.btnLogIn.Size = new System.Drawing.Size(74, 24);
             this.btnLogIn.TabIndex = 5;
             this.btnLogIn.Text = "LOG IN";
             this.btnLogIn.UseVisualStyleBackColor = true;
@@ -67,18 +69,20 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(262, 302);
+            this.txtPassword.Location = new System.Drawing.Point(131, 157);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(247, 44);
+            this.txtPassword.Size = new System.Drawing.Size(126, 25);
             this.txtPassword.TabIndex = 4;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(262, 211);
+            this.txtName.Location = new System.Drawing.Point(131, 110);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(247, 45);
+            this.txtName.Size = new System.Drawing.Size(126, 25);
             this.txtName.TabIndex = 3;
             // 
             // lblPass
@@ -86,9 +90,10 @@
             this.lblPass.AutoSize = true;
             this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPass.ForeColor = System.Drawing.Color.White;
-            this.lblPass.Location = new System.Drawing.Point(66, 302);
+            this.lblPass.Location = new System.Drawing.Point(33, 157);
+            this.lblPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(180, 31);
+            this.lblPass.Size = new System.Drawing.Size(96, 17);
             this.lblPass.TabIndex = 2;
             this.lblPass.Text = "PASSWORD";
             // 
@@ -98,9 +103,10 @@
             this.lblName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(66, 211);
+            this.lblName.Location = new System.Drawing.Point(33, 110);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(96, 31);
+            this.lblName.Size = new System.Drawing.Size(51, 17);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "NAME";
             // 
@@ -110,23 +116,26 @@
             this.lblWelcome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblWelcome.Location = new System.Drawing.Point(255, 98);
+            this.lblWelcome.Location = new System.Drawing.Point(127, 45);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(189, 37);
+            this.lblWelcome.Size = new System.Drawing.Size(98, 20);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "WELCOME";
             // 
             // FormLogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Diagnostic.Properties.Resources.LogInBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1530, 947);
+            this.ClientSize = new System.Drawing.Size(1094, 657);
             this.Controls.Add(this.pnlWelcome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MinimizeBox = false;
             this.Name = "FormLogIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log In";
             this.Load += new System.EventHandler(this.FormLogIn_Load);
             this.pnlWelcome.ResumeLayout(false);

@@ -38,16 +38,15 @@ namespace Diagnostic
             set { this.ds = value; }
         }
 
-        //internal DataTable dt;
+       
 
         public DataAccess()
         {
-            this.Sqlcon = new SqlConnection("Data Source=SHOHAGRANASUVO\\SQLEXPRESS;Initial Catalog=Diagnostic;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
-
-
-
-            Sqlcon.Open();
+            string connStr = @"Data Source=SHOHAGRANASUVO\SQLEXPRESS;Initial Catalog=NewDiagnostic;Integrated Security=True;TrustServerCertificate=True";
+            this.Sqlcon = new SqlConnection(connStr);  
+            this.Sqlcon.Open();
         }
+
 
         private void QueryText(string query)
         {
@@ -56,7 +55,7 @@ namespace Diagnostic
 
         public DataSet ExecuteQuery(string sql)
         {
-            this.Sqlcom = new SqlCommand(sql, this.Sqlcon);//this.QueryText(sql);
+            this.Sqlcom = new SqlCommand(sql, this.Sqlcon);
             this.Sda = new SqlDataAdapter(this.Sqlcom);
             this.Ds = new DataSet();
             this.Sda.Fill(this.Ds);
@@ -65,7 +64,7 @@ namespace Diagnostic
 
         public DataTable ExecuteQueryTable(string sql)
         {
-            this.Sqlcom = new SqlCommand(sql, this.Sqlcon);//this.QueryText(sql);
+            this.Sqlcom = new SqlCommand(sql, this.Sqlcon);
             this.Sda = new SqlDataAdapter(this.Sqlcom);
             this.Ds = new DataSet();
             this.Sda.Fill(this.Ds);

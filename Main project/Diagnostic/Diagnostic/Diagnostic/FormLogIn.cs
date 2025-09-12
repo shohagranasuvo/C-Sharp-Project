@@ -24,10 +24,10 @@ namespace Diagnostic
             da = new DataAccess();
 
             InitializeComponent();
-            ReceptionistDashboard rd = new ReceptionistDashboard(this.txtName.Text, this);
+          //  ReceptionistDashboard rd = new ReceptionistDashboard(this.txtName.Text, this);
             this.txtName.Text = "";
 
-            rd.Visible = true;
+          //  rd.Visible = true;
 
 
         }
@@ -42,7 +42,7 @@ namespace Diagnostic
         {
             try
             {
-                string sql = "select * from [User] where Name = '" + this.txtName.Text + "'";
+                string sql = "select * from [Users] where UserId = '" + this.txtName.Text + "'";
                 DataSet ds = this.da.ExecuteQuery(sql);
 
 
@@ -59,8 +59,10 @@ namespace Diagnostic
                         this.Visible= false;
                         if (ds.Tables[0].Rows[0]["Role"].ToString() == "Receptionist")
                         {
+                            
 
-                            ReceptionistDashboard rd = new ReceptionistDashboard(this.txtName.Text, this);
+
+                            ReceptionistDashboard rd = new ReceptionistDashboard(this.FindName(), this);
                             this.txtName.Text = "";
 
                             rd.Visible = true;
@@ -68,7 +70,11 @@ namespace Diagnostic
                         else if (ds.Tables[0].Rows[0]["Role"].ToString() == "Admin")
                             {
 
-                            AdminInterface rd = new AdminInterface(this.txtName.Text, this);
+                            
+
+
+
+                            AdminInterface rd = new AdminInterface(this.FindName(), this);
                                 this.txtName.Text = "";
 
                                 rd.Visible = true;
@@ -89,6 +95,13 @@ namespace Diagnostic
                 MessageBox.Show("Error: " + ex.Message);
             }
 
+        }
+        private string FindName()
+        {
+            string sqlForName = "select Name from Users where UserId = '" + this.txtName.Text + "'";
+            DataSet dsForname = this.da.ExecuteQuery(sqlForName);
+            var name = dsForname.Tables[0].Rows[0][0].ToString();
+            return name;
         }
 
         private void FormLogIn_Load(object sender, EventArgs e)
