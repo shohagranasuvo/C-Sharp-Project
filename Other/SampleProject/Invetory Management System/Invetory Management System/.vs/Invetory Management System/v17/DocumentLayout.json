@@ -1,0 +1,538 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\C#-Practice\\Invetory Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\adminaddcatagories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\adminaddcatagories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\cashiercustomerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\cashiercustomerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\adminadduuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\adminadduuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\usersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\usersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\addproductsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\addproductsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\cashierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\cashierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\cashiermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\cashiermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\cashiermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\cashiermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\ordersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\ordersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\customersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\customersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\cashiercustomerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\cashiercustomerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\customermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\customermainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\categoriesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\categoriesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\cashierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\cashierorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\adminaddproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\adminaddproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\adminaddcatagories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\adminaddcatagories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\adminaddusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\adminaddusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\adminadduuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\adminadduuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\adminaddproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\adminaddproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\adminaddusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\adminaddusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|f:\\c#-practice\\invetory management system\\invetory management system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|F:\\C#-Practice\\Invetory Management System\\invetory management system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{570B87B5-A891-4E17-A73B-40159FBBBFEE}|Invetory Management System\\Invetory Management System.csproj|solutionrelative:invetory management system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 1014,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Dashboard.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\Dashboard.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Dashboard.cs",
+              "RelativeToolTip": "Invetory Management System\\Dashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T15:46:32.832Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CashierCustomerForm.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierCustomerForm.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\CashierCustomerForm.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierCustomerForm.cs",
+              "RelativeToolTip": "Invetory Management System\\CashierCustomerForm.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T18:07:45.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CashierCustomerForm.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierCustomerForm.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\CashierCustomerForm.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierCustomerForm.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\CashierCustomerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T17:59:03.248Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomersData.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CustomersData.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\CustomersData.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CustomersData.cs",
+              "RelativeToolTip": "Invetory Management System\\CustomersData.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswF0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T17:43:37.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomerMainForm.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CustomerMainForm.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\CustomerMainForm.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CustomerMainForm.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\CustomerMainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T04:08:08.753Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrdersData.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\OrdersData.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\OrdersData.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\OrdersData.cs",
+              "RelativeToolTip": "Invetory Management System\\OrdersData.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAE0AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T05:13:32.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CashierMainForm.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierMainForm.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\CashierMainForm.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierMainForm.cs",
+              "RelativeToolTip": "Invetory Management System\\CashierMainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T06:53:45.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CashierOrder.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierOrder.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\CashierOrder.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierOrder.cs",
+              "RelativeToolTip": "Invetory Management System\\CashierOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T05:02:44.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CashierOrder.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierOrder.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\CashierOrder.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierOrder.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\CashierOrder.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T04:57:24.706Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CashierMainForm.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierMainForm.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\CashierMainForm.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CashierMainForm.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\CashierMainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T04:47:12.935Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddProductsData.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AddProductsData.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\AddProductsData.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AddProductsData.cs",
+              "RelativeToolTip": "Invetory Management System\\AddProductsData.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA8wFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T14:09:50.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AdminAddProducts.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAddProducts.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\AdminAddProducts.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAddProducts.cs",
+              "RelativeToolTip": "Invetory Management System\\AdminAddProducts.cs",
+              "ViewState": "AgIAADoCAAAAAAAAAAAAwD0CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T11:53:52.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdminAddCatagories.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAddCatagories.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\AdminAddCatagories.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAddCatagories.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\AdminAddCatagories.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:14:12.523Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "adminAddusers.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\adminAddusers.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\adminAddusers.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\adminAddusers.cs",
+              "RelativeToolTip": "Invetory Management System\\adminAddusers.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAAwNMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:05:27.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminAddCatagories.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAddCatagories.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\AdminAddCatagories.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAddCatagories.cs",
+              "RelativeToolTip": "Invetory Management System\\AdminAddCatagories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:32:48.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminAddProducts.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAddProducts.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\AdminAddProducts.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAddProducts.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\AdminAddProducts.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T11:16:47.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "adminAddusers.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\adminAddusers.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\adminAddusers.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\adminAddusers.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\adminAddusers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T17:31:24.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsersData.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\UsersData.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\UsersData.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\UsersData.cs",
+              "RelativeToolTip": "Invetory Management System\\UsersData.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwCQAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T19:02:03.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CategoriesData.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CategoriesData.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\CategoriesData.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\CategoriesData.cs",
+              "RelativeToolTip": "Invetory Management System\\CategoriesData.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:23:42.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminAdduUser.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAdduUser.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\AdminAdduUser.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAdduUser.cs",
+              "RelativeToolTip": "Invetory Management System\\AdminAdduUser.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAgwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T17:24:35.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\MainForm.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\MainForm.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\MainForm.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T16:02:11.201Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Form1.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\Form1.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Form1.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T17:00:34.828Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AdminAdduUser.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAdduUser.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\AdminAdduUser.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\AdminAdduUser.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\AdminAdduUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T17:23:06.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Form1.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\Form1.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Form1.cs",
+              "RelativeToolTip": "Invetory Management System\\Form1.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAuwFsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T18:48:53.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "adminDashboard.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\adminDashboard.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\adminDashboard.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\adminDashboard.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\adminDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T16:25:44.413Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "adminDashboard.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\adminDashboard.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\adminDashboard.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\adminDashboard.cs",
+              "RelativeToolTip": "Invetory Management System\\adminDashboard.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAuwBgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T16:27:33.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\MainForm.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\MainForm.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\MainForm.cs",
+              "RelativeToolTip": "Invetory Management System\\MainForm.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAWwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T18:01:41.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\MainForm.Designer.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\MainForm.Designer.cs",
+              "RelativeToolTip": "Invetory Management System\\MainForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T15:27:03.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\Form2.Designer.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Form2.Designer.cs",
+              "RelativeToolTip": "Invetory Management System\\Form2.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T15:00:19.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Form2.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\Form2.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Form2.cs [Design]",
+              "RelativeToolTip": "Invetory Management System\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T15:40:35.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Form2.cs",
+              "RelativeDocumentMoniker": "Invetory Management System\\Form2.cs",
+              "ToolTip": "F:\\C#-Practice\\Invetory Management System\\Invetory Management System\\Form2.cs",
+              "RelativeToolTip": "Invetory Management System\\Form2.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAwHEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T19:06:30.135Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

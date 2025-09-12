@@ -136,6 +136,12 @@
     <Compile Include="UcReciptionist.Designer.cs">
       <DependentUpon>UcReciptionist.cs</DependentUpon>
     </Compile>
+    <Compile Include="UcRegisterPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcRegisterPatient.Designer.cs">
+      <DependentUpon>UcRegisterPatient.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddReceptionist.resx">
       <DependentUpon>AddReceptionist.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UcReciptionist.resx">
       <DependentUpon>UcReciptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcRegisterPatient.resx">
+      <DependentUpon>UcRegisterPatient.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DiagnosticDataSet.xsc">
       <DependentUpon>DiagnosticDataSet.xsd</DependentUpon>

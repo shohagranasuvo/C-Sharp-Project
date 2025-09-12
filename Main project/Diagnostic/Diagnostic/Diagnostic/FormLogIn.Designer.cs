@@ -71,19 +71,19 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(131, 157);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(126, 25);
+            this.txtPassword.Size = new System.Drawing.Size(126, 20);
             this.txtPassword.TabIndex = 4;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(131, 110);
             this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(126, 25);
+            this.txtName.Size = new System.Drawing.Size(126, 20);
             this.txtName.TabIndex = 3;
+            this.txtName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtName_KeyDown);
             // 
             // lblPass
             // 

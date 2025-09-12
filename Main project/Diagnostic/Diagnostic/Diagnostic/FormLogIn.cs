@@ -25,9 +25,10 @@ namespace Diagnostic
 
             InitializeComponent();
           //  ReceptionistDashboard rd = new ReceptionistDashboard(this.txtName.Text, this);
-            this.txtName.Text = "";
+          
+            this.txtName.Focus();
 
-          //  rd.Visible = true;
+          
 
 
         }
@@ -40,60 +41,61 @@ namespace Diagnostic
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            try
-            {
-                string sql = "select * from [Users] where UserId = '" + this.txtName.Text + "'";
-                DataSet ds = this.da.ExecuteQuery(sql);
+            //try
+            //{
+            //    string sql = "select * from [Users] where UserId = '" + this.txtName.Text + "'";
+            //    DataSet ds = this.da.ExecuteQuery(sql);
 
 
-                if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
-                {
-                    string dbPassword = ds.Tables[0].Rows[0]["Password"].ToString();
+            //    if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            //    {
+            //        string dbPassword = ds.Tables[0].Rows[0]["Password"].ToString();
 
-                    if (dbPassword == this.txtPassword.Text)
-                    {
+            //        if (dbPassword == this.txtPassword.Text)
+            //        {
 
-                        MessageBox.Show("Log in Successful ");
-                        this.txtPassword.Text = "";
-                       
-                        this.Visible= false;
-                        if (ds.Tables[0].Rows[0]["Role"].ToString() == "Receptionist")
-                        {
-                            
+            //            MessageBox.Show("Log in Successful ");
+            //            this.txtPassword.Text = "";
 
-
-                            ReceptionistDashboard rd = new ReceptionistDashboard(this.FindName(), this);
-                            this.txtName.Text = "";
-
-                            rd.Visible = true;
-                        }
-                        else if (ds.Tables[0].Rows[0]["Role"].ToString() == "Admin")
-                            {
-
-                            
+            //            this.Visible = false;
+            //            if (ds.Tables[0].Rows[0]["Role"].ToString() == "Receptionist")
+            //            {
 
 
 
-                            AdminInterface rd = new AdminInterface(this.FindName(), this);
-                                this.txtName.Text = "";
+            //                ReceptionistDashboard rd = new ReceptionistDashboard(this.FindName(), this);
+            //                this.txtName.Text = "";
 
-                                rd.Visible = true;
-                            }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Wrong username or password");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("User not found");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
+            //                rd.Visible = true;
+            //            }
+            //            else if (ds.Tables[0].Rows[0]["Role"].ToString() == "Admin")
+            //            {
+
+
+
+
+
+            //                AdminInterface rd = new AdminInterface(this.FindName(), this);
+            //                this.txtName.Text = "";
+
+            //                rd.Visible = true;
+            //            }
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("Wrong username or password");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("User not found");
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Error: " + ex.Message);
+            //}
+           LogInPress();
 
         }
         private string FindName()
@@ -118,6 +120,78 @@ namespace Diagnostic
         {
             this.btnLogIn.BackColor = Color.White;
         }
+
+        private void txtName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.txtPassword.Focus();
+
+            }
+
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                LogInPress();
+            }
+        }
+        public void LogInPress()
+        {
+            try
+            {
+                string sql = "SELECT * FROM [Users] WHERE UserId = '" + this.txtName.Text + "'";
+                DataSet ds = this.da.ExecuteQuery(sql);
+
+                
+                if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    string dbPassword = ds.Tables[0].Rows[0]["Password"].ToString();
+                    string role = ds.Tables[0].Rows[0]["Role"].ToString();
+                    string userName = ds.Tables[0].Rows[0]["Name"].ToString(); 
+
+                    
+                    if (dbPassword == this.txtPassword.Text)
+                    {
+                        MessageBox.Show("Log in Successful ");
+
+                       
+                        this.txtPassword.Text = "";
+                        this.txtName.Text = "";
+
+                       
+                        this.Visible = false;
+
+                        
+                        if (role == "Receptionist")
+                        {
+                            ReceptionistDashboard rd = new ReceptionistDashboard(userName, this);
+                            rd.Visible = true;
+                        }
+                        else if (role == "Admin")
+                        {
+                            AdminInterface rd = new AdminInterface(userName, this);
+                            rd.Visible = true;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong username or password");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("User not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
     }
 }
 

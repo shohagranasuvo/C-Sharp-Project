@@ -1,0 +1,37 @@
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\Invetory Management System.exe
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\Invetory Management System.deps.json
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\Invetory Management System.runtimeconfig.json
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\Invetory Management System.dll
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\Invetory Management System.pdb
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+F:\C#-Practice\Invetory Management System\Invetory Management System\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.csproj.AssemblyReference.cache
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.AdminAddCatagories.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.AdminAddProducts.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.adminAddusers.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.AdminAdduUser.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.adminDashboard.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.CashierMainForm.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.CashierOrder.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.Dashboard.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.Form1.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.RegisterForm.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.MainForm.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.Properties.Resources.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.csproj.GenerateResource.cache
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.GeneratedMSBuildEditorConfig.editorconfig
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.AssemblyInfoInputs.cache
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.AssemblyInfo.cs
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.csproj.CoreCompileInputs.cache
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory.8D5B261A.Up2Date
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.dll
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\refint\Invetory Management System.dll
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.pdb
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.genruntimeconfig.cache
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\ref\Invetory Management System.dll
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.CustomerMainForm.resources
+F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.CashierCustomerForm.resources

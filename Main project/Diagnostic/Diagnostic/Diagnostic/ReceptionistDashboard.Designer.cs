@@ -118,7 +118,7 @@
             this.panel1.Controls.Add(this.pnlDashBoard);
             this.panel1.Controls.Add(this.lblWelcomeName);
             this.panel1.Location = new System.Drawing.Point(227, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(872, 643);
             this.panel1.TabIndex = 9;
@@ -128,7 +128,7 @@
             // 
             this.pnlDashBoard.GradientAngle = 0F;
             this.pnlDashBoard.Location = new System.Drawing.Point(2, 87);
-            this.pnlDashBoard.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlDashBoard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlDashBoard.Name = "pnlDashBoard";
             this.pnlDashBoard.OutlineThickness = 1F;
             this.pnlDashBoard.PanelColor1 = System.Drawing.Color.SlateGray;
@@ -162,7 +162,7 @@
             this.cuiGradientPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.cuiGradientPanel2.GradientAngle = 0F;
             this.cuiGradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.cuiGradientPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.cuiGradientPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cuiGradientPanel2.Name = "cuiGradientPanel2";
             this.cuiGradientPanel2.OutlineThickness = 1F;
             this.cuiGradientPanel2.PanelColor1 = System.Drawing.Color.DarkSlateGray;
@@ -183,7 +183,7 @@
             this.Controls.Add(this.cuiGradientPanel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ReceptionistDashboard";
             this.Text = "ReceptionistDashboard";
             this.panel1.ResumeLayout(false);
