@@ -35,11 +35,9 @@
             this.lblAdminUsers = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.cuiPanel1 = new CuoreUI.Controls.cuiPanel();
-            this.pnlUserControl = new CuoreUI.Controls.cuiGradientPanel();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnLogOut = new CuoreUI.Controls.cuiButton();
+            this.pnlUserControl = new CuoreUI.Controls.cuiGradientPanel();
             this.cuiPanel1.SuspendLayout();
-            this.pnlUserControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblAdminNotice
@@ -145,35 +143,6 @@
             this.cuiPanel1.Size = new System.Drawing.Size(229, 661);
             this.cuiPanel1.TabIndex = 17;
             // 
-            // pnlUserControl
-            // 
-            this.pnlUserControl.Controls.Add(this.label2);
-            this.pnlUserControl.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlUserControl.GradientAngle = 0F;
-            this.pnlUserControl.Location = new System.Drawing.Point(230, 0);
-            this.pnlUserControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pnlUserControl.Name = "pnlUserControl";
-            this.pnlUserControl.OutlineThickness = 1F;
-            this.pnlUserControl.PanelColor1 = System.Drawing.Color.Ivory;
-            this.pnlUserControl.PanelColor2 = System.Drawing.Color.Transparent;
-            this.pnlUserControl.PanelOutlineColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.pnlUserControl.PanelOutlineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.pnlUserControl.Rounding = new System.Windows.Forms.Padding(8);
-            this.pnlUserControl.Size = new System.Drawing.Size(868, 661);
-            this.pnlUserControl.TabIndex = 17;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 31);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "QUICK STATS";
-            // 
             // btnLogOut
             // 
             this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
@@ -214,6 +183,22 @@
             this.btnLogOut.TextOffset = new System.Drawing.Point(0, 0);
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
+            // pnlUserControl
+            // 
+            this.pnlUserControl.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlUserControl.GradientAngle = 0F;
+            this.pnlUserControl.Location = new System.Drawing.Point(230, 0);
+            this.pnlUserControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlUserControl.Name = "pnlUserControl";
+            this.pnlUserControl.OutlineThickness = 1F;
+            this.pnlUserControl.PanelColor1 = System.Drawing.Color.Ivory;
+            this.pnlUserControl.PanelColor2 = System.Drawing.Color.Transparent;
+            this.pnlUserControl.PanelOutlineColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.pnlUserControl.PanelOutlineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.pnlUserControl.Rounding = new System.Windows.Forms.Padding(8);
+            this.pnlUserControl.Size = new System.Drawing.Size(868, 661);
+            this.pnlUserControl.TabIndex = 17;
+            // 
             // AdminInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,8 +212,6 @@
             this.Text = "AdminInterface";
             this.cuiPanel1.ResumeLayout(false);
             this.cuiPanel1.PerformLayout();
-            this.pnlUserControl.ResumeLayout(false);
-            this.pnlUserControl.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -242,7 +225,6 @@
         private System.Windows.Forms.Label label13;
         private CuoreUI.Controls.cuiPanel cuiPanel1;
         private CuoreUI.Controls.cuiGradientPanel pnlUserControl;
-        private System.Windows.Forms.Label label2;
         private CuoreUI.Controls.cuiButton btnLogOut;
     }
 }

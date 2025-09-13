@@ -35,3 +35,7 @@ F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\n
 F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\ref\Invetory Management System.dll
 F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.CustomerMainForm.resources
 F:\C#-Practice\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory_Management_System.CashierCustomerForm.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Other\SampleProject\Invetory Management System\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.csproj.AssemblyReference.cache
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Other\SampleProject\Invetory Management System\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.dll
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Other\SampleProject\Invetory Management System\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\refint\Invetory Management System.dll
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Other\SampleProject\Invetory Management System\Invetory Management System\Invetory Management System\obj\Debug\net8.0-windows\Invetory Management System.pdb

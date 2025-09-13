@@ -50,10 +50,17 @@ namespace Diagnostic
         private void lblAdminUsers_Click(object sender, EventArgs e)
         {
            
-            UcReciptionist ucReciptionist =new UcReciptionist();
+            //UcReciptionist ucReciptionist =new UcReciptionist();
 
+            //this.pnlUserControl.Controls.Clear();
+            //this.pnlUserControl.Controls.Add(ucReciptionist);
+            UcAdminAdd AA =new UcAdminAdd();
             this.pnlUserControl.Controls.Clear();
-            this.pnlUserControl.Controls.Add(ucReciptionist);
+            
+            this.pnlUserControl.Controls.Add(AA);
+            
+            
+
         }
 
         private void lblAdminDashboard_Click(object sender, EventArgs e)

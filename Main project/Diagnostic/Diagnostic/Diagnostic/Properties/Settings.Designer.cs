@@ -33,5 +33,16 @@ namespace Diagnostic.Properties {
                 return ((string)(this["DiagnosticConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SHOHAGRANASUVO\\SQLEXPRESS;Initial Catalog=NewDiagnostic;Integrated Se" +
+            "curity=True;TrustServerCertificate=True")]
+        public string NewDiagnosticConnectionString {
+            get {
+                return ((string)(this["NewDiagnosticConnectionString"]));
+            }
+        }
     }
 }

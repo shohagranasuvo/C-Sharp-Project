@@ -49,7 +49,7 @@
             this.pnlWelcome.Controls.Add(this.lblWelcome);
             this.pnlWelcome.ForeColor = System.Drawing.SystemColors.Desktop;
             this.pnlWelcome.Location = new System.Drawing.Point(343, 136);
-            this.pnlWelcome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlWelcome.Margin = new System.Windows.Forms.Padding(2);
             this.pnlWelcome.Name = "pnlWelcome";
             this.pnlWelcome.Size = new System.Drawing.Size(438, 345);
             this.pnlWelcome.TabIndex = 8;
@@ -57,7 +57,7 @@
             // btnLogIn
             // 
             this.btnLogIn.Location = new System.Drawing.Point(148, 212);
-            this.btnLogIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(74, 24);
             this.btnLogIn.TabIndex = 5;
@@ -70,19 +70,22 @@
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(131, 157);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(126, 20);
             this.txtPassword.TabIndex = 4;
+            this.txtPassword.Text = "123";
+            this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(131, 110);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(126, 20);
             this.txtName.TabIndex = 3;
+            this.txtName.Text = "U002";
             this.txtName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtName_KeyDown);
             // 
             // lblPass
@@ -132,7 +135,7 @@
             this.ClientSize = new System.Drawing.Size(1094, 657);
             this.Controls.Add(this.pnlWelcome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimizeBox = false;
             this.Name = "FormLogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
