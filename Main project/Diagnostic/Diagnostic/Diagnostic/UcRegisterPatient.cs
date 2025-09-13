@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -66,18 +67,9 @@ namespace Diagnostic
         {
             try
             {
-                if (!this.IsValidToSave())
-                {
-                    MessageBox.Show("Please fill all the empty fields");
-                    return;
-                }
-
-                var patientId = this.AutoIdGenerate();
-
-                if (patientId == null)
-                {
-                    patientId = "1";
-                }
+                string idd = this.dvgpatient.CurrentRow.Cells[0].Value.ToString();
+                string query = "select  * from patient where Patientid ='" + idd + "'";
+                var ds = this.Da.ExecuteQuery(query);
                 string gender = "";
                 if (this.rbtnMale.Checked)
                 {
@@ -90,24 +82,73 @@ namespace Diagnostic
                 string dob = this.dtpDateOfBirth.Text;
                 MessageBox.Show(dob);
 
-
-
-                // gets the selected date
-                //string dobString = dob.ToString("yyyy-MM-dd");
-                string query = "INSERT INTO Patient (PatientId, PatientName, Phone, Email, Address, Gender, DateOfBirth) VALUES ('" + patientId + "', '" + this.txtboxname.Text + "', '" + this.txtPhone.Text + "', '" + this.txtEmail.Text + "', '" + this.txtAddress.Text + "', '" + gender + "','" + dob + "')";
-
-                var ds = this.Da.ExecuteDMLQuery(query);    
-                if(ds==1)
+                if (ds.Tables[0].Rows.Count == 1)
                 {
-                    MessageBox.Show("Successfully Register");
-                 
+
+                    string updatequery = "UPDATE Patient SET PatientName = '" + this.txtboxname.Text + "',phone = '" + this.txtPhone.Text + "', email ='" + this.txtEmail.Text + "', address ='" + this.txtAddress.Text + "', gender ='" + gender + "',DateOfBirth ='" + dob + "' where Patientid ='" + idd + "' ";
+                    int check = this.Da.ExecuteDMLQuery(updatequery);
+                    if (check == 1)
+                    {
+                        MessageBox.Show("Updated");
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Not Updated");
+                    }
+                    this.PopulateGridView();
+
                 }
                 else
                 {
-                    MessageBox.Show("Register not Successful");
 
+
+
+
+
+                    if (!this.IsValidToSave())
+                    {
+                        MessageBox.Show("Please fill all the empty fields");
+                        return;
+                    }
+
+                    var patientId = this.AutoIdGenerate();
+
+                    if (patientId == null)
+                    {
+                        patientId = "1";
+                    }
+                     gender = "";
+                    if (this.rbtnMale.Checked)
+                    {
+                        gender = "Male";
+                    }
+                    else if (this.rbtnFemale.Checked)
+                    {
+                        gender = "Female";
+                    }
+                     dob = this.dtpDateOfBirth.Text;
+                    MessageBox.Show(dob);
+
+
+
+                    // gets the selected date
+                    //string dobString = dob.ToString("yyyy-MM-dd");
+                     query = "INSERT INTO Patient (PatientId, PatientName, Phone, Email, Address, Gender, DateOfBirth) VALUES ('" + patientId + "', '" + this.txtboxname.Text + "', '" + this.txtPhone.Text + "', '" + this.txtEmail.Text + "', '" + this.txtAddress.Text + "', '" + gender + "','" + dob + "')";
+
+                    var dss = this.Da.ExecuteDMLQuery(query);
+                    if (dss == 1)
+                    {
+                        MessageBox.Show("Successfully ");
+
+                    }
+                    else
+                    {
+                        MessageBox.Show(" Unsuccessful");
+
+                    }
+                    this.PopulateGridView();
                 }
-                this.PopulateGridView(); 
 
 
 
@@ -132,8 +173,8 @@ namespace Diagnostic
                 pid = Convert.ToInt32(oldId) + 1;
             }
 
-            MessageBox.Show("OldId: " + oldId);
-            MessageBox.Show("NewId: " + pid);
+            //MessageBox.Show("OldId: " + oldId);
+            //MessageBox.Show("NewId: " + pid);
 
             return pid.ToString();
         }
@@ -217,8 +258,88 @@ namespace Diagnostic
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            this.txtboxname.Text = this.dvgpatient.CurrentRow.Cells[1].ToString();
-            this.txtPhone.Text=this.dvgpatient.CurrentRow.Cells["Phone"].ToString();
+
+            try
+            {
+                this.txtboxname.Text = this.dvgpatient.CurrentRow.Cells[1].Value.ToString();
+                this.txtPhone.Text = this.dvgpatient.CurrentRow.Cells[2].Value.ToString();
+                this.txtEmail.Text = this.dvgpatient.CurrentRow.Cells[3].Value.ToString();
+                this.txtAddress.Text = this.dvgpatient.CurrentRow.Cells[5].Value.ToString();
+                this.dtpDateOfBirth.Text = this.dvgpatient.CurrentRow.Cells[6].Value.ToString();
+
+                this.btnRegisterAndSave.Text = "Save";
+                if (this.dvgpatient.CurrentRow.Cells[4].Value.ToString() == "Male")
+                {
+                    this.rbtnMale.Checked = true;
+
+                }
+                else if (this.dvgpatient.CurrentRow.Cells[4].Value.ToString() == "Female")
+                {
+                    this.rbtnFemale.Checked = true;
+
+                }
+              
+
+
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error Occure : " + ex);
+            }
+
+
+        }
+
+        private void btnPatientSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //if (cmbSelectType.SelectedItem == null)
+                //{
+                //    MessageBox.Show("Please select a search type.");
+                //    return;
+                //}
+
+                //string column = cmbSelectType.SelectedItem.ToString();
+
+                string value = this.txtSearch.contentTextField.Text;
+            // string val =this.txtsea.contentTextField.Text;
+
+
+
+
+            if (string.IsNullOrEmpty(value))
+            {
+                MessageBox.Show("Please enter a search value.");
+                return;
+            }
+
+           
+
+
+            //if (column == "AccessoryId")
+            //{
+            //    if (!int.TryParse(value, out int id))
+            //    {
+            //        MessageBox.Show("Please enter a valid numeric ID.");
+            //        return;
+            //    }
+            //    sql = $"SELECT * FROM [Accessories] WHERE {column} = {id}";
+            //}
+           
+               string query = "SELECT * FROM patient WHERE PatientName = '" + value+"'";
+            
+
+           
+                var ds = this.Da.ExecuteQuery(query);
+                this.dvgpatient.AutoGenerateColumns = true;
+                this.dvgpatient.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while searching: " + ex.Message);
+            }
         }
     }
 }

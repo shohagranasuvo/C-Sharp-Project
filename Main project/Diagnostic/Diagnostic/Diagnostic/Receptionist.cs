@@ -56,7 +56,9 @@ namespace Diagnostic
         //    }
 
         //}
-        private void btnSearch_Click(object sender, EventArgs e)
+       
+
+        private void btnSearch_Click_1(object sender, EventArgs e)
         {
             if (cmbSelectType.SelectedItem == null)
             {
@@ -65,8 +67,11 @@ namespace Diagnostic
             }
 
             string column = cmbSelectType.SelectedItem.ToString();
-            string value = txtBoxSearch.Text;
-           // MessageBox.Show(value);
+            
+            string value = this.txtBoxForSearch.contentTextField.Text;
+           // string val =this.txtsea.contentTextField.Text;
+
+            
 
 
             if (string.IsNullOrEmpty(value))
@@ -77,7 +82,7 @@ namespace Diagnostic
 
             string sql;
 
-            
+
             if (column == "AccessoryId")
             {
                 if (!int.TryParse(value, out int id))
@@ -89,7 +94,7 @@ namespace Diagnostic
             }
             else
             {
-                // String search
+                
                 sql = $"SELECT * FROM [Accessories] WHERE {column} = '{value.Replace("'", "''")}'";
             }
 
@@ -103,8 +108,7 @@ namespace Diagnostic
             {
                 MessageBox.Show("Error while searching: " + ex.Message);
             }
+
         }
-
-
     }
 }

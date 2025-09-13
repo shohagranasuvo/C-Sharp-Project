@@ -29,25 +29,28 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.accessoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.diagnosticDataSet = new Diagnostic.DiagnosticDataSet();
             this.btnAccessoriesDetails = new MaterialSkin.Controls.MaterialRaisedButton();
             this.accessoriesTableAdapter = new Diagnostic.DiagnosticDataSetTableAdapters.AccessoriesTableAdapter();
-            this.btnSearch = new CuoreUI.Controls.cuiButton();
             this.cmbSelectType = new CuoreUI.Controls.cuiComboBox();
-            this.txtBoxSearch = new MetroFramework.Controls.MetroTextBox();
             this.newDiagnosticDataSet = new Diagnostic.NewDiagnosticDataSet();
             this.accessoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.accessoriesTableAdapter1 = new Diagnostic.NewDiagnosticDataSetTableAdapters.AccessoriesTableAdapter();
             this.DgvAccessoriesDetails = new MetroFramework.Controls.MetroGrid();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.AccessoriesId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AccessoriesName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEdit = new MetroFramework.Controls.MetroButton();
+            this.btnDelete = new MetroFramework.Controls.MetroButton();
+            this.btnUpdatePatient = new MetroFramework.Controls.MetroButton();
+            this.btnAddpatient = new MetroFramework.Controls.MetroButton();
+            this.txtBoxForSearch = new CuoreUI.Controls.cuiTextBox();
+            this.btnForSearch = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagnosticDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newDiagnosticDataSet)).BeginInit();
@@ -72,12 +75,12 @@
             this.btnAccessoriesDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccessoriesDetails.ForeColor = System.Drawing.Color.White;
             this.btnAccessoriesDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAccessoriesDetails.Location = new System.Drawing.Point(682, 97);
-            this.btnAccessoriesDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAccessoriesDetails.Location = new System.Drawing.Point(1364, 187);
+            this.btnAccessoriesDetails.Margin = new System.Windows.Forms.Padding(4);
             this.btnAccessoriesDetails.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAccessoriesDetails.Name = "btnAccessoriesDetails";
             this.btnAccessoriesDetails.Primary = true;
-            this.btnAccessoriesDetails.Size = new System.Drawing.Size(184, 27);
+            this.btnAccessoriesDetails.Size = new System.Drawing.Size(368, 52);
             this.btnAccessoriesDetails.TabIndex = 1;
             this.btnAccessoriesDetails.Text = "Accessories Details";
             this.btnAccessoriesDetails.UseVisualStyleBackColor = false;
@@ -86,46 +89,6 @@
             // accessoriesTableAdapter
             // 
             this.accessoriesTableAdapter.ClearBeforeFill = true;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.CheckButton = false;
-            this.btnSearch.Checked = false;
-            this.btnSearch.CheckedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.btnSearch.CheckedForeColor = System.Drawing.Color.White;
-            this.btnSearch.CheckedImageTint = System.Drawing.Color.White;
-            this.btnSearch.CheckedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.btnSearch.Content = "Search";
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.HoverBackground = System.Drawing.Color.White;
-            this.btnSearch.HoverForeColor = System.Drawing.Color.Black;
-            this.btnSearch.HoverImageTint = System.Drawing.Color.White;
-            this.btnSearch.HoverOutline = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnSearch.Image = null;
-            this.btnSearch.ImageAutoCenter = true;
-            this.btnSearch.ImageExpand = new System.Drawing.Point(0, 0);
-            this.btnSearch.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnSearch.Location = new System.Drawing.Point(172, 95);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.NormalBackground = System.Drawing.Color.White;
-            this.btnSearch.NormalForeColor = System.Drawing.Color.Black;
-            this.btnSearch.NormalImageTint = System.Drawing.Color.White;
-            this.btnSearch.NormalOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnSearch.OutlineThickness = 1F;
-            this.btnSearch.PressedBackground = System.Drawing.Color.WhiteSmoke;
-            this.btnSearch.PressedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.btnSearch.PressedImageTint = System.Drawing.Color.White;
-            this.btnSearch.PressedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnSearch.Rounding = new System.Windows.Forms.Padding(8);
-            this.btnSearch.Size = new System.Drawing.Size(76, 23);
-            this.btnSearch.TabIndex = 3;
-            this.btnSearch.TextAlignment = System.Drawing.StringAlignment.Center;
-            this.btnSearch.TextOffset = new System.Drawing.Point(0, 0);
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // cmbSelectType
             // 
@@ -144,48 +107,16 @@
             this.cmbSelectType.Items = new string[] {
         "AccessoriesName",
         "AccessoriesId"};
-            this.cmbSelectType.Location = new System.Drawing.Point(253, 94);
-            this.cmbSelectType.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cmbSelectType.Location = new System.Drawing.Point(1337, 115);
+            this.cmbSelectType.Margin = new System.Windows.Forms.Padding(12);
             this.cmbSelectType.Name = "cmbSelectType";
             this.cmbSelectType.NoSelectionDropdownText = "Empty";
             this.cmbSelectType.NoSelectionText = "None";
             this.cmbSelectType.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.cmbSelectType.OutlineThickness = 1F;
             this.cmbSelectType.Rounding = 8;
-            this.cmbSelectType.Size = new System.Drawing.Size(120, 23);
+            this.cmbSelectType.Size = new System.Drawing.Size(240, 44);
             this.cmbSelectType.TabIndex = 5;
-            // 
-            // txtBoxSearch
-            // 
-            // 
-            // 
-            // 
-            this.txtBoxSearch.CustomButton.Image = null;
-            this.txtBoxSearch.CustomButton.Location = new System.Drawing.Point(56, 1);
-            this.txtBoxSearch.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtBoxSearch.CustomButton.Name = "";
-            this.txtBoxSearch.CustomButton.Size = new System.Drawing.Size(6, 6);
-            this.txtBoxSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtBoxSearch.CustomButton.TabIndex = 1;
-            this.txtBoxSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtBoxSearch.CustomButton.UseSelectable = true;
-            this.txtBoxSearch.CustomButton.Visible = false;
-            this.txtBoxSearch.Lines = new string[0];
-            this.txtBoxSearch.Location = new System.Drawing.Point(22, 97);
-            this.txtBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtBoxSearch.MaxLength = 32767;
-            this.txtBoxSearch.Name = "txtBoxSearch";
-            this.txtBoxSearch.PasswordChar = '\0';
-            this.txtBoxSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBoxSearch.SelectedText = "";
-            this.txtBoxSearch.SelectionLength = 0;
-            this.txtBoxSearch.SelectionStart = 0;
-            this.txtBoxSearch.ShortcutsEnabled = true;
-            this.txtBoxSearch.Size = new System.Drawing.Size(127, 16);
-            this.txtBoxSearch.TabIndex = 6;
-            this.txtBoxSearch.UseSelectable = true;
-            this.txtBoxSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtBoxSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // newDiagnosticDataSet
             // 
@@ -210,102 +141,225 @@
             this.DgvAccessoriesDetails.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DgvAccessoriesDetails.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.DgvAccessoriesDetails.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvAccessoriesDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvAccessoriesDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.DgvAccessoriesDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvAccessoriesDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.AccessoriesId,
             this.AccessoriesName,
             this.Quantity,
             this.Price});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvAccessoriesDetails.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvAccessoriesDetails.DefaultCellStyle = dataGridViewCellStyle8;
             this.DgvAccessoriesDetails.EnableHeadersVisualStyles = false;
             this.DgvAccessoriesDetails.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.DgvAccessoriesDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.DgvAccessoriesDetails.Location = new System.Drawing.Point(2, 122);
-            this.DgvAccessoriesDetails.Margin = new System.Windows.Forms.Padding(2);
+            this.DgvAccessoriesDetails.Location = new System.Drawing.Point(4, 235);
+            this.DgvAccessoriesDetails.Margin = new System.Windows.Forms.Padding(4);
             this.DgvAccessoriesDetails.Name = "DgvAccessoriesDetails";
             this.DgvAccessoriesDetails.ReadOnly = true;
             this.DgvAccessoriesDetails.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvAccessoriesDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvAccessoriesDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.DgvAccessoriesDetails.RowHeadersWidth = 82;
             this.DgvAccessoriesDetails.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DgvAccessoriesDetails.RowTemplate.Height = 33;
             this.DgvAccessoriesDetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvAccessoriesDetails.Size = new System.Drawing.Size(866, 413);
+            this.DgvAccessoriesDetails.Size = new System.Drawing.Size(1732, 794);
             this.DgvAccessoriesDetails.TabIndex = 0;
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.BackgroundImage = global::Diagnostic.Properties.Resources.alert2;
-            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.metroButton1.Location = new System.Drawing.Point(22, 21);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 7;
-            this.metroButton1.UseSelectable = true;
             // 
             // AccessoriesId
             // 
             this.AccessoriesId.DataPropertyName = "AccessoriesId";
             this.AccessoriesId.HeaderText = "Accessories Id";
+            this.AccessoriesId.MinimumWidth = 10;
             this.AccessoriesId.Name = "AccessoriesId";
             this.AccessoriesId.ReadOnly = true;
+            this.AccessoriesId.Width = 200;
             // 
             // AccessoriesName
             // 
             this.AccessoriesName.DataPropertyName = "AccessoriesName";
             this.AccessoriesName.HeaderText = "Accessories Name";
+            this.AccessoriesName.MinimumWidth = 10;
             this.AccessoriesName.Name = "AccessoriesName";
             this.AccessoriesName.ReadOnly = true;
+            this.AccessoriesName.Width = 200;
             // 
             // Quantity
             // 
             this.Quantity.DataPropertyName = "Quantity";
             this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 10;
             this.Quantity.Name = "Quantity";
             this.Quantity.ReadOnly = true;
+            this.Quantity.Width = 200;
             // 
             // Price
             // 
             this.Price.DataPropertyName = "Price";
             this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 10;
             this.Price.Name = "Price";
             this.Price.ReadOnly = true;
+            this.Price.Width = 200;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnEdit.BackgroundImage = global::Diagnostic.Properties.Resources.EditUserNew;
+            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.ForeColor = System.Drawing.Color.Black;
+            this.btnEdit.Location = new System.Drawing.Point(191, 26);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(118, 87);
+            this.btnEdit.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnEdit.TabIndex = 18;
+            this.btnEdit.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnEdit.UseCustomBackColor = true;
+            this.btnEdit.UseCustomForeColor = true;
+            this.btnEdit.UseSelectable = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnDelete.BackgroundImage = global::Diagnostic.Properties.Resources.delete;
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.ForeColor = System.Drawing.Color.Black;
+            this.btnDelete.Location = new System.Drawing.Point(363, 26);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(116, 87);
+            this.btnDelete.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnDelete.TabIndex = 17;
+            this.btnDelete.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnDelete.UseCustomBackColor = true;
+            this.btnDelete.UseCustomForeColor = true;
+            this.btnDelete.UseSelectable = true;
+            // 
+            // btnUpdatePatient
+            // 
+            this.btnUpdatePatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnUpdatePatient.BackgroundImage = global::Diagnostic.Properties.Resources.updated_User;
+            this.btnUpdatePatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnUpdatePatient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdatePatient.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdatePatient.Location = new System.Drawing.Point(535, 26);
+            this.btnUpdatePatient.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdatePatient.Name = "btnUpdatePatient";
+            this.btnUpdatePatient.Size = new System.Drawing.Size(108, 87);
+            this.btnUpdatePatient.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnUpdatePatient.TabIndex = 16;
+            this.btnUpdatePatient.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnUpdatePatient.UseCustomBackColor = true;
+            this.btnUpdatePatient.UseCustomForeColor = true;
+            this.btnUpdatePatient.UseSelectable = true;
+            // 
+            // btnAddpatient
+            // 
+            this.btnAddpatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnAddpatient.BackgroundImage = global::Diagnostic.Properties.Resources.add_user;
+            this.btnAddpatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddpatient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddpatient.ForeColor = System.Drawing.Color.Black;
+            this.btnAddpatient.Location = new System.Drawing.Point(23, 26);
+            this.btnAddpatient.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddpatient.Name = "btnAddpatient";
+            this.btnAddpatient.Size = new System.Drawing.Size(128, 87);
+            this.btnAddpatient.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnAddpatient.TabIndex = 15;
+            this.btnAddpatient.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnAddpatient.UseCustomBackColor = true;
+            this.btnAddpatient.UseCustomForeColor = true;
+            this.btnAddpatient.UseSelectable = true;
+            // 
+            // txtBoxForSearch
+            // 
+            this.txtBoxForSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtBoxForSearch.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtBoxForSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.txtBoxForSearch.Content = "";
+            this.txtBoxForSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxForSearch.FocusBackgroundColor = System.Drawing.Color.White;
+            this.txtBoxForSearch.FocusImageTint = System.Drawing.Color.White;
+            this.txtBoxForSearch.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.txtBoxForSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxForSearch.ForeColor = System.Drawing.Color.Gray;
+            this.txtBoxForSearch.Image = null;
+            this.txtBoxForSearch.ImageExpand = new System.Drawing.Point(0, 0);
+            this.txtBoxForSearch.ImageOffset = new System.Drawing.Point(0, 0);
+            this.txtBoxForSearch.Location = new System.Drawing.Point(1001, 26);
+            this.txtBoxForSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBoxForSearch.Multiline = false;
+            this.txtBoxForSearch.Name = "txtBoxForSearch";
+            this.txtBoxForSearch.NormalImageTint = System.Drawing.Color.White;
+            this.txtBoxForSearch.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.txtBoxForSearch.Padding = new System.Windows.Forms.Padding(29, 17, 29, 0);
+            this.txtBoxForSearch.PasswordChar = false;
+            this.txtBoxForSearch.PlaceholderColor = System.Drawing.SystemColors.WindowText;
+            this.txtBoxForSearch.PlaceholderText = "";
+            this.txtBoxForSearch.Rounding = new System.Windows.Forms.Padding(20);
+            this.txtBoxForSearch.Size = new System.Drawing.Size(576, 63);
+            this.txtBoxForSearch.TabIndex = 19;
+            this.txtBoxForSearch.TextOffset = new System.Drawing.Size(0, 0);
+            this.txtBoxForSearch.UnderlinedStyle = false;
+            // 
+            // btnForSearch
+            // 
+            this.btnForSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnForSearch.BackgroundImage = global::Diagnostic.Properties.Resources.Search;
+            this.btnForSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnForSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnForSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnForSearch.Location = new System.Drawing.Point(1529, 37);
+            this.btnForSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnForSearch.Name = "btnForSearch";
+            this.btnForSearch.Size = new System.Drawing.Size(48, 40);
+            this.btnForSearch.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnForSearch.TabIndex = 20;
+            this.btnForSearch.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnForSearch.UseCustomBackColor = true;
+            this.btnForSearch.UseCustomForeColor = true;
+            this.btnForSearch.UseSelectable = true;
+            this.btnForSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
             // 
             // Receptionist
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.metroButton1);
-            this.Controls.Add(this.txtBoxSearch);
+            this.Controls.Add(this.btnForSearch);
+            this.Controls.Add(this.txtBoxForSearch);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdatePatient);
+            this.Controls.Add(this.btnAddpatient);
             this.Controls.Add(this.cmbSelectType);
-            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnAccessoriesDetails);
             this.Controls.Add(this.DgvAccessoriesDetails);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Receptionist";
-            this.Size = new System.Drawing.Size(868, 556);
+            this.Size = new System.Drawing.Size(1744, 1069);
             ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagnosticDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newDiagnosticDataSet)).EndInit();
@@ -320,17 +374,20 @@
         private System.Windows.Forms.BindingSource accessoriesBindingSource;
         private DiagnosticDataSet diagnosticDataSet;
         private DiagnosticDataSetTableAdapters.AccessoriesTableAdapter accessoriesTableAdapter;
-        private CuoreUI.Controls.cuiButton btnSearch;
         private CuoreUI.Controls.cuiComboBox cmbSelectType;
-        private MetroFramework.Controls.MetroTextBox txtBoxSearch;
         private System.Windows.Forms.BindingSource accessoriesBindingSource1;
         private NewDiagnosticDataSet newDiagnosticDataSet;
         private NewDiagnosticDataSetTableAdapters.AccessoriesTableAdapter accessoriesTableAdapter1;
         private MetroFramework.Controls.MetroGrid DgvAccessoriesDetails;
-        private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.DataGridViewTextBoxColumn AccessoriesId;
         private System.Windows.Forms.DataGridViewTextBoxColumn AccessoriesName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private MetroFramework.Controls.MetroButton btnEdit;
+        private MetroFramework.Controls.MetroButton btnDelete;
+        private MetroFramework.Controls.MetroButton btnUpdatePatient;
+        private MetroFramework.Controls.MetroButton btnAddpatient;
+        private CuoreUI.Controls.cuiTextBox txtBoxForSearch;
+        private MetroFramework.Controls.MetroButton btnForSearch;
     }
 }
