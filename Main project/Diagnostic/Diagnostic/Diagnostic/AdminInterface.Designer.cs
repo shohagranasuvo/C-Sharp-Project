@@ -49,9 +49,9 @@
             this.lblAdminNotice.Location = new System.Drawing.Point(24, 280);
             this.lblAdminNotice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAdminNotice.Name = "lblAdminNotice";
-            this.lblAdminNotice.Size = new System.Drawing.Size(64, 24);
+            this.lblAdminNotice.Size = new System.Drawing.Size(75, 24);
             this.lblAdminNotice.TabIndex = 5;
-            this.lblAdminNotice.Text = "Notice";
+            this.lblAdminNotice.Text = "Product";
             // 
             // lblAdminProduct
             // 
@@ -62,9 +62,10 @@
             this.lblAdminProduct.Location = new System.Drawing.Point(24, 214);
             this.lblAdminProduct.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAdminProduct.Name = "lblAdminProduct";
-            this.lblAdminProduct.Size = new System.Drawing.Size(84, 24);
+            this.lblAdminProduct.Size = new System.Drawing.Size(201, 24);
             this.lblAdminProduct.TabIndex = 4;
-            this.lblAdminProduct.Text = "Products";
+            this.lblAdminProduct.Text = "Receptionist Operation";
+            this.lblAdminProduct.Click += new System.EventHandler(this.lblAdminProduct_Click);
             // 
             // lblAdminDashboard
             // 
@@ -103,9 +104,9 @@
             this.lblAdminUsers.Location = new System.Drawing.Point(24, 148);
             this.lblAdminUsers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAdminUsers.Name = "lblAdminUsers";
-            this.lblAdminUsers.Size = new System.Drawing.Size(58, 24);
+            this.lblAdminUsers.Size = new System.Drawing.Size(153, 24);
             this.lblAdminUsers.TabIndex = 3;
-            this.lblAdminUsers.Text = "Users";
+            this.lblAdminUsers.Text = "Admin Operation";
             this.lblAdminUsers.Click += new System.EventHandler(this.lblAdminUsers_Click);
             // 
             // lblWelcome
@@ -134,7 +135,7 @@
             this.cuiPanel1.Controls.Add(this.lblAdminNotice);
             this.cuiPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.cuiPanel1.Location = new System.Drawing.Point(0, 0);
-            this.cuiPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cuiPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.cuiPanel1.Name = "cuiPanel1";
             this.cuiPanel1.OutlineThickness = 1F;
             this.cuiPanel1.PanelColor = System.Drawing.Color.Blue;
@@ -188,7 +189,7 @@
             this.pnlUserControl.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlUserControl.GradientAngle = 0F;
             this.pnlUserControl.Location = new System.Drawing.Point(230, 0);
-            this.pnlUserControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlUserControl.Margin = new System.Windows.Forms.Padding(2);
             this.pnlUserControl.Name = "pnlUserControl";
             this.pnlUserControl.OutlineThickness = 1F;
             this.pnlUserControl.PanelColor1 = System.Drawing.Color.Ivory;
@@ -206,7 +207,7 @@
             this.ClientSize = new System.Drawing.Size(1098, 661);
             this.Controls.Add(this.cuiPanel1);
             this.Controls.Add(this.pnlUserControl);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminInterface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminInterface";

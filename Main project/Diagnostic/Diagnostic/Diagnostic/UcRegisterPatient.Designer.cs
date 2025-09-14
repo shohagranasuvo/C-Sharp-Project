@@ -79,15 +79,15 @@ namespace Diagnostic
             this.pnlRegisterPatient.Controls.Add(this.btnSearch);
             this.pnlRegisterPatient.HorizontalScrollbarBarColor = true;
             this.pnlRegisterPatient.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnlRegisterPatient.HorizontalScrollbarSize = 10;
+            this.pnlRegisterPatient.HorizontalScrollbarSize = 5;
             this.pnlRegisterPatient.Location = new System.Drawing.Point(0, 0);
-            this.pnlRegisterPatient.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlRegisterPatient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlRegisterPatient.Name = "pnlRegisterPatient";
-            this.pnlRegisterPatient.Size = new System.Drawing.Size(1736, 1065);
+            this.pnlRegisterPatient.Size = new System.Drawing.Size(868, 554);
             this.pnlRegisterPatient.TabIndex = 7;
             this.pnlRegisterPatient.VerticalScrollbarBarColor = true;
             this.pnlRegisterPatient.VerticalScrollbarHighlightOnWheel = false;
-            this.pnlRegisterPatient.VerticalScrollbarSize = 10;
+            this.pnlRegisterPatient.VerticalScrollbarSize = 5;
             // 
             // btnSearch
             // 
@@ -102,8 +102,8 @@ namespace Diagnostic
             this.btnSearch.Controls.Add(this.btnUpdatePatient);
             this.btnSearch.Controls.Add(this.btnAddpatient);
             this.btnSearch.GradientAngle = 0F;
-            this.btnSearch.Location = new System.Drawing.Point(4, 4);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearch.Location = new System.Drawing.Point(2, 2);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.OutlineThickness = 1F;
             this.btnSearch.PanelColor1 = System.Drawing.Color.LightSkyBlue;
@@ -111,7 +111,7 @@ namespace Diagnostic
             this.btnSearch.PanelOutlineColor1 = System.Drawing.Color.PaleTurquoise;
             this.btnSearch.PanelOutlineColor2 = System.Drawing.Color.LightBlue;
             this.btnSearch.Rounding = new System.Windows.Forms.Padding(8);
-            this.btnSearch.Size = new System.Drawing.Size(1732, 1066);
+            this.btnSearch.Size = new System.Drawing.Size(868, 661);
             this.btnSearch.TabIndex = 2;
             // 
             // pnlGrideViewPatient
@@ -119,15 +119,15 @@ namespace Diagnostic
             this.pnlGrideViewPatient.Controls.Add(this.dvgpatient);
             this.pnlGrideViewPatient.HorizontalScrollbarBarColor = true;
             this.pnlGrideViewPatient.HorizontalScrollbarHighlightOnWheel = false;
-            this.pnlGrideViewPatient.HorizontalScrollbarSize = 10;
-            this.pnlGrideViewPatient.Location = new System.Drawing.Point(-2, 167);
-            this.pnlGrideViewPatient.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlGrideViewPatient.HorizontalScrollbarSize = 5;
+            this.pnlGrideViewPatient.Location = new System.Drawing.Point(-1, 87);
+            this.pnlGrideViewPatient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlGrideViewPatient.Name = "pnlGrideViewPatient";
-            this.pnlGrideViewPatient.Size = new System.Drawing.Size(1112, 890);
+            this.pnlGrideViewPatient.Size = new System.Drawing.Size(556, 463);
             this.pnlGrideViewPatient.TabIndex = 19;
             this.pnlGrideViewPatient.VerticalScrollbarBarColor = true;
             this.pnlGrideViewPatient.VerticalScrollbarHighlightOnWheel = false;
-            this.pnlGrideViewPatient.VerticalScrollbarSize = 10;
+            this.pnlGrideViewPatient.VerticalScrollbarSize = 5;
             // 
             // dvgpatient
             // 
@@ -168,7 +168,7 @@ namespace Diagnostic
             this.dvgpatient.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dvgpatient.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dvgpatient.Location = new System.Drawing.Point(0, 0);
-            this.dvgpatient.Margin = new System.Windows.Forms.Padding(4);
+            this.dvgpatient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dvgpatient.Name = "dvgpatient";
             this.dvgpatient.ReadOnly = true;
             this.dvgpatient.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -184,8 +184,9 @@ namespace Diagnostic
             this.dvgpatient.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dvgpatient.RowTemplate.Height = 33;
             this.dvgpatient.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dvgpatient.Size = new System.Drawing.Size(1112, 890);
+            this.dvgpatient.Size = new System.Drawing.Size(556, 463);
             this.dvgpatient.TabIndex = 17;
+            this.dvgpatient.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgpatient_CellClick);
             // 
             // Column7
             // 
@@ -268,14 +269,14 @@ namespace Diagnostic
             this.pnlRegisterPatientForm.Controls.Add(this.txtPhone);
             this.pnlRegisterPatientForm.Controls.Add(this.txtboxname);
             this.pnlRegisterPatientForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlRegisterPatientForm.Location = new System.Drawing.Point(1134, 154);
-            this.pnlRegisterPatientForm.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlRegisterPatientForm.Location = new System.Drawing.Point(567, 80);
+            this.pnlRegisterPatientForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlRegisterPatientForm.Name = "pnlRegisterPatientForm";
             this.pnlRegisterPatientForm.OutlineThickness = 1F;
             this.pnlRegisterPatientForm.PanelColor = System.Drawing.Color.LightBlue;
             this.pnlRegisterPatientForm.PanelOutlineColor = System.Drawing.Color.LightBlue;
             this.pnlRegisterPatientForm.Rounding = new System.Windows.Forms.Padding(8);
-            this.pnlRegisterPatientForm.Size = new System.Drawing.Size(576, 885);
+            this.pnlRegisterPatientForm.Size = new System.Drawing.Size(288, 460);
             this.pnlRegisterPatientForm.TabIndex = 18;
             this.pnlRegisterPatientForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlRegisterPatientForm_Paint);
             // 
@@ -283,10 +284,10 @@ namespace Diagnostic
             // 
             this.dtpDateOfBirth.CustomFormat = "yyyy-MM-dd";
             this.dtpDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDateOfBirth.Location = new System.Drawing.Point(188, 548);
-            this.dtpDateOfBirth.Margin = new System.Windows.Forms.Padding(12);
+            this.dtpDateOfBirth.Location = new System.Drawing.Point(94, 285);
+            this.dtpDateOfBirth.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dtpDateOfBirth.Name = "dtpDateOfBirth";
-            this.dtpDateOfBirth.Size = new System.Drawing.Size(284, 31);
+            this.dtpDateOfBirth.Size = new System.Drawing.Size(144, 19);
             this.dtpDateOfBirth.TabIndex = 94;
             // 
             // btnRegisterAndSave
@@ -294,10 +295,10 @@ namespace Diagnostic
             this.btnRegisterAndSave.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnRegisterAndSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegisterAndSave.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnRegisterAndSave.Location = new System.Drawing.Point(184, 640);
-            this.btnRegisterAndSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegisterAndSave.Location = new System.Drawing.Point(92, 333);
+            this.btnRegisterAndSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegisterAndSave.Name = "btnRegisterAndSave";
-            this.btnRegisterAndSave.Size = new System.Drawing.Size(212, 60);
+            this.btnRegisterAndSave.Size = new System.Drawing.Size(106, 31);
             this.btnRegisterAndSave.TabIndex = 10;
             this.btnRegisterAndSave.Text = "REGISTER";
             this.btnRegisterAndSave.UseVisualStyleBackColor = false;
@@ -307,10 +308,10 @@ namespace Diagnostic
             // 
             this.cuiLabel2.Content = "Date\\ Of\\ Birth";
             this.cuiLabel2.HorizontalAlignment = System.Drawing.StringAlignment.Near;
-            this.cuiLabel2.Location = new System.Drawing.Point(34, 554);
-            this.cuiLabel2.Margin = new System.Windows.Forms.Padding(12);
+            this.cuiLabel2.Location = new System.Drawing.Point(17, 288);
+            this.cuiLabel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cuiLabel2.Name = "cuiLabel2";
-            this.cuiLabel2.Size = new System.Drawing.Size(170, 31);
+            this.cuiLabel2.Size = new System.Drawing.Size(85, 16);
             this.cuiLabel2.TabIndex = 8;
             this.cuiLabel2.VerticalAlignment = System.Drawing.StringAlignment.Near;
             this.cuiLabel2.Load += new System.EventHandler(this.cuiLabel2_Load);
@@ -320,10 +321,10 @@ namespace Diagnostic
             this.cuiLabel1.Content = "PATIENT\\ FORM";
             this.cuiLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cuiLabel1.HorizontalAlignment = System.Drawing.StringAlignment.Center;
-            this.cuiLabel1.Location = new System.Drawing.Point(76, 15);
-            this.cuiLabel1.Margin = new System.Windows.Forms.Padding(12);
+            this.cuiLabel1.Location = new System.Drawing.Point(38, 8);
+            this.cuiLabel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.cuiLabel1.Name = "cuiLabel1";
-            this.cuiLabel1.Size = new System.Drawing.Size(390, 40);
+            this.cuiLabel1.Size = new System.Drawing.Size(195, 21);
             this.cuiLabel1.TabIndex = 7;
             this.cuiLabel1.VerticalAlignment = System.Drawing.StringAlignment.Near;
             // 
@@ -331,20 +332,20 @@ namespace Diagnostic
             // 
             this.btnGender.Content = "Gender";
             this.btnGender.HorizontalAlignment = System.Drawing.StringAlignment.Near;
-            this.btnGender.Location = new System.Drawing.Point(32, 469);
-            this.btnGender.Margin = new System.Windows.Forms.Padding(12);
+            this.btnGender.Location = new System.Drawing.Point(16, 244);
+            this.btnGender.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnGender.Name = "btnGender";
-            this.btnGender.Size = new System.Drawing.Size(124, 37);
+            this.btnGender.Size = new System.Drawing.Size(62, 19);
             this.btnGender.TabIndex = 6;
             this.btnGender.VerticalAlignment = System.Drawing.StringAlignment.Near;
             // 
             // rbtnFemale
             // 
             this.rbtnFemale.AutoSize = true;
-            this.rbtnFemale.Location = new System.Drawing.Point(346, 469);
-            this.rbtnFemale.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtnFemale.Location = new System.Drawing.Point(173, 244);
+            this.rbtnFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbtnFemale.Name = "rbtnFemale";
-            this.rbtnFemale.Size = new System.Drawing.Size(120, 29);
+            this.rbtnFemale.Size = new System.Drawing.Size(65, 17);
             this.rbtnFemale.TabIndex = 5;
             this.rbtnFemale.TabStop = true;
             this.rbtnFemale.Text = "Female";
@@ -353,10 +354,10 @@ namespace Diagnostic
             // rbtnMale
             // 
             this.rbtnMale.AutoSize = true;
-            this.rbtnMale.Location = new System.Drawing.Point(184, 469);
-            this.rbtnMale.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtnMale.Location = new System.Drawing.Point(92, 244);
+            this.rbtnMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rbtnMale.Name = "rbtnMale";
-            this.rbtnMale.Size = new System.Drawing.Size(94, 29);
+            this.rbtnMale.Size = new System.Drawing.Size(52, 17);
             this.rbtnMale.TabIndex = 4;
             this.rbtnMale.TabStop = true;
             this.rbtnMale.Text = "Male\r\n";
@@ -369,17 +370,17 @@ namespace Diagnostic
             // 
             // 
             this.txtAddress.CustomButton.Image = null;
-            this.txtAddress.CustomButton.Location = new System.Drawing.Point(446, 2);
-            this.txtAddress.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddress.CustomButton.Location = new System.Drawing.Point(111, 1);
+            this.txtAddress.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAddress.CustomButton.Name = "";
-            this.txtAddress.CustomButton.Size = new System.Drawing.Size(39, 39);
+            this.txtAddress.CustomButton.Size = new System.Drawing.Size(10, 11);
             this.txtAddress.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtAddress.CustomButton.TabIndex = 1;
             this.txtAddress.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtAddress.CustomButton.UseSelectable = true;
             this.txtAddress.CustomButton.Visible = false;
             this.txtAddress.Lines = new string[0];
-            this.txtAddress.Location = new System.Drawing.Point(32, 373);
+            this.txtAddress.Location = new System.Drawing.Point(16, 194);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(0);
             this.txtAddress.MaxLength = 32767;
             this.txtAddress.Multiline = true;
@@ -391,7 +392,7 @@ namespace Diagnostic
             this.txtAddress.SelectionLength = 0;
             this.txtAddress.SelectionStart = 0;
             this.txtAddress.ShortcutsEnabled = true;
-            this.txtAddress.Size = new System.Drawing.Size(488, 44);
+            this.txtAddress.Size = new System.Drawing.Size(244, 23);
             this.txtAddress.Style = MetroFramework.MetroColorStyle.White;
             this.txtAddress.TabIndex = 3;
             this.txtAddress.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -410,17 +411,17 @@ namespace Diagnostic
             // 
             // 
             this.txtEmail.CustomButton.Image = null;
-            this.txtEmail.CustomButton.Location = new System.Drawing.Point(446, 2);
-            this.txtEmail.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.CustomButton.Location = new System.Drawing.Point(111, 1);
+            this.txtEmail.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.CustomButton.Name = "";
-            this.txtEmail.CustomButton.Size = new System.Drawing.Size(39, 39);
+            this.txtEmail.CustomButton.Size = new System.Drawing.Size(10, 11);
             this.txtEmail.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtEmail.CustomButton.TabIndex = 1;
             this.txtEmail.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtEmail.CustomButton.UseSelectable = true;
             this.txtEmail.CustomButton.Visible = false;
             this.txtEmail.Lines = new string[0];
-            this.txtEmail.Location = new System.Drawing.Point(32, 269);
+            this.txtEmail.Location = new System.Drawing.Point(16, 140);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(0);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.Multiline = true;
@@ -432,7 +433,7 @@ namespace Diagnostic
             this.txtEmail.SelectionLength = 0;
             this.txtEmail.SelectionStart = 0;
             this.txtEmail.ShortcutsEnabled = true;
-            this.txtEmail.Size = new System.Drawing.Size(488, 44);
+            this.txtEmail.Size = new System.Drawing.Size(244, 23);
             this.txtEmail.Style = MetroFramework.MetroColorStyle.White;
             this.txtEmail.TabIndex = 2;
             this.txtEmail.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -451,17 +452,17 @@ namespace Diagnostic
             // 
             // 
             this.txtPhone.CustomButton.Image = null;
-            this.txtPhone.CustomButton.Location = new System.Drawing.Point(446, 2);
-            this.txtPhone.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhone.CustomButton.Location = new System.Drawing.Point(111, 1);
+            this.txtPhone.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPhone.CustomButton.Name = "";
-            this.txtPhone.CustomButton.Size = new System.Drawing.Size(39, 39);
+            this.txtPhone.CustomButton.Size = new System.Drawing.Size(10, 11);
             this.txtPhone.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPhone.CustomButton.TabIndex = 1;
             this.txtPhone.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtPhone.CustomButton.UseSelectable = true;
             this.txtPhone.CustomButton.Visible = false;
             this.txtPhone.Lines = new string[0];
-            this.txtPhone.Location = new System.Drawing.Point(32, 173);
+            this.txtPhone.Location = new System.Drawing.Point(16, 90);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(0);
             this.txtPhone.MaxLength = 32767;
             this.txtPhone.Multiline = true;
@@ -473,7 +474,7 @@ namespace Diagnostic
             this.txtPhone.SelectionLength = 0;
             this.txtPhone.SelectionStart = 0;
             this.txtPhone.ShortcutsEnabled = true;
-            this.txtPhone.Size = new System.Drawing.Size(488, 44);
+            this.txtPhone.Size = new System.Drawing.Size(244, 23);
             this.txtPhone.Style = MetroFramework.MetroColorStyle.White;
             this.txtPhone.TabIndex = 1;
             this.txtPhone.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -492,17 +493,17 @@ namespace Diagnostic
             // 
             // 
             this.txtboxname.CustomButton.Image = null;
-            this.txtboxname.CustomButton.Location = new System.Drawing.Point(446, 2);
-            this.txtboxname.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxname.CustomButton.Location = new System.Drawing.Point(111, 1);
+            this.txtboxname.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtboxname.CustomButton.Name = "";
-            this.txtboxname.CustomButton.Size = new System.Drawing.Size(39, 39);
+            this.txtboxname.CustomButton.Size = new System.Drawing.Size(10, 11);
             this.txtboxname.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtboxname.CustomButton.TabIndex = 1;
             this.txtboxname.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtboxname.CustomButton.UseSelectable = true;
             this.txtboxname.CustomButton.Visible = false;
             this.txtboxname.Lines = new string[0];
-            this.txtboxname.Location = new System.Drawing.Point(32, 77);
+            this.txtboxname.Location = new System.Drawing.Point(16, 40);
             this.txtboxname.Margin = new System.Windows.Forms.Padding(0);
             this.txtboxname.MaxLength = 32767;
             this.txtboxname.Multiline = true;
@@ -514,7 +515,7 @@ namespace Diagnostic
             this.txtboxname.SelectionLength = 0;
             this.txtboxname.SelectionStart = 0;
             this.txtboxname.ShortcutsEnabled = true;
-            this.txtboxname.Size = new System.Drawing.Size(488, 44);
+            this.txtboxname.Size = new System.Drawing.Size(244, 23);
             this.txtboxname.Style = MetroFramework.MetroColorStyle.White;
             this.txtboxname.TabIndex = 0;
             this.txtboxname.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -533,10 +534,10 @@ namespace Diagnostic
             this.btnPatientSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPatientSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPatientSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnPatientSearch.Location = new System.Drawing.Point(1648, 37);
-            this.btnPatientSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPatientSearch.Location = new System.Drawing.Point(824, 19);
+            this.btnPatientSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPatientSearch.Name = "btnPatientSearch";
-            this.btnPatientSearch.Size = new System.Drawing.Size(48, 40);
+            this.btnPatientSearch.Size = new System.Drawing.Size(24, 21);
             this.btnPatientSearch.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnPatientSearch.TabIndex = 16;
             this.btnPatientSearch.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -560,18 +561,18 @@ namespace Diagnostic
             this.txtSearch.Image = null;
             this.txtSearch.ImageExpand = new System.Drawing.Point(0, 0);
             this.txtSearch.ImageOffset = new System.Drawing.Point(0, 0);
-            this.txtSearch.Location = new System.Drawing.Point(1150, 23);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Location = new System.Drawing.Point(575, 12);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearch.Multiline = false;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.NormalImageTint = System.Drawing.Color.White;
             this.txtSearch.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.txtSearch.Padding = new System.Windows.Forms.Padding(29, 17, 29, 0);
+            this.txtSearch.Padding = new System.Windows.Forms.Padding(15, 9, 15, 0);
             this.txtSearch.PasswordChar = false;
             this.txtSearch.PlaceholderColor = System.Drawing.SystemColors.WindowText;
             this.txtSearch.PlaceholderText = "";
             this.txtSearch.Rounding = new System.Windows.Forms.Padding(20);
-            this.txtSearch.Size = new System.Drawing.Size(576, 63);
+            this.txtSearch.Size = new System.Drawing.Size(288, 33);
             this.txtSearch.TabIndex = 15;
             this.txtSearch.TextOffset = new System.Drawing.Size(0, 0);
             this.txtSearch.UnderlinedStyle = false;
@@ -583,10 +584,10 @@ namespace Diagnostic
             this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEdit.Location = new System.Drawing.Point(192, 23);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEdit.Location = new System.Drawing.Point(96, 12);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(118, 87);
+            this.btnEdit.Size = new System.Drawing.Size(59, 45);
             this.btnEdit.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnEdit.TabIndex = 14;
             this.btnEdit.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -602,10 +603,10 @@ namespace Diagnostic
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(364, 23);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelete.Location = new System.Drawing.Point(182, 12);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(116, 87);
+            this.btnDelete.Size = new System.Drawing.Size(58, 45);
             this.btnDelete.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -621,10 +622,10 @@ namespace Diagnostic
             this.btnUpdatePatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnUpdatePatient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdatePatient.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdatePatient.Location = new System.Drawing.Point(536, 23);
-            this.btnUpdatePatient.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdatePatient.Location = new System.Drawing.Point(268, 12);
+            this.btnUpdatePatient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdatePatient.Name = "btnUpdatePatient";
-            this.btnUpdatePatient.Size = new System.Drawing.Size(108, 87);
+            this.btnUpdatePatient.Size = new System.Drawing.Size(54, 45);
             this.btnUpdatePatient.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnUpdatePatient.TabIndex = 12;
             this.btnUpdatePatient.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -640,10 +641,10 @@ namespace Diagnostic
             this.btnAddpatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAddpatient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddpatient.ForeColor = System.Drawing.Color.Black;
-            this.btnAddpatient.Location = new System.Drawing.Point(24, 23);
-            this.btnAddpatient.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddpatient.Location = new System.Drawing.Point(12, 12);
+            this.btnAddpatient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddpatient.Name = "btnAddpatient";
-            this.btnAddpatient.Size = new System.Drawing.Size(128, 87);
+            this.btnAddpatient.Size = new System.Drawing.Size(64, 45);
             this.btnAddpatient.Style = MetroFramework.MetroColorStyle.Blue;
             this.btnAddpatient.TabIndex = 11;
             this.btnAddpatient.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -666,12 +667,11 @@ namespace Diagnostic
             // 
             // UcRegisterPatient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlRegisterPatient);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "UcRegisterPatient";
-            this.Size = new System.Drawing.Size(1736, 1069);
+            this.Size = new System.Drawing.Size(868, 556);
             this.pnlRegisterPatient.ResumeLayout(false);
             this.btnSearch.ResumeLayout(false);
             this.pnlGrideViewPatient.ResumeLayout(false);

@@ -49,12 +49,12 @@ namespace Diagnostic
 
         private void lblAdminUsers_Click(object sender, EventArgs e)
         {
-           
+
             //UcReciptionist ucReciptionist =new UcReciptionist();
 
             //this.pnlUserControl.Controls.Clear();
             //this.pnlUserControl.Controls.Add(ucReciptionist);
-            UcAdminAdd AA =new UcAdminAdd();
+            UcAdminOperationCRUDE AA =new UcAdminOperationCRUDE();
             this.pnlUserControl.Controls.Clear();
             
             this.pnlUserControl.Controls.Add(AA);
@@ -66,6 +66,15 @@ namespace Diagnostic
         private void lblAdminDashboard_Click(object sender, EventArgs e)
         {
             FirstDashBoardView();
+
+        }
+
+        private void lblAdminProduct_Click(object sender, EventArgs e)
+        {
+            UcReceptionistOperationCRUDE AA = new UcReceptionistOperationCRUDE();
+            this.pnlUserControl.Controls.Clear();
+
+            this.pnlUserControl.Controls.Add(AA);
 
         }
     }

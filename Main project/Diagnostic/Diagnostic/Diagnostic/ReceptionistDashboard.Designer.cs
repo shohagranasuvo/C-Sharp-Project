@@ -115,9 +115,9 @@
             // pnlforUcReceptionist
             // 
             this.pnlforUcReceptionist.Location = new System.Drawing.Point(227, 0);
-            this.pnlforUcReceptionist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlforUcReceptionist.Margin = new System.Windows.Forms.Padding(2);
             this.pnlforUcReceptionist.Name = "pnlforUcReceptionist";
-            this.pnlforUcReceptionist.Size = new System.Drawing.Size(866, 658);
+            this.pnlforUcReceptionist.Size = new System.Drawing.Size(868, 661);
             this.pnlforUcReceptionist.TabIndex = 9;
             this.pnlforUcReceptionist.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -145,7 +145,7 @@
             this.cuiGradientPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.cuiGradientPanel2.GradientAngle = 0F;
             this.cuiGradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.cuiGradientPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cuiGradientPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.cuiGradientPanel2.Name = "cuiGradientPanel2";
             this.cuiGradientPanel2.OutlineThickness = 1F;
             this.cuiGradientPanel2.PanelColor1 = System.Drawing.Color.DarkSlateGray;
@@ -166,7 +166,7 @@
             this.Controls.Add(this.cuiGradientPanel2);
             this.Controls.Add(this.pnlforUcReceptionist);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ReceptionistDashboard";
             this.Text = "ReceptionistDashboard";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ReceptionistDashboard_FormClosed);

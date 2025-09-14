@@ -136,6 +136,12 @@
     <Compile Include="UcAdminDashBoard.Designer.cs">
       <DependentUpon>UcAdminDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UcReceptionistOperationCRUDE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcReceptionistOperationCRUDE.Designer.cs">
+      <DependentUpon>UcReceptionistOperationCRUDE.cs</DependentUpon>
+    </Compile>
     <Compile Include="UcReciptionist.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,11 +154,11 @@
     <Compile Include="UcRegisterPatient.Designer.cs">
       <DependentUpon>UcRegisterPatient.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcAdminAdd.cs">
+    <Compile Include="UcAdminOperationCRUDE.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcAdminAdd.Designer.cs">
-      <DependentUpon>UcAdminAdd.cs</DependentUpon>
+    <Compile Include="UcAdminOperationCRUDE.Designer.cs">
+      <DependentUpon>UcAdminOperationCRUDE.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddReceptionist.resx">
       <DependentUpon>AddReceptionist.cs</DependentUpon>
@@ -182,11 +188,14 @@
     <EmbeddedResource Include="ReceptionistDashboard.resx">
       <DependentUpon>ReceptionistDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcAdminAdd.resx">
-      <DependentUpon>UcAdminAdd.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UcAdminDashBoard.resx">
       <DependentUpon>UcAdminDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcAdminOperationCRUDE.resx">
+      <DependentUpon>UcAdminOperationCRUDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcReceptionistOperationCRUDE.resx">
+      <DependentUpon>UcReceptionistOperationCRUDE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UcReciptionist.resx">
       <DependentUpon>UcReciptionist.cs</DependentUpon>

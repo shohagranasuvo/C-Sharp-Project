@@ -44,7 +44,7 @@ namespace Diagnostic
 
         private void btnAddpatient_Click(object sender, EventArgs e)
         {
-            //string name =this.txtboxname.Text;
+            //string name = this.txtboxname.Text;
             //if (name == "")
             //{
             //    MessageBox.Show("Fill the Name");
@@ -52,21 +52,35 @@ namespace Diagnostic
             //}
             //else
             //{
-            //    var sql ="select patientid from patient where Patientname= '"+name+"'";
-            //    var ds =this.Da.ExecuteQuery(sql);  
-            //    if(ds.Tables[0].Rows.Count > 0)
+            //    var sql = "select patientid from patient where Patientname= '" + name + "'";
+            //    var ds = this.Da.ExecuteQuery(sql);
+            //    if (ds.Tables[0].Rows.Count > 0)
             //    {
             //        MessageBox.Show("User Already exist ");
             //        return;
             //    }
             //}
 
+            AddPatent();
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            AddPatent();
+        }
+
+        private void AddPatent ()
+        {
             try
             {
+                if (!this.IsValidToSave())
+                {
+                    MessageBox.Show("Please fill all the empty fields");
+                    return;
+                }
+
                 string idd = this.dvgpatient.CurrentRow.Cells[0].Value.ToString();
                 string query = "select  * from patient where Patientid ='" + idd + "'";
                 var ds = this.Da.ExecuteQuery(query);
@@ -118,7 +132,7 @@ namespace Diagnostic
                     {
                         patientId = "1";
                     }
-                     gender = "";
+                    gender = "";
                     if (this.rbtnMale.Checked)
                     {
                         gender = "Male";
@@ -127,14 +141,14 @@ namespace Diagnostic
                     {
                         gender = "Female";
                     }
-                     dob = this.dtpDateOfBirth.Text;
+                    dob = this.dtpDateOfBirth.Text;
                     MessageBox.Show(dob);
 
 
 
                     // gets the selected date
                     //string dobString = dob.ToString("yyyy-MM-dd");
-                     query = "INSERT INTO Patient (PatientId, PatientName, Phone, Email, Address, Gender, DateOfBirth) VALUES ('" + patientId + "', '" + this.txtboxname.Text + "', '" + this.txtPhone.Text + "', '" + this.txtEmail.Text + "', '" + this.txtAddress.Text + "', '" + gender + "','" + dob + "')";
+                    query = "INSERT INTO Patient (PatientId, PatientName, Phone, Email, Address, Gender, DateOfBirth) VALUES ('" + patientId + "', '" + this.txtboxname.Text + "', '" + this.txtPhone.Text + "', '" + this.txtEmail.Text + "', '" + this.txtAddress.Text + "', '" + gender + "','" + dob + "')";
 
                     var dss = this.Da.ExecuteDMLQuery(query);
                     if (dss == 1)
@@ -254,6 +268,11 @@ namespace Diagnostic
                 MessageBox.Show("An error has occured: " + exc.Message);
             }
 
+            finally
+            {
+                PopulateGridView();
+            }
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -278,10 +297,10 @@ namespace Diagnostic
                     this.rbtnFemale.Checked = true;
 
                 }
-              
 
 
-                
+
+
             }
             catch (Exception ex)
             {
@@ -295,16 +314,10 @@ namespace Diagnostic
         {
             try
             {
-                //if (cmbSelectType.SelectedItem == null)
-                //{
-                //    MessageBox.Show("Please select a search type.");
-                //    return;
-                //}
-
-                //string column = cmbSelectType.SelectedItem.ToString();
+               
 
                 string value = this.txtSearch.contentTextField.Text;
-            // string val =this.txtsea.contentTextField.Text;
+           
 
 
 
@@ -318,16 +331,6 @@ namespace Diagnostic
            
 
 
-            //if (column == "AccessoryId")
-            //{
-            //    if (!int.TryParse(value, out int id))
-            //    {
-            //        MessageBox.Show("Please enter a valid numeric ID.");
-            //        return;
-            //    }
-            //    sql = $"SELECT * FROM [Accessories] WHERE {column} = {id}";
-            //}
-           
                string query = "SELECT * FROM patient WHERE PatientName = '" + value+"'";
             
 
@@ -339,6 +342,41 @@ namespace Diagnostic
             catch (Exception ex)
             {
                 MessageBox.Show("Error while searching: " + ex.Message);
+            }
+        }
+
+        private void dvgpatient_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            editButton(e);
+        }
+
+        private void editButton(DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = this.dvgpatient.Rows[e.RowIndex];
+
+                    this.txtboxname.Text = row.Cells[1].Value.ToString();
+                    this.txtPhone.Text = row.Cells[2].Value.ToString();
+                    this.txtEmail.Text = row.Cells[3].Value.ToString();
+                    this.txtAddress.Text = row.Cells[5].Value.ToString();
+                    this.dtpDateOfBirth.Text = row.Cells[6].Value.ToString();
+
+                    if (row.Cells[4].Value.ToString() == "Male")
+                    {
+                        this.rbtnMale.Checked = true;
+                    }
+                    else if (row.Cells[4].Value.ToString() == "Female")
+                    {
+                        this.rbtnFemale.Checked = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error selecting row: " + ex.Message);
             }
         }
     }
