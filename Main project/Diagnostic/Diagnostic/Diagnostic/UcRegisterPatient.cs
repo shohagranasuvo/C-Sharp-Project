@@ -174,7 +174,7 @@ namespace Diagnostic
             }
         }
 
-        private string AutoIdGenerate()
+        public string AutoIdGenerate()
         {
             var query = "SELECT MAX(PatientId) FROM Patient";
             var dt = this.Da.ExecuteQueryTable(query);

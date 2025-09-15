@@ -221,6 +221,78 @@ namespace Diagnostic
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string patientId = txtId.Text.Trim();
+                string patientName = txtName.Text.Trim();
+                string patientPhone = txtPhone.Text.Trim();
+
+                if (string.IsNullOrEmpty(patientId) &&
+                    (string.IsNullOrEmpty(patientName) || string.IsNullOrEmpty(patientPhone)))
+                {
+                    MessageBox.Show("Please fill either Patient ID OR both Name and Phone!");
+                    return;
+                }
+
+
+                if (!string.IsNullOrEmpty(patientId))
+                {
+                    string query = "SELECT COUNT(*) FROM Patient WHERE PatientId = '" + patientId + "'";
+                    var da = this.Da.ExecuteQuery(query);
+
+                    int count = 0;
+
+                    if (da.Tables.Count > 0 && da.Tables[0].Rows.Count > 0)
+                    {
+                        count = Convert.ToInt32(da.Tables[0].Rows[0][0]);
+                    }
+
+                    if (count > 0)
+                    {
+
+                        MessageBox.Show("Patient exists! You can continue.");
+                        this.pnlTestItems.Controls.Clear();
+                        //string id = da.Tables[0].Rows[0][0].ToString() ;
+                        UcBillConfirm billConfirm = new UcBillConfirm(this.lvSelectedItem , patientId);
+                        this.pnlTestItems.Controls.Add(billConfirm);
+                    }
+                    else
+                    {
+
+                       
+
+                        MessageBox.Show("Patient ID does not exist. Please enter Name and Phone to add a new patient.");
+
+                    }
+                }
+                else
+                {
+                    // No PatientId entered → must provide Name + Phone to add new patient
+                    if (!string.IsNullOrEmpty(patientName) && !string.IsNullOrEmpty(patientPhone))
+                    {
+                        UcRegisterPatient ucRegisterPatient = new UcRegisterPatient();
+                        string id =ucRegisterPatient.AutoIdGenerate();
+                        string insertQuery = $"INSERT INTO Patient (patientid ,patientName, Phone) VALUES ('"+id+"','"+patientName+"', '"+patientPhone+"')";
+                        this.Da.ExecuteDMLQuery(insertQuery);
+                        MessageBox.Show("New patient added successfully!");
+                        this.pnlTestItems.Controls.Clear();
+                        UcBillConfirm billConfirm = new UcBillConfirm(this.lvSelectedItem ,id);
+                        this.pnlTestItems.Controls.Add(billConfirm);
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please fill Patient ID OR both Name and Phone.");
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error :" + ex);
+            }
+
+
 
         }
     }

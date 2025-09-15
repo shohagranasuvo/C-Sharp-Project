@@ -89,6 +89,12 @@
     <Compile Include="AdmisFirstDashBoard.Designer.cs">
       <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UcBillConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcBillConfirm.Designer.cs">
+      <DependentUpon>UcBillConfirm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataAccess.cs" />
     <Compile Include="DiagnosticDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdmisFirstDashBoard.resx">
       <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcBillConfirm.resx">
+      <DependentUpon>UcBillConfirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogIn.resx">
       <DependentUpon>FormLogIn.cs</DependentUpon>
