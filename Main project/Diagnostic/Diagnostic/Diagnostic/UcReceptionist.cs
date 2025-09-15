@@ -13,10 +13,10 @@ using System.Windows.Forms;
 
 namespace Diagnostic
 {
-    public partial class Receptionist : UserControl
+    public partial class UcReceptionist : UserControl
     {
         DataAccess da;
-        public Receptionist()
+        public UcReceptionist()
         {
             
             InitializeComponent();

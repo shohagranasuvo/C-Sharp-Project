@@ -22,7 +22,6 @@ S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Di
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.csproj.AssemblyReference.cache
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.FormLogIn.resources
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.Properties.Resources.resources
-S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.Receptionist.resources
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.ReceptionistDashboard.resources
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.csproj.GenerateResource.cache
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.csproj.CoreCompileInputs.cache
@@ -40,3 +39,5 @@ S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Di
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\bin\Debug\Krypton.Toolkit.xml
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcAdminOperationCRUDE.resources
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcReceptionistOperationCRUDE.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcReceptionist.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcBilling.resources

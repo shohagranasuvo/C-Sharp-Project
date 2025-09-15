@@ -1,6 +1,6 @@
 ﻿namespace Diagnostic
 {
-    partial class Receptionist
+    partial class UcReceptionist
     {
         /// <summary> 
         /// Required designer variable.

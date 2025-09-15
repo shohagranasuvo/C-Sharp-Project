@@ -25,7 +25,7 @@ namespace Diagnostic
 
             this.lblWelcomeName.Text +=", "+UserName.ToUpper();
 
-            Receptionist receptionistGridView = new Receptionist();
+            UcReceptionist receptionistGridView = new UcReceptionist();
             this.pnlforUcReceptionist.Controls.Add(receptionistGridView);
 
         }
@@ -44,7 +44,7 @@ namespace Diagnostic
         private void lblDashBoard_Click(object sender, EventArgs e)
         {
             this.pnlforUcReceptionist.Controls.Clear(); 
-            Receptionist receptionistGridView = new Receptionist();
+            UcReceptionist receptionistGridView = new UcReceptionist();
             this.pnlforUcReceptionist.Controls.Add(receptionistGridView);
         }
 
@@ -58,6 +58,13 @@ namespace Diagnostic
         private void ReceptionistDashboard_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnBilling_Click(object sender, EventArgs e)
+        {
+            this.pnlforUcReceptionist.Controls.Clear();
+            UcBilling ucBilling = new UcBilling();
+            this.pnlforUcReceptionist.Controls.Add(ucBilling);
         }
     }
 }
