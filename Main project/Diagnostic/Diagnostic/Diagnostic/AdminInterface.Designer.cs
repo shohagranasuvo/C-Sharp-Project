@@ -46,10 +46,10 @@
             this.lblAdminNotice.BackColor = System.Drawing.Color.Transparent;
             this.lblAdminNotice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdminNotice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAdminNotice.Location = new System.Drawing.Point(24, 280);
-            this.lblAdminNotice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAdminNotice.Location = new System.Drawing.Point(48, 538);
+            this.lblAdminNotice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminNotice.Name = "lblAdminNotice";
-            this.lblAdminNotice.Size = new System.Drawing.Size(75, 24);
+            this.lblAdminNotice.Size = new System.Drawing.Size(147, 42);
             this.lblAdminNotice.TabIndex = 5;
             this.lblAdminNotice.Text = "Product";
             // 
@@ -59,10 +59,10 @@
             this.lblAdminProduct.BackColor = System.Drawing.Color.Transparent;
             this.lblAdminProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdminProduct.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAdminProduct.Location = new System.Drawing.Point(24, 214);
-            this.lblAdminProduct.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAdminProduct.Location = new System.Drawing.Point(48, 412);
+            this.lblAdminProduct.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminProduct.Name = "lblAdminProduct";
-            this.lblAdminProduct.Size = new System.Drawing.Size(201, 24);
+            this.lblAdminProduct.Size = new System.Drawing.Size(398, 42);
             this.lblAdminProduct.TabIndex = 4;
             this.lblAdminProduct.Text = "Receptionist Operation";
             this.lblAdminProduct.Click += new System.EventHandler(this.lblAdminProduct_Click);
@@ -73,10 +73,10 @@
             this.lblAdminDashboard.BackColor = System.Drawing.Color.Transparent;
             this.lblAdminDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdminDashboard.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAdminDashboard.Location = new System.Drawing.Point(24, 88);
-            this.lblAdminDashboard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAdminDashboard.Location = new System.Drawing.Point(48, 169);
+            this.lblAdminDashboard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminDashboard.Name = "lblAdminDashboard";
-            this.lblAdminDashboard.Size = new System.Drawing.Size(102, 24);
+            this.lblAdminDashboard.Size = new System.Drawing.Size(202, 42);
             this.lblAdminDashboard.TabIndex = 2;
             this.lblAdminDashboard.Text = "Dashboard";
             this.lblAdminDashboard.Click += new System.EventHandler(this.lblAdminDashboard_Click);
@@ -88,10 +88,10 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label13.Location = new System.Drawing.Point(18, 346);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(36, 665);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(117, 24);
+            this.label13.Size = new System.Drawing.Size(233, 42);
             this.label13.TabIndex = 7;
             this.label13.Text = "Transactions";
             // 
@@ -101,10 +101,10 @@
             this.lblAdminUsers.BackColor = System.Drawing.Color.Transparent;
             this.lblAdminUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdminUsers.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAdminUsers.Location = new System.Drawing.Point(24, 148);
-            this.lblAdminUsers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAdminUsers.Location = new System.Drawing.Point(48, 285);
+            this.lblAdminUsers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminUsers.Name = "lblAdminUsers";
-            this.lblAdminUsers.Size = new System.Drawing.Size(153, 24);
+            this.lblAdminUsers.Size = new System.Drawing.Size(297, 42);
             this.lblAdminUsers.TabIndex = 3;
             this.lblAdminUsers.Text = "Admin Operation";
             this.lblAdminUsers.Click += new System.EventHandler(this.lblAdminUsers_Click);
@@ -115,10 +115,10 @@
             this.lblWelcome.BackColor = System.Drawing.Color.Transparent;
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.White;
-            this.lblWelcome.Location = new System.Drawing.Point(6, 5);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWelcome.Location = new System.Drawing.Point(12, 10);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(132, 26);
+            this.lblWelcome.Size = new System.Drawing.Size(251, 52);
             this.lblWelcome.TabIndex = 4;
             this.lblWelcome.Text = "Welcome , ";
             this.lblWelcome.Click += new System.EventHandler(this.label1_Click);
@@ -135,13 +135,13 @@
             this.cuiPanel1.Controls.Add(this.lblAdminNotice);
             this.cuiPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.cuiPanel1.Location = new System.Drawing.Point(0, 0);
-            this.cuiPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.cuiPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cuiPanel1.Name = "cuiPanel1";
             this.cuiPanel1.OutlineThickness = 1F;
             this.cuiPanel1.PanelColor = System.Drawing.Color.Blue;
             this.cuiPanel1.PanelOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.cuiPanel1.Rounding = new System.Windows.Forms.Padding(8);
-            this.cuiPanel1.Size = new System.Drawing.Size(229, 661);
+            this.cuiPanel1.Size = new System.Drawing.Size(458, 1271);
             this.cuiPanel1.TabIndex = 17;
             // 
             // btnLogOut
@@ -166,7 +166,8 @@
             this.btnLogOut.ImageAutoCenter = true;
             this.btnLogOut.ImageExpand = new System.Drawing.Point(0, 0);
             this.btnLogOut.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnLogOut.Location = new System.Drawing.Point(3, 620);
+            this.btnLogOut.Location = new System.Drawing.Point(6, 1192);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.NormalBackground = System.Drawing.Color.Transparent;
             this.btnLogOut.NormalForeColor = System.Drawing.Color.Black;
@@ -178,7 +179,7 @@
             this.btnLogOut.PressedImageTint = System.Drawing.Color.White;
             this.btnLogOut.PressedOutline = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnLogOut.Rounding = new System.Windows.Forms.Padding(8);
-            this.btnLogOut.Size = new System.Drawing.Size(96, 38);
+            this.btnLogOut.Size = new System.Drawing.Size(192, 73);
             this.btnLogOut.TabIndex = 8;
             this.btnLogOut.TextAlignment = System.Drawing.StringAlignment.Center;
             this.btnLogOut.TextOffset = new System.Drawing.Point(0, 0);
@@ -188,8 +189,8 @@
             // 
             this.pnlUserControl.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlUserControl.GradientAngle = 0F;
-            this.pnlUserControl.Location = new System.Drawing.Point(230, 0);
-            this.pnlUserControl.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlUserControl.Location = new System.Drawing.Point(460, 0);
+            this.pnlUserControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlUserControl.Name = "pnlUserControl";
             this.pnlUserControl.OutlineThickness = 1F;
             this.pnlUserControl.PanelColor1 = System.Drawing.Color.Ivory;
@@ -197,20 +198,21 @@
             this.pnlUserControl.PanelOutlineColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.pnlUserControl.PanelOutlineColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
             this.pnlUserControl.Rounding = new System.Windows.Forms.Padding(8);
-            this.pnlUserControl.Size = new System.Drawing.Size(868, 661);
+            this.pnlUserControl.Size = new System.Drawing.Size(1736, 1271);
             this.pnlUserControl.TabIndex = 17;
             // 
             // AdminInterface
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1098, 661);
+            this.ClientSize = new System.Drawing.Size(2196, 1271);
             this.Controls.Add(this.cuiPanel1);
             this.Controls.Add(this.pnlUserControl);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminInterface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminInterface";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminInterface_FormClosing);
             this.cuiPanel1.ResumeLayout(false);
             this.cuiPanel1.PerformLayout();
             this.ResumeLayout(false);

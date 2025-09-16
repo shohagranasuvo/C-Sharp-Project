@@ -77,5 +77,10 @@ namespace Diagnostic
             this.pnlUserControl.Controls.Add(AA);
 
         }
+
+        private void AdminInterface_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

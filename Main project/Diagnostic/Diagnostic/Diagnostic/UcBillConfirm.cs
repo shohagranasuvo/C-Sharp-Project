@@ -14,9 +14,11 @@ namespace Diagnostic
     { private double Total {  get; set; }  
         private string PatientId {  get; set; }     
         private ListView Lv { get; set; }
+        private DataAccess Da { get; set; }
         public UcBillConfirm()
         {
             InitializeComponent();
+            Da =new DataAccess();
         }
 
         public UcBillConfirm(ListView lv, string id = "2") 
@@ -87,9 +89,26 @@ namespace Diagnostic
                 int result = da.ExecuteDMLQuery(query);
 
                 if (result > 0)
-                    MessageBox.Show($"Bill saved successfully BillId: {nextBillId}");
+                { MessageBox.Show($"Bill saved successfully BillId: {nextBillId}"); }
                 else
-                    MessageBox.Show("Failed to save bill");
+                { MessageBox.Show("Failed to save bill"); }
+
+                foreach (ListViewItem item in lvSelectedItemView.Items)
+                {
+
+                    string itemName = item.SubItems[1].Text;
+                    string quantity = item.SubItems[2].Text;    
+                    string query1 = "select AccessoriesName ,Quantity from Accessories";//need to code
+                    var ds = this.Da.ExecuteQuery(query1);
+                    if(ds.Tables[0].Rows.Count > 0)
+                    {
+                       // string OldQuantity = 
+
+                    }
+
+                }
+
+
             }
             catch (Exception ex)
             {
