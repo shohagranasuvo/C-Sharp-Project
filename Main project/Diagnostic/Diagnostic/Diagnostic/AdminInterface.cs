@@ -82,5 +82,13 @@ namespace Diagnostic
         {
             Application.Exit();
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            UCAdminTransactions at = new UCAdminTransactions();
+
+            this.pnlUserControl.Controls.Clear();
+            this.pnlUserControl.Controls.Add(at);
+        }
     }
 }

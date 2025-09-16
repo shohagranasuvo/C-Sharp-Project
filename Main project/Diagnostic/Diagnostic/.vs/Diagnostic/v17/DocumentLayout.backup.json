@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\main project\\diagnostic\\diagnostic\\diagnostic\\ucbillconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucbillconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\admininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\admininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\admininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\admininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\main project\\diagnostic\\diagnostic\\diagnostic\\ucadmintransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucadmintransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\main project\\diagnostic\\diagnostic\\diagnostic\\ucadmintransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucadmintransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\main project\\diagnostic\\diagnostic\\diagnostic\\ucadmintransactions.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucadmintransactions.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\main project\\diagnostic\\diagnostic\\diagnostic\\ucadmintransactions.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucadmintransactions.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucadminoperationcrude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucadminoperationcrude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucadminoperationcrude.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucadminoperationcrude.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\main project\\diagnostic\\diagnostic\\diagnostic\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucbillconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucbillconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\receptionistdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\receptionistdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucbilling.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucbilling.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucbillconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucbillconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucbilling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -27,22 +71,6 @@
       "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucbilling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\admininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\admininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|s:\\study\\6th semester summer 24-25\\c#\\c-sharp-project\\main project\\diagnostic\\diagnostic\\diagnostic\\admininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\admininterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucadminoperationcrude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucadminoperationcrude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\receptionistdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\receptionistdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucregisterpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucregisterpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -51,20 +79,8 @@
       "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucbillconfirm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucadminoperationcrude.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucadminoperationcrude.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucbilling.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucbilling.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucreceptionistoperationcrude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\ucreceptionistoperationcrude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|solutionrelative:diagnostic\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}|Diagnostic\\Diagnostic.csproj|S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\diagnostic\\ucadminoperationcrude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -110,11 +126,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "UcBilling.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcBilling.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcBilling.cs",
@@ -122,12 +138,11 @@
               "RelativeToolTip": "Diagnostic\\UcBilling.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T08:04:15.355Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "UcReceptionist.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcReceptionist.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcReceptionist.cs",
@@ -139,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "UcAdminOperationCRUDE.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcAdminOperationCRUDE.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcAdminOperationCRUDE.cs",
@@ -152,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "UcAdminOperationCRUDE.cs",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcAdminOperationCRUDE.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcAdminOperationCRUDE.cs",
@@ -166,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "UcReceptionistOperationCRUDE.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcReceptionistOperationCRUDE.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcReceptionistOperationCRUDE.cs",
@@ -174,12 +189,11 @@
               "RelativeToolTip": "Diagnostic\\UcReceptionistOperationCRUDE.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-14T18:35:35.124Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "UcBilling.cs",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcBilling.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcBilling.cs",
@@ -188,12 +202,11 @@
               "ViewState": "AgIAAK0AAAAAAAAAAAAYwLIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T15:09:35.728Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "UcBillConfirm.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcBillConfirm.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcBillConfirm.cs",
@@ -201,12 +214,11 @@
               "RelativeToolTip": "Diagnostic\\UcBillConfirm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T18:44:07.205Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "UcReceptionist.cs",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcReceptionist.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcReceptionist.cs",
@@ -219,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ReceptionistDashboard.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\ReceptionistDashboard.cs",
               "RelativeDocumentMoniker": "Diagnostic\\ReceptionistDashboard.cs",
@@ -227,12 +239,11 @@
               "RelativeToolTip": "Diagnostic\\ReceptionistDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-14T17:38:19.471Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "UcBilling.Designer.cs",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcBilling.Designer.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcBilling.Designer.cs",
@@ -241,12 +252,11 @@
               "ViewState": "AgIAAMUCAAAAAAAAAAAtwMsCAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T16:50:58.167Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "UcBillConfirm.cs",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcBillConfirm.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcBillConfirm.cs",
@@ -255,19 +265,56 @@
               "ViewState": "AgIAAGAAAAAAAAAAAAAIwGgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T19:16:12.921Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UCAdminTransactions.cs",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UCAdminTransactions.cs",
+              "RelativeDocumentMoniker": "Diagnostic\\UCAdminTransactions.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UCAdminTransactions.cs*",
+              "RelativeToolTip": "Diagnostic\\UCAdminTransactions.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T13:04:32.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminInterface.cs [Design]",
-              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\AdminInterface.cs",
-              "RelativeDocumentMoniker": "Diagnostic\\AdminInterface.cs",
-              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\AdminInterface.cs [Design]",
-              "RelativeToolTip": "Diagnostic\\AdminInterface.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "UCAdminTransactions.Designer.cs",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UCAdminTransactions.Designer.cs",
+              "RelativeDocumentMoniker": "Diagnostic\\UCAdminTransactions.Designer.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UCAdminTransactions.Designer.cs*",
+              "RelativeToolTip": "Diagnostic\\UCAdminTransactions.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T05:17:23.54Z",
+              "WhenOpened": "2025-09-16T13:02:53.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UCAdminTransactions.resx",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UCAdminTransactions.resx",
+              "RelativeDocumentMoniker": "Diagnostic\\UCAdminTransactions.resx",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UCAdminTransactions.resx*",
+              "RelativeToolTip": "Diagnostic\\UCAdminTransactions.resx*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-09-16T13:02:49.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UCAdminTransactions.cs [Design]",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UCAdminTransactions.cs",
+              "RelativeDocumentMoniker": "Diagnostic\\UCAdminTransactions.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UCAdminTransactions.cs [Design]*",
+              "RelativeToolTip": "Diagnostic\\UCAdminTransactions.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T13:00:08.914Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -280,64 +327,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UcRegisterPatient.cs [Design]",
-              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcRegisterPatient.cs",
-              "RelativeDocumentMoniker": "Diagnostic\\UcRegisterPatient.cs",
-              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcRegisterPatient.cs [Design]",
-              "RelativeToolTip": "Diagnostic\\UcRegisterPatient.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "AdminInterface.cs [Design]",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\AdminInterface.cs",
+              "RelativeDocumentMoniker": "Diagnostic\\AdminInterface.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\AdminInterface.cs [Design]*",
+              "RelativeToolTip": "Diagnostic\\AdminInterface.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T20:00:49.063Z",
+              "WhenOpened": "2025-09-16T05:17:23.54Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UcBillConfirm.Designer.cs",
-              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcBillConfirm.Designer.cs",
-              "RelativeDocumentMoniker": "Diagnostic\\UcBillConfirm.Designer.cs",
-              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcBillConfirm.Designer.cs",
-              "RelativeToolTip": "Diagnostic\\UcBillConfirm.Designer.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAtwOYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T19:39:14.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UcReceptionistOperationCRUDE.cs",
-              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcReceptionistOperationCRUDE.cs",
-              "RelativeDocumentMoniker": "Diagnostic\\UcReceptionistOperationCRUDE.cs",
-              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcReceptionistOperationCRUDE.cs",
-              "RelativeToolTip": "Diagnostic\\UcReceptionistOperationCRUDE.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAiwEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T19:23:03.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReceptionistDashboard.cs",
-              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\ReceptionistDashboard.cs",
-              "RelativeDocumentMoniker": "Diagnostic\\ReceptionistDashboard.cs",
-              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\ReceptionistDashboard.cs",
-              "RelativeToolTip": "Diagnostic\\ReceptionistDashboard.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T21:39:32.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "AdminInterface.cs",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\AdminInterface.cs",
               "RelativeDocumentMoniker": "Diagnostic\\AdminInterface.cs",
-              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\AdminInterface.cs",
-              "RelativeToolTip": "Diagnostic\\AdminInterface.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAYwFIAAAAfAAAAAAAAAA==",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\AdminInterface.cs*",
+              "RelativeToolTip": "Diagnostic\\AdminInterface.cs*",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwFoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-12T17:23:21.028Z",
               "EditorCaption": ""
@@ -345,18 +353,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "UcReceptionistOperationCRUDE.cs",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcReceptionistOperationCRUDE.cs",
+              "RelativeDocumentMoniker": "Diagnostic\\UcReceptionistOperationCRUDE.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcReceptionistOperationCRUDE.cs",
+              "RelativeToolTip": "Diagnostic\\UcReceptionistOperationCRUDE.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T19:23:03.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReceptionistDashboard.cs",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\ReceptionistDashboard.cs",
+              "RelativeDocumentMoniker": "Diagnostic\\ReceptionistDashboard.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\ReceptionistDashboard.cs",
+              "RelativeToolTip": "Diagnostic\\ReceptionistDashboard.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T21:39:32.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "DataAccess.cs",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\DataAccess.cs",
               "RelativeDocumentMoniker": "Diagnostic\\DataAccess.cs",
               "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\DataAccess.cs",
               "RelativeToolTip": "Diagnostic\\DataAccess.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwB0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T16:50:01.958Z"
+              "WhenOpened": "2025-09-09T16:50:01.958Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "UcAdminOperationCRUDE.Designer.cs",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcAdminOperationCRUDE.Designer.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcAdminOperationCRUDE.Designer.cs",
@@ -369,7 +402,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
+              "Title": "UcBillConfirm.Designer.cs",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcBillConfirm.Designer.cs",
+              "RelativeDocumentMoniker": "Diagnostic\\UcBillConfirm.Designer.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcBillConfirm.Designer.cs",
+              "RelativeToolTip": "Diagnostic\\UcBillConfirm.Designer.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAtwOYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T19:39:14.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UcRegisterPatient.cs [Design]",
+              "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcRegisterPatient.cs",
+              "RelativeDocumentMoniker": "Diagnostic\\UcRegisterPatient.cs",
+              "ToolTip": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcRegisterPatient.cs [Design]",
+              "RelativeToolTip": "Diagnostic\\UcRegisterPatient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T20:00:49.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "UcReciptionist.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcReciptionist.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcReciptionist.cs",
@@ -380,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "UcReceptionistOperationCRUDE.Designer.cs",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\UcReceptionistOperationCRUDE.Designer.cs",
               "RelativeDocumentMoniker": "Diagnostic\\UcReceptionistOperationCRUDE.Designer.cs",
@@ -388,12 +444,11 @@
               "RelativeToolTip": "Diagnostic\\UcReceptionistOperationCRUDE.Designer.cs",
               "ViewState": "AgIAAMACAAAAAAAAAAAowMYCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T18:58:16.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-14T18:58:16.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "DiagnosticDataSet.xsd",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\DiagnosticDataSet.xsd",
               "RelativeDocumentMoniker": "Diagnostic\\DiagnosticDataSet.xsd",
@@ -404,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "AddReceptionist.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\AddReceptionist.cs",
               "RelativeDocumentMoniker": "Diagnostic\\AddReceptionist.cs",
@@ -415,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "AdmisFirstDashBoard.cs [Design]",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\AdmisFirstDashBoard.cs",
               "RelativeDocumentMoniker": "Diagnostic\\AdmisFirstDashBoard.cs",
@@ -426,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "FormLogIn.cs",
               "DocumentMoniker": "S:\\STUDY\\6th semester Summer 24-25\\C#\\C-Sharp-Project\\Main project\\Diagnostic\\Diagnostic\\Diagnostic\\FormLogIn.cs",
               "RelativeDocumentMoniker": "Diagnostic\\FormLogIn.cs",

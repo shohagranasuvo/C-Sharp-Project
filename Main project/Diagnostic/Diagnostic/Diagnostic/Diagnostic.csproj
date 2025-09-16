@@ -89,6 +89,12 @@
     <Compile Include="AdmisFirstDashBoard.Designer.cs">
       <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCAdminTransactions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAdminTransactions.Designer.cs">
+      <DependentUpon>UCAdminTransactions.cs</DependentUpon>
+    </Compile>
     <Compile Include="UcBillConfirm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -181,6 +187,7 @@
     <EmbeddedResource Include="AdmisFirstDashBoard.resx">
       <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCAdminTransactions.resx" />
     <EmbeddedResource Include="UcBillConfirm.resx">
       <DependentUpon>UcBillConfirm.cs</DependentUpon>
     </EmbeddedResource>

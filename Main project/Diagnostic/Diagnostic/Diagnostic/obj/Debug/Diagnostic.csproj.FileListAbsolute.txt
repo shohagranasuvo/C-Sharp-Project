@@ -42,3 +42,4 @@ S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Di
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcReceptionist.resources
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcBilling.resources
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcBillConfirm.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UCAdminTransactions.resources

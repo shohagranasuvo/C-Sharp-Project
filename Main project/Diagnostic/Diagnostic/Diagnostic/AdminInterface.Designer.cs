@@ -94,6 +94,7 @@
             this.label13.Size = new System.Drawing.Size(233, 42);
             this.label13.TabIndex = 7;
             this.label13.Text = "Transactions";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // lblAdminUsers
             // 
@@ -135,7 +136,7 @@
             this.cuiPanel1.Controls.Add(this.lblAdminNotice);
             this.cuiPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.cuiPanel1.Location = new System.Drawing.Point(0, 0);
-            this.cuiPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cuiPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.cuiPanel1.Name = "cuiPanel1";
             this.cuiPanel1.OutlineThickness = 1F;
             this.cuiPanel1.PanelColor = System.Drawing.Color.Blue;
@@ -167,7 +168,7 @@
             this.btnLogOut.ImageExpand = new System.Drawing.Point(0, 0);
             this.btnLogOut.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnLogOut.Location = new System.Drawing.Point(6, 1192);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(6);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.NormalBackground = System.Drawing.Color.Transparent;
             this.btnLogOut.NormalForeColor = System.Drawing.Color.Black;
@@ -190,7 +191,7 @@
             this.pnlUserControl.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlUserControl.GradientAngle = 0F;
             this.pnlUserControl.Location = new System.Drawing.Point(460, 0);
-            this.pnlUserControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlUserControl.Margin = new System.Windows.Forms.Padding(4);
             this.pnlUserControl.Name = "pnlUserControl";
             this.pnlUserControl.OutlineThickness = 1F;
             this.pnlUserControl.PanelColor1 = System.Drawing.Color.Ivory;
@@ -208,7 +209,7 @@
             this.ClientSize = new System.Drawing.Size(2196, 1271);
             this.Controls.Add(this.cuiPanel1);
             this.Controls.Add(this.pnlUserControl);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminInterface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminInterface";
