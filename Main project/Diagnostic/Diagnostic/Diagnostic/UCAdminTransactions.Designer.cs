@@ -41,10 +41,8 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnTransactionSearch = new MetroFramework.Controls.MetroButton();
-            this.txtTransactionSearch = new CuoreUI.Controls.cuiTextBox();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.lblTrancastion = new System.Windows.Forms.Label();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -52,18 +50,17 @@
             // 
             // metroPanel1
             // 
-            this.metroPanel1.Controls.Add(this.cmbStatus);
+            this.metroPanel1.Controls.Add(this.lblTrancastion);
             this.metroPanel1.Controls.Add(this.dgvTransaction);
-            this.metroPanel1.Controls.Add(this.btnTransactionSearch);
-            this.metroPanel1.Controls.Add(this.txtTransactionSearch);
             this.metroPanel1.Controls.Add(this.metroGrid1);
+            this.metroPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 16;
-            this.metroPanel1.Location = new System.Drawing.Point(5, 80);
+            this.metroPanel1.Location = new System.Drawing.Point(5, 0);
             this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(1726, 1112);
+            this.metroPanel1.Size = new System.Drawing.Size(1726, 1192);
             this.metroPanel1.TabIndex = 2;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -105,7 +102,7 @@
             this.dgvTransaction.EnableHeadersVisualStyles = false;
             this.dgvTransaction.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgvTransaction.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgvTransaction.Location = new System.Drawing.Point(0, 221);
+            this.dgvTransaction.Location = new System.Drawing.Point(0, 118);
             this.dgvTransaction.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvTransaction.Name = "dgvTransaction";
             this.dgvTransaction.ReadOnly = true;
@@ -122,7 +119,7 @@
             this.dgvTransaction.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvTransaction.RowTemplate.Height = 33;
             this.dgvTransaction.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTransaction.Size = new System.Drawing.Size(1726, 891);
+            this.dgvTransaction.Size = new System.Drawing.Size(1726, 1074);
             this.dgvTransaction.TabIndex = 18;
             // 
             // Column7
@@ -171,56 +168,6 @@
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
-            // btnTransactionSearch
-            // 
-            this.btnTransactionSearch.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnTransactionSearch.BackgroundImage = global::Diagnostic.Properties.Resources.Search;
-            this.btnTransactionSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnTransactionSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTransactionSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnTransactionSearch.Location = new System.Drawing.Point(546, 37);
-            this.btnTransactionSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnTransactionSearch.Name = "btnTransactionSearch";
-            this.btnTransactionSearch.Size = new System.Drawing.Size(48, 41);
-            this.btnTransactionSearch.Style = MetroFramework.MetroColorStyle.Blue;
-            this.btnTransactionSearch.TabIndex = 17;
-            this.btnTransactionSearch.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.btnTransactionSearch.UseCustomBackColor = true;
-            this.btnTransactionSearch.UseCustomForeColor = true;
-            this.btnTransactionSearch.UseSelectable = true;
-            this.btnTransactionSearch.Click += new System.EventHandler(this.btnTransactionSearch_Click_1);
-            // 
-            // txtTransactionSearch
-            // 
-            this.txtTransactionSearch.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtTransactionSearch.BackgroundColor = System.Drawing.Color.LightSkyBlue;
-            this.txtTransactionSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.txtTransactionSearch.Content = "";
-            this.txtTransactionSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTransactionSearch.FocusBackgroundColor = System.Drawing.Color.White;
-            this.txtTransactionSearch.FocusImageTint = System.Drawing.Color.White;
-            this.txtTransactionSearch.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
-            this.txtTransactionSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTransactionSearch.ForeColor = System.Drawing.Color.Gray;
-            this.txtTransactionSearch.Image = null;
-            this.txtTransactionSearch.ImageExpand = new System.Drawing.Point(0, 0);
-            this.txtTransactionSearch.ImageOffset = new System.Drawing.Point(0, 0);
-            this.txtTransactionSearch.Location = new System.Drawing.Point(33, 24);
-            this.txtTransactionSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtTransactionSearch.Multiline = false;
-            this.txtTransactionSearch.Name = "txtTransactionSearch";
-            this.txtTransactionSearch.NormalImageTint = System.Drawing.Color.White;
-            this.txtTransactionSearch.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.txtTransactionSearch.Padding = new System.Windows.Forms.Padding(29, 18, 29, 0);
-            this.txtTransactionSearch.PasswordChar = false;
-            this.txtTransactionSearch.PlaceholderColor = System.Drawing.SystemColors.WindowText;
-            this.txtTransactionSearch.PlaceholderText = "";
-            this.txtTransactionSearch.Rounding = new System.Windows.Forms.Padding(20);
-            this.txtTransactionSearch.Size = new System.Drawing.Size(576, 64);
-            this.txtTransactionSearch.TabIndex = 16;
-            this.txtTransactionSearch.TextOffset = new System.Drawing.Size(0, 0);
-            this.txtTransactionSearch.UnderlinedStyle = false;
-            // 
             // metroGrid1
             // 
             this.metroGrid1.AllowUserToResizeRows = false;
@@ -267,19 +214,14 @@
             this.metroGrid1.Size = new System.Drawing.Size(1640, 816);
             this.metroGrid1.TabIndex = 4;
             // 
-            // cmbStatus
+            // lblTrancastion
             // 
-            this.cmbStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Items.AddRange(new object[] {
-            "Paid",
-            "Pending"});
-            this.cmbStatus.Location = new System.Drawing.Point(1391, 45);
-            this.cmbStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(260, 33);
-            this.cmbStatus.TabIndex = 20;
-            this.cmbStatus.Text = "Status";
+            this.lblTrancastion.AutoSize = true;
+            this.lblTrancastion.Location = new System.Drawing.Point(696, 20);
+            this.lblTrancastion.Name = "lblTrancastion";
+            this.lblTrancastion.Size = new System.Drawing.Size(413, 51);
+            this.lblTrancastion.TabIndex = 19;
+            this.lblTrancastion.Text = "Transaction History";
             // 
             // UCAdminTransactions
             // 
@@ -289,6 +231,7 @@
             this.Name = "UCAdminTransactions";
             this.Size = new System.Drawing.Size(1736, 1272);
             this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaction)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.ResumeLayout(false);
@@ -299,14 +242,12 @@
 
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroGrid dgvTransaction;
-        private MetroFramework.Controls.MetroButton btnTransactionSearch;
-        private CuoreUI.Controls.cuiTextBox txtTransactionSearch;
         private MetroFramework.Controls.MetroGrid metroGrid1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.ComboBox cmbStatus;
+        private System.Windows.Forms.Label lblTrancastion;
     }
 }

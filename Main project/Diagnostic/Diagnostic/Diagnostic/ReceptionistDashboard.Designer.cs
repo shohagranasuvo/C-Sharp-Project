@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblAccessories = new System.Windows.Forms.Label();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.lblPatientReg = new System.Windows.Forms.Label();
-            this.lblTest = new System.Windows.Forms.Label();
             this.lblDashBoard = new System.Windows.Forms.Label();
             this.pnlforUcReceptionist = new System.Windows.Forms.Panel();
             this.lblWelcomeName = new System.Windows.Forms.Label();
@@ -39,20 +37,6 @@
             this.btnBilling = new System.Windows.Forms.Label();
             this.cuiGradientPanel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblAccessories
-            // 
-            this.lblAccessories.AutoSize = true;
-            this.lblAccessories.BackColor = System.Drawing.Color.Transparent;
-            this.lblAccessories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblAccessories.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccessories.ForeColor = System.Drawing.Color.Black;
-            this.lblAccessories.Location = new System.Drawing.Point(48, 523);
-            this.lblAccessories.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblAccessories.Name = "lblAccessories";
-            this.lblAccessories.Size = new System.Drawing.Size(268, 51);
-            this.lblAccessories.TabIndex = 3;
-            this.lblAccessories.Text = "Accessories";
             // 
             // btnLogOut
             // 
@@ -82,20 +66,6 @@
             this.lblPatientReg.TabIndex = 2;
             this.lblPatientReg.Text = "Register Patient";
             this.lblPatientReg.Click += new System.EventHandler(this.lblPatientReg_Click);
-            // 
-            // lblTest
-            // 
-            this.lblTest.AutoSize = true;
-            this.lblTest.BackColor = System.Drawing.Color.Transparent;
-            this.lblTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTest.ForeColor = System.Drawing.Color.Black;
-            this.lblTest.Location = new System.Drawing.Point(48, 431);
-            this.lblTest.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTest.Name = "lblTest";
-            this.lblTest.Size = new System.Drawing.Size(133, 51);
-            this.lblTest.TabIndex = 1;
-            this.lblTest.Text = "Tests";
             // 
             // lblDashBoard
             // 
@@ -139,10 +109,8 @@
             // 
             this.cuiGradientPanel2.Controls.Add(this.btnBilling);
             this.cuiGradientPanel2.Controls.Add(this.lblWelcomeName);
-            this.cuiGradientPanel2.Controls.Add(this.lblAccessories);
             this.cuiGradientPanel2.Controls.Add(this.lblPatientReg);
             this.cuiGradientPanel2.Controls.Add(this.lblDashBoard);
-            this.cuiGradientPanel2.Controls.Add(this.lblTest);
             this.cuiGradientPanel2.Controls.Add(this.btnLogOut);
             this.cuiGradientPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.cuiGradientPanel2.GradientAngle = 0F;
@@ -165,7 +133,7 @@
             this.btnBilling.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBilling.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBilling.ForeColor = System.Drawing.Color.Black;
-            this.btnBilling.Location = new System.Drawing.Point(51, 628);
+            this.btnBilling.Location = new System.Drawing.Point(51, 413);
             this.btnBilling.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnBilling.Name = "btnBilling";
             this.btnBilling.Size = new System.Drawing.Size(146, 51);
@@ -194,9 +162,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblAccessories;
         private System.Windows.Forms.Label lblPatientReg;
-        private System.Windows.Forms.Label lblTest;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Label lblDashBoard;
         private System.Windows.Forms.Panel pnlforUcReceptionist;

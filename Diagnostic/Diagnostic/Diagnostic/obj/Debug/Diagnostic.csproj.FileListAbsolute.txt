@@ -43,3 +43,24 @@ S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Di
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcBilling.resources
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcBillConfirm.resources
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UCAdminTransactions.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.csproj.AssemblyReference.cache
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.exe.config
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcAddReceptionist.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.AdminInterface.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.AdmisFirstDashBoard.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UCAdminTransactions.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcBillConfirm.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.FormLogIn.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.Properties.Resources.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcReceptionist.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.ReceptionistDashboard.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcAdminDashBoard.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcAdminOperationCRUDE.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcBilling.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcReceptionistOperationCRUDE.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcReciptionist.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcRegisterPatient.resources
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.csproj.GenerateResource.cache
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.csproj.CoreCompileInputs.cache
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.exe
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.pdb

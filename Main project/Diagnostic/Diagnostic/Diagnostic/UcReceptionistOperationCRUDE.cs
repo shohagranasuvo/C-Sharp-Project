@@ -391,6 +391,7 @@ namespace Diagnostic
         private void btnUpdatePatient_Click(object sender, EventArgs e)
         {
             this.ClearAll();
+
             PopulateGridView();
         }
         public void ClearAll()

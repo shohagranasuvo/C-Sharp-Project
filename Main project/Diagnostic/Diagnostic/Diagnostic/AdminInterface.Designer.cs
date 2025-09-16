@@ -209,6 +209,7 @@
             this.ClientSize = new System.Drawing.Size(2196, 1271);
             this.Controls.Add(this.cuiPanel1);
             this.Controls.Add(this.pnlUserControl);
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminInterface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

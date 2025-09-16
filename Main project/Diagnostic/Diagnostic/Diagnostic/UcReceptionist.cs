@@ -60,7 +60,7 @@ namespace Diagnostic
 
         private void btnSearch_Click_1(object sender, EventArgs e)
         {
-            if (cmbSelectType.SelectedItem == null)
+            if (cmbSelectType.SelectedIndex == -1)
             {
                 MessageBox.Show("Please select a search type.");
                 return;

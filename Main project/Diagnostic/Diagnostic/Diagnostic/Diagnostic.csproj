@@ -95,6 +95,11 @@
     <Compile Include="UCAdminTransactions.Designer.cs">
       <DependentUpon>UCAdminTransactions.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCAdminTransactions1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UCAdminTransactions.resx</DependentUpon>
+    </Compile>
     <Compile Include="UcBillConfirm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -160,9 +165,7 @@
     <Compile Include="UcReceptionistOperationCRUDE.Designer.cs">
       <DependentUpon>UcReceptionistOperationCRUDE.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcReciptionist.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="UcReciptionist.cs" />
     <Compile Include="UcReciptionist.Designer.cs">
       <DependentUpon>UcReciptionist.cs</DependentUpon>
     </Compile>
@@ -187,7 +190,10 @@
     <EmbeddedResource Include="AdmisFirstDashBoard.resx">
       <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCAdminTransactions.resx" />
+    <EmbeddedResource Include="UCAdminTransactions.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCAdminTransactions1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="UcBillConfirm.resx">
       <DependentUpon>UcBillConfirm.cs</DependentUpon>
     </EmbeddedResource>

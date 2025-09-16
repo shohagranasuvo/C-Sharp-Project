@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Diagnostic
 {
-    public partial class UCAdminTransactions : UserControl
+   public partial  class UCAdminTransactions : UserControl
     {
         private DataAccess Da { get; set; }
-        public UCAdminTransactions()
+        public  UCAdminTransactions()
         {
             InitializeComponent();
             this.Da = new DataAccess();
@@ -29,18 +29,33 @@ namespace Diagnostic
             this.dgvTransaction.AutoGenerateColumns = false;
             this.dgvTransaction.DataSource = ds.Tables[0];
         }
-       
+        private void metroPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void btnTransactionSearch_Click(object sender, EventArgs e)
         {
-            string sql = " select * from Bill where ReceptionistId = '" + this.txtTransactionSearch.Text + "'; ";
-            this.PopulatedGridView(sql);
+            //string sql = " select * from Bill where ReceptionistId = '" + this.txtTransactionSearch.Text + "'; ";
+            //this.PopulatedGridView(sql);
         }
 
-        private void cmbStatus_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        //private void cmbStatus_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    string selectedStatus = this.cmbStatus.SelectedItem.ToString();
+        //    string sql = "";
 
-        }
+        //    if (selectedStatus.Equals("Paid", StringComparison.OrdinalIgnoreCase))
+        //    {
+        //        sql = "select * from Bill where PaymentStatus = 'Paid';";
+        //    }
+        //    else if (selectedStatus.Equals("Pending", StringComparison.OrdinalIgnoreCase))
+        //    {
+        //        sql = "select * from Bill where PaymentStatus = 'Pending';";
+        //    }
+
+        //    this.PopulatedGridView(sql);
+        //}
 
         private void dgvTransaction_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -57,10 +72,5 @@ namespace Diagnostic
 
         }
 
-        private void btnTransactionSearch_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
-
 }

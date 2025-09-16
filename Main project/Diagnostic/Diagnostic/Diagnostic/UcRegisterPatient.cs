@@ -44,24 +44,59 @@ namespace Diagnostic
 
         private void btnAddpatient_Click(object sender, EventArgs e)
         {
-            //string name = this.txtboxname.Text;
-            //if (name == "")
-            //{
-            //    MessageBox.Show("Fill the Name");
-            //    return;
-            //}
-            //else
-            //{
-            //    var sql = "select patientid from patient where Patientname= '" + name + "'";
-            //    var ds = this.Da.ExecuteQuery(sql);
-            //    if (ds.Tables[0].Rows.Count > 0)
-            //    {
-            //        MessageBox.Show("User Already exist ");
-            //        return;
-            //    }
-            //}
+            try
+            {
+                //this.clearAll();
+                dvgpatient.ClearSelection();
+                if (!this.IsValidToSave())
+                {
+                    MessageBox.Show("Please fill all the empty fields");
+                    return;
+                }
 
-            AddPatent();
+                var patientId = this.AutoIdGenerate();
+
+                if (patientId == null)
+                {
+                    patientId = "1";
+                }
+               string gender = "";
+                if (this.rbtnMale.Checked)
+                {
+                    gender = "Male";
+                }
+                else if (this.rbtnFemale.Checked)
+                {
+                    gender = "Female";
+                }
+               string dob = this.dtpDateOfBirth.Text;
+                MessageBox.Show(dob);
+
+               string query = "INSERT INTO Patient (PatientId, PatientName, Phone, Email, Address, Gender, DateOfBirth) VALUES ('" + patientId + "', '" + this.txtboxname.Text + "', '" + this.txtPhone.Text + "', '" + this.txtEmail.Text + "', '" + this.txtAddress.Text + "', '" + gender + "','" + dob + "')";
+
+                var dss = this.Da.ExecuteDMLQuery(query);
+                if (dss == 1)
+                {
+                    MessageBox.Show("Successfully ");
+
+                }
+                else
+                {
+                    MessageBox.Show(" Unsuccessful");
+
+                }
+                this.PopulateGridView();
+            
+
+
+
+
+            }
+            catch (Exception ex){
+                MessageBox.Show("Eerror :" + ex);
+            }
+           
+
 
 
         }
@@ -80,7 +115,7 @@ namespace Diagnostic
                     MessageBox.Show("Please fill all the empty fields");
                     return;
                 }
-
+                
                 string idd = this.dvgpatient.CurrentRow.Cells[0].Value.ToString();
                 string query = "select  * from patient where Patientid ='" + idd + "'";
                 var ds = this.Da.ExecuteQuery(query);
@@ -146,8 +181,7 @@ namespace Diagnostic
 
 
 
-                    // gets the selected date
-                    //string dobString = dob.ToString("yyyy-MM-dd");
+                    
                     query = "INSERT INTO Patient (PatientId, PatientName, Phone, Email, Address, Gender, DateOfBirth) VALUES ('" + patientId + "', '" + this.txtboxname.Text + "', '" + this.txtPhone.Text + "', '" + this.txtEmail.Text + "', '" + this.txtAddress.Text + "', '" + gender + "','" + dob + "')";
 
                     var dss = this.Da.ExecuteDMLQuery(query);
@@ -214,6 +248,9 @@ namespace Diagnostic
 
         private void btnUpdatePatient_Click(object sender, EventArgs e)
         {
+            clearAll();
+            dvgpatient.ClearSelection();
+
             var sql = "select * from patient";
             PopulateGridView(sql);
 
@@ -378,6 +415,14 @@ namespace Diagnostic
             {
                 MessageBox.Show("Error selecting row: " + ex.Message);
             }
+        }
+        public void clearAll()
+        {
+            this.txtboxname.Text = "";
+            this.txtAddress.Text = "";
+            this.txtPhone.Text = "";
+            this.txtEmail.Text = "";
+           
         }
     }
 }
