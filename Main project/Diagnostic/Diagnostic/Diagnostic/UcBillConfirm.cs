@@ -11,24 +11,27 @@ using System.Windows.Forms;
 namespace Diagnostic
 { 
     public partial class UcBillConfirm : UserControl
-    { private double Total {  get; set; }  
+    { 
+        private double TotalBill {  get; set; }  
         private string PatientId {  get; set; }     
         private ListView Lv { get; set; }
         private DataAccess Da { get; set; }
         public UcBillConfirm()
         {
+            this.Da = new DataAccess();
             InitializeComponent();
-            Da =new DataAccess();
+            
         }
 
         public UcBillConfirm(ListView lv, string id = "2") 
         {
+            this.Da = new DataAccess();
             InitializeComponent();
             this.PatientId = id;    
 
             copyList(lv);
-            this.Total = setSum();
-            this.lbltotaltaka.Text = Total.ToString();
+            this.TotalBill = setSum();
+            this.lbltotaltaka.Text = TotalBill.ToString();
             DataBaseUpdate();
 
 
@@ -41,7 +44,23 @@ namespace Diagnostic
 
             foreach (ListViewItem item in Lv.Items)
             {
-                lvSelectedItemView.Items.Add((ListViewItem)item.Clone());
+                //lvSelectedItemView.Items.Add((ListViewItem)item.Clone());
+                ListViewItem newItem = (ListViewItem)item.Clone();
+                string quantityText = newItem.SubItems[2].Text;
+                string priceText = newItem.SubItems[3].Text;
+
+                if(int.TryParse(quantityText, out int quantity) && double.TryParse(priceText, out double price))
+                {
+                    double itemTotal = quantity * price;
+                    newItem.SubItems.Add(itemTotal.ToString("0.00"));
+
+                }
+                else
+                {
+                    newItem.SubItems.Add("0.00");
+                }
+
+                lvSelectedItemView.Items.Add(newItem);
             }
 
         }
@@ -53,7 +72,7 @@ namespace Diagnostic
             foreach (ListViewItem item in lvSelectedItemView.Items)
             {
                 
-                string priceText = item.SubItems[3].Text;
+                string priceText = item.SubItems[4].Text;
 
                 if (Double.TryParse(priceText, out Double price))
                 {
@@ -64,60 +83,115 @@ namespace Diagnostic
 
         }
 
-      
-
-           public void DataBaseUpdate()
+        private int AutoIdGenerate()
         {
             try
             {
-                DataAccess da = new DataAccess();
+                string query = "SELECT MAX(BillId) FROM Bill";
+                var dt = this.Da.ExecuteQueryTable(query);
 
-                
-                string getIdQuery = "SELECT ISNULL(MAX(BillId), 0) + 1 FROM Bill";
-                DataTable dt = da.ExecuteQueryTable(getIdQuery);
-                int nextBillId = Convert.ToInt32(dt.Rows[0][0]); 
+                string oldId = dt.Rows[0][0]?.ToString(); 
+                if (string.IsNullOrEmpty(oldId))
+                    return 1; 
 
-                
-                string patientId = PatientId; 
-                string totalAmount = setSum().ToString(); 
-                string billDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); 
-
-                
-                string query = $"INSERT INTO Bill (BillId, PatientId, BillDate, TotalAmount) " +
-                               $"VALUES ({nextBillId}, '{patientId}', '{billDate}', '{totalAmount}')";
-
-                int result = da.ExecuteDMLQuery(query);
-
-                if (result > 0)
-                { MessageBox.Show($"Bill saved successfully BillId: {nextBillId}"); }
-                else
-                { MessageBox.Show("Failed to save bill"); }
-
-
-
-                foreach (ListViewItem item in lvSelectedItemView.Items)
-                {
-
-                    string itemName = item.SubItems[1].Text;
-                    string quantity = item.SubItems[2].Text;    
-                    string query1 = "select AccessoriesName ,Quantity from Accessories where ";//need to code
-                    var ds = this.Da.ExecuteQuery(query1);
-                    if(ds.Tables[0].Rows.Count > 0)
-                    {
-                       // string OldQuantity = 
-
-                    }
-
-                }
-
+                int maxId = 0;
+                if (!int.TryParse(oldId, out maxId))
+                    maxId = 0;
+                Random rnd = new Random();
+                return maxId + rnd.Next(1, 100000);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error generating ID: " + ex.Message);
+                return -1;
             }
         }
 
+
+        public void DataBaseUpdate()
+        {
+         
+            try
+            {
+
+                string nextBillId = this.AutoIdGenerate().ToString();
+
+              
+                string patientId = PatientId;
+                string totalAmount = setSum().ToString();
+                string billDate = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                string query = $"INSERT INTO Bill (BillId, PatientId, BillDate, TotalAmount) " +
+                               $"VALUES ({nextBillId}, '{patientId}', '{billDate}', '{totalAmount}')";
+
+                int result = Da.ExecuteDMLQuery(query);
+
+                if (result > 0)
+                {
+                    MessageBox.Show($"Bill saved successfully BillId: {nextBillId}");
+                }
+                else
+                {
+                    MessageBox.Show("Failed to save bill");
+                }
+
+                
+                foreach (ListViewItem item in lvSelectedItemView.Items)
+                {
+                    string itemName = item.SubItems[1].Text;
+                    int purchasedQty = int.Parse(item.SubItems[2].Text); 
+
+                   
+                    string checkAccessories = $"SELECT Quantity FROM Accessories WHERE AccessoriesName = '{itemName}'";
+                    DataTable accessoriesDt = Da.ExecuteQueryTable(checkAccessories);
+
+                    if (accessoriesDt.Rows.Count > 0)
+                    {
+                        int oldQty = Convert.ToInt32(accessoriesDt.Rows[0]["Quantity"]);
+                        int newQty = oldQty - purchasedQty;
+
+                        if (newQty < 0) newQty = 0; 
+
+                        string updateAccessories = $"UPDATE Accessories SET Quantity = {newQty} WHERE AccessoriesName = '{itemName}'";
+                        Da.ExecuteDMLQuery(updateAccessories);
+                    }
+                    else
+                    {
+                        
+                        //string checkTest = $"SELECT Quantity FROM Test WHERE TestName = '{itemName}'";
+                        //DataTable testDt = da.ExecuteQueryTable(checkTest);
+
+                        //if (testDt.Rows.Count > 0)
+                        //{
+                        //    int oldQty = Convert.ToInt32(testDt.Rows[0]["Quantity"]);
+                        //    int newQty = oldQty - purchasedQty;
+
+                        //    if (newQty < 0) newQty = 0;
+
+                        //    string updateTest = $"UPDATE Test SET Quantity = {newQty} WHERE TestName = '{itemName}'";
+                        //    da.ExecuteDMLQuery(updateTest);
+                        //}
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(" Error: " + ex.Message);
+            }
+        
+
+        }
+
+        private void lvSelectedItemView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbltotaltaka_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

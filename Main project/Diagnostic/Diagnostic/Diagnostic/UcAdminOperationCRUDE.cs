@@ -110,6 +110,8 @@ namespace Diagnostic
 
 
         }
+       
+
 
         private string AutoIdGenerate()
         {

@@ -267,11 +267,11 @@ namespace Diagnostic
                 }
                 else
                 {
-                    // No PatientId entered → must provide Name + Phone to add new patient
+                    
                     if (!string.IsNullOrEmpty(patientName) && !string.IsNullOrEmpty(patientPhone))
                     {
-                        UcRegisterPatient ucRegisterPatient = new UcRegisterPatient();
-                        string id =ucRegisterPatient.AutoIdGenerate();
+                        //UcRegisterPatient ucRegisterPatient = new UcRegisterPatient();
+                        string id =this.AutoIdGenerate();
                         string insertQuery = $"INSERT INTO Patient (patientid ,patientName, Phone) VALUES ('"+id+"','"+patientName+"', '"+patientPhone+"')";
                         this.Da.ExecuteDMLQuery(insertQuery);
                         MessageBox.Show("New patient added successfully!");
@@ -294,6 +294,27 @@ namespace Diagnostic
 
 
 
+        }
+        public string AutoIdGenerate()
+        {
+            var query = "SELECT MAX(PatientId) FROM Patient";
+            var dt = this.Da.ExecuteQueryTable(query);
+
+            string oldId = dt.Rows[0][0].ToString();
+            int pid = 1;
+
+            if (!string.IsNullOrEmpty(oldId))
+            {
+                Random rnd = new Random();
+              
+
+                pid = Convert.ToInt32(oldId)  + rnd.Next(1, 1000000);
+            }
+
+            MessageBox.Show("OldId: " + oldId);
+            MessageBox.Show("NewId: " + pid);
+
+            return pid.ToString();
         }
     }
     }

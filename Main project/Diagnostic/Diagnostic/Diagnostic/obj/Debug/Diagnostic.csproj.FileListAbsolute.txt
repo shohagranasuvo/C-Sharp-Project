@@ -43,7 +43,6 @@ S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\C-Sharp-Proje
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\C-Sharp-Project-main\C-Sharp-Project-main\Main project\Diagnostic\Diagnostic\Diagnostic\bin\Debug\MetroFramework.Fonts.dll
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\C-Sharp-Project-main\C-Sharp-Project-main\Main project\Diagnostic\Diagnostic\Diagnostic\bin\Debug\Krypton.Toolkit.xml
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\C-Sharp-Project-main\C-Sharp-Project-main\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.csproj.Up2Date
-S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.csproj.AssemblyReference.cache
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\bin\Debug\Diagnostic.exe.config
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\bin\Debug\Diagnostic.exe
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\bin\Debug\Diagnostic.pdb
@@ -55,6 +54,7 @@ S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Di
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\bin\Debug\MetroFramework.dll
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\bin\Debug\MetroFramework.Fonts.dll
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\bin\Debug\Krypton.Toolkit.xml
+S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.csproj.AssemblyReference.cache
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.UcAddReceptionist.resources
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.AdminInterface.resources
 S:\STUDY\6th semester Summer 24-25\C#\C-Sharp-Project\Main project\Diagnostic\Diagnostic\Diagnostic\obj\Debug\Diagnostic.AdmisFirstDashBoard.resources
