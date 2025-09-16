@@ -36,14 +36,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.dgvTransaction = new MetroFramework.Controls.MetroGrid();
-            this.btnTransactionSearch = new MetroFramework.Controls.MetroButton();
-            this.txtTransactionSearch = new CuoreUI.Controls.cuiTextBox();
-            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnTransactionSearch = new MetroFramework.Controls.MetroButton();
+            this.txtTransactionSearch = new CuoreUI.Controls.cuiTextBox();
+            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransaction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -51,6 +52,7 @@
             // 
             // metroPanel1
             // 
+            this.metroPanel1.Controls.Add(this.cmbStatus);
             this.metroPanel1.Controls.Add(this.dgvTransaction);
             this.metroPanel1.Controls.Add(this.btnTransactionSearch);
             this.metroPanel1.Controls.Add(this.txtTransactionSearch);
@@ -122,6 +124,52 @@
             this.dgvTransaction.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTransaction.Size = new System.Drawing.Size(1726, 891);
             this.dgvTransaction.TabIndex = 18;
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column7.DataPropertyName = "BillDate";
+            this.Column7.HeaderText = "Date";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "BillId";
+            this.Column1.HeaderText = "Transaction ID";
+            this.Column1.MinimumWidth = 10;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "PatientId";
+            this.Column2.HeaderText = "Patient ID";
+            this.Column2.MinimumWidth = 10;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "TotalAmount";
+            this.Column3.HeaderText = "Amount";
+            this.Column3.MinimumWidth = 10;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column6.DataPropertyName = "PaymentStatus";
+            this.Column6.FillWeight = 70F;
+            this.Column6.HeaderText = "Status";
+            this.Column6.MinimumWidth = 10;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // btnTransactionSearch
             // 
@@ -219,51 +267,19 @@
             this.metroGrid1.Size = new System.Drawing.Size(1640, 816);
             this.metroGrid1.TabIndex = 4;
             // 
-            // Column7
+            // cmbStatus
             // 
-            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column7.DataPropertyName = "BillDate";
-            this.Column7.HeaderText = "Date";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.DataPropertyName = "BillId";
-            this.Column1.HeaderText = "Transaction ID";
-            this.Column1.MinimumWidth = 10;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.DataPropertyName = "PatientId";
-            this.Column2.HeaderText = "Patient ID";
-            this.Column2.MinimumWidth = 10;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.DataPropertyName = "TotalAmount";
-            this.Column3.HeaderText = "Amount";
-            this.Column3.MinimumWidth = 10;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column6.DataPropertyName = "PaymentStatus";
-            this.Column6.FillWeight = 70F;
-            this.Column6.HeaderText = "Status";
-            this.Column6.MinimumWidth = 10;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
+            this.cmbStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Items.AddRange(new object[] {
+            "Paid",
+            "Pending"});
+            this.cmbStatus.Location = new System.Drawing.Point(1391, 45);
+            this.cmbStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(260, 33);
+            this.cmbStatus.TabIndex = 20;
+            this.cmbStatus.Text = "Status";
             // 
             // UCAdminTransactions
             // 
@@ -291,5 +307,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.ComboBox cmbStatus;
     }
 }

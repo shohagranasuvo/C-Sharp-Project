@@ -39,19 +39,7 @@ namespace Diagnostic
 
         private void cmbStatus_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedStatus = this.cmbStatus.SelectedItem.ToString();
-            string sql = "";
 
-            if (selectedStatus.Equals("Paid", StringComparison.OrdinalIgnoreCase))
-            {
-                sql = "select * from Bill where PaymentStatus = 'Paid';";
-            }
-            else if (selectedStatus.Equals("Pending", StringComparison.OrdinalIgnoreCase))
-            {
-                sql = "select * from Bill where PaymentStatus = 'Pending';";
-            }
-
-            this.PopulatedGridView(sql);
         }
 
         private void dgvTransaction_CellContentClick(object sender, DataGridViewCellEventArgs e)

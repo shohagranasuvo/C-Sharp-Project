@@ -1,0 +1,309 @@
+﻿namespace Diagnostic
+{
+    partial class UcReceptionist
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.accessoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.diagnosticDataSet = new Diagnostic.DiagnosticDataSet();
+            this.btnAccessoriesDetails = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.accessoriesTableAdapter = new Diagnostic.DiagnosticDataSetTableAdapters.AccessoriesTableAdapter();
+            this.cmbSelectType = new CuoreUI.Controls.cuiComboBox();
+            this.newDiagnosticDataSet = new Diagnostic.NewDiagnosticDataSet();
+            this.accessoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.accessoriesTableAdapter1 = new Diagnostic.NewDiagnosticDataSetTableAdapters.AccessoriesTableAdapter();
+            this.DgvAccessoriesDetails = new MetroFramework.Controls.MetroGrid();
+            this.AccessoriesId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AccessoriesName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtBoxForSearch = new CuoreUI.Controls.cuiTextBox();
+            this.btnForSearch = new MetroFramework.Controls.MetroButton();
+            ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diagnosticDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newDiagnosticDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAccessoriesDetails)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // accessoriesBindingSource
+            // 
+            this.accessoriesBindingSource.DataMember = "Accessories";
+            this.accessoriesBindingSource.DataSource = this.diagnosticDataSet;
+            // 
+            // diagnosticDataSet
+            // 
+            this.diagnosticDataSet.DataSetName = "DiagnosticDataSet";
+            this.diagnosticDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnAccessoriesDetails
+            // 
+            this.btnAccessoriesDetails.BackColor = System.Drawing.Color.Transparent;
+            this.btnAccessoriesDetails.Depth = 0;
+            this.btnAccessoriesDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccessoriesDetails.ForeColor = System.Drawing.Color.White;
+            this.btnAccessoriesDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAccessoriesDetails.Location = new System.Drawing.Point(1364, 187);
+            this.btnAccessoriesDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAccessoriesDetails.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnAccessoriesDetails.Name = "btnAccessoriesDetails";
+            this.btnAccessoriesDetails.Primary = true;
+            this.btnAccessoriesDetails.Size = new System.Drawing.Size(368, 52);
+            this.btnAccessoriesDetails.TabIndex = 1;
+            this.btnAccessoriesDetails.Text = "Accessories Details";
+            this.btnAccessoriesDetails.UseVisualStyleBackColor = false;
+            this.btnAccessoriesDetails.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // accessoriesTableAdapter
+            // 
+            this.accessoriesTableAdapter.ClearBeforeFill = true;
+            // 
+            // cmbSelectType
+            // 
+            this.cmbSelectType.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbSelectType.ButtonCursor = System.Windows.Forms.Cursors.Arrow;
+            this.cmbSelectType.ButtonHoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cmbSelectType.ButtonHoverOutline = System.Drawing.Color.Empty;
+            this.cmbSelectType.ButtonNormalBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cmbSelectType.ButtonNormalOutline = System.Drawing.Color.Empty;
+            this.cmbSelectType.ButtonPressedBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.cmbSelectType.ButtonPressedOutline = System.Drawing.Color.Empty;
+            this.cmbSelectType.DropDownBackgroundColor = System.Drawing.Color.White;
+            this.cmbSelectType.DropDownOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbSelectType.ExpandArrowColor = System.Drawing.Color.Gray;
+            this.cmbSelectType.ForeColor = System.Drawing.Color.Gray;
+            this.cmbSelectType.Items = new string[] {
+        "AccessoriesName",
+        "AccessoriesId"};
+            this.cmbSelectType.Location = new System.Drawing.Point(1336, 115);
+            this.cmbSelectType.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.cmbSelectType.Name = "cmbSelectType";
+            this.cmbSelectType.NoSelectionDropdownText = "Empty";
+            this.cmbSelectType.NoSelectionText = "None";
+            this.cmbSelectType.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.cmbSelectType.OutlineThickness = 1F;
+            this.cmbSelectType.Rounding = 8;
+            this.cmbSelectType.Size = new System.Drawing.Size(240, 44);
+            this.cmbSelectType.TabIndex = 5;
+            // 
+            // newDiagnosticDataSet
+            // 
+            this.newDiagnosticDataSet.DataSetName = "NewDiagnosticDataSet";
+            this.newDiagnosticDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // accessoriesBindingSource1
+            // 
+            this.accessoriesBindingSource1.DataMember = "Accessories";
+            this.accessoriesBindingSource1.DataSource = this.newDiagnosticDataSet;
+            // 
+            // accessoriesTableAdapter1
+            // 
+            this.accessoriesTableAdapter1.ClearBeforeFill = true;
+            // 
+            // DgvAccessoriesDetails
+            // 
+            this.DgvAccessoriesDetails.AllowUserToAddRows = false;
+            this.DgvAccessoriesDetails.AllowUserToDeleteRows = false;
+            this.DgvAccessoriesDetails.AllowUserToResizeRows = false;
+            this.DgvAccessoriesDetails.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.DgvAccessoriesDetails.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DgvAccessoriesDetails.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DgvAccessoriesDetails.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvAccessoriesDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.DgvAccessoriesDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvAccessoriesDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AccessoriesId,
+            this.AccessoriesName,
+            this.Quantity,
+            this.Price});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvAccessoriesDetails.DefaultCellStyle = dataGridViewCellStyle8;
+            this.DgvAccessoriesDetails.EnableHeadersVisualStyles = false;
+            this.DgvAccessoriesDetails.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.DgvAccessoriesDetails.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.DgvAccessoriesDetails.Location = new System.Drawing.Point(4, 235);
+            this.DgvAccessoriesDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DgvAccessoriesDetails.Name = "DgvAccessoriesDetails";
+            this.DgvAccessoriesDetails.ReadOnly = true;
+            this.DgvAccessoriesDetails.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvAccessoriesDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.DgvAccessoriesDetails.RowHeadersWidth = 82;
+            this.DgvAccessoriesDetails.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.DgvAccessoriesDetails.RowTemplate.Height = 33;
+            this.DgvAccessoriesDetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvAccessoriesDetails.Size = new System.Drawing.Size(1732, 794);
+            this.DgvAccessoriesDetails.TabIndex = 0;
+            // 
+            // AccessoriesId
+            // 
+            this.AccessoriesId.DataPropertyName = "AccessoriesId";
+            this.AccessoriesId.HeaderText = "Accessories Id";
+            this.AccessoriesId.MinimumWidth = 10;
+            this.AccessoriesId.Name = "AccessoriesId";
+            this.AccessoriesId.ReadOnly = true;
+            this.AccessoriesId.Width = 200;
+            // 
+            // AccessoriesName
+            // 
+            this.AccessoriesName.DataPropertyName = "AccessoriesName";
+            this.AccessoriesName.HeaderText = "Accessories Name";
+            this.AccessoriesName.MinimumWidth = 10;
+            this.AccessoriesName.Name = "AccessoriesName";
+            this.AccessoriesName.ReadOnly = true;
+            this.AccessoriesName.Width = 200;
+            // 
+            // Quantity
+            // 
+            this.Quantity.DataPropertyName = "Quantity";
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 10;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            this.Quantity.Width = 200;
+            // 
+            // Price
+            // 
+            this.Price.DataPropertyName = "Price";
+            this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 10;
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
+            this.Price.Width = 200;
+            // 
+            // txtBoxForSearch
+            // 
+            this.txtBoxForSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtBoxForSearch.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtBoxForSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.txtBoxForSearch.Content = "";
+            this.txtBoxForSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxForSearch.FocusBackgroundColor = System.Drawing.Color.White;
+            this.txtBoxForSearch.FocusImageTint = System.Drawing.Color.White;
+            this.txtBoxForSearch.FocusOutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(106)))), ((int)(((byte)(0)))));
+            this.txtBoxForSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxForSearch.ForeColor = System.Drawing.Color.Gray;
+            this.txtBoxForSearch.Image = null;
+            this.txtBoxForSearch.ImageExpand = new System.Drawing.Point(0, 0);
+            this.txtBoxForSearch.ImageOffset = new System.Drawing.Point(0, 0);
+            this.txtBoxForSearch.Location = new System.Drawing.Point(1000, 27);
+            this.txtBoxForSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBoxForSearch.Multiline = false;
+            this.txtBoxForSearch.Name = "txtBoxForSearch";
+            this.txtBoxForSearch.NormalImageTint = System.Drawing.Color.White;
+            this.txtBoxForSearch.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.txtBoxForSearch.Padding = new System.Windows.Forms.Padding(29, 17, 29, 0);
+            this.txtBoxForSearch.PasswordChar = false;
+            this.txtBoxForSearch.PlaceholderColor = System.Drawing.SystemColors.WindowText;
+            this.txtBoxForSearch.PlaceholderText = "";
+            this.txtBoxForSearch.Rounding = new System.Windows.Forms.Padding(20);
+            this.txtBoxForSearch.Size = new System.Drawing.Size(576, 63);
+            this.txtBoxForSearch.TabIndex = 19;
+            this.txtBoxForSearch.TextOffset = new System.Drawing.Size(0, 0);
+            this.txtBoxForSearch.UnderlinedStyle = false;
+            // 
+            // btnForSearch
+            // 
+            this.btnForSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnForSearch.BackgroundImage = global::Diagnostic.Properties.Resources.Search;
+            this.btnForSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnForSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnForSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnForSearch.Location = new System.Drawing.Point(1528, 37);
+            this.btnForSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnForSearch.Name = "btnForSearch";
+            this.btnForSearch.Size = new System.Drawing.Size(48, 40);
+            this.btnForSearch.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnForSearch.TabIndex = 20;
+            this.btnForSearch.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnForSearch.UseCustomBackColor = true;
+            this.btnForSearch.UseCustomForeColor = true;
+            this.btnForSearch.UseSelectable = true;
+            this.btnForSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
+            // 
+            // UcReceptionist
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnForSearch);
+            this.Controls.Add(this.txtBoxForSearch);
+            this.Controls.Add(this.cmbSelectType);
+            this.Controls.Add(this.btnAccessoriesDetails);
+            this.Controls.Add(this.DgvAccessoriesDetails);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "UcReceptionist";
+            this.Size = new System.Drawing.Size(1736, 1271);
+            ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diagnosticDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newDiagnosticDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvAccessoriesDetails)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+        private MaterialSkin.Controls.MaterialRaisedButton btnAccessoriesDetails;
+        private System.Windows.Forms.BindingSource accessoriesBindingSource;
+        private DiagnosticDataSet diagnosticDataSet;
+        private DiagnosticDataSetTableAdapters.AccessoriesTableAdapter accessoriesTableAdapter;
+        private CuoreUI.Controls.cuiComboBox cmbSelectType;
+        private System.Windows.Forms.BindingSource accessoriesBindingSource1;
+        private NewDiagnosticDataSet newDiagnosticDataSet;
+        private NewDiagnosticDataSetTableAdapters.AccessoriesTableAdapter accessoriesTableAdapter1;
+        private MetroFramework.Controls.MetroGrid DgvAccessoriesDetails;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AccessoriesId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AccessoriesName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private CuoreUI.Controls.cuiTextBox txtBoxForSearch;
+        private MetroFramework.Controls.MetroButton btnForSearch;
+    }
+}

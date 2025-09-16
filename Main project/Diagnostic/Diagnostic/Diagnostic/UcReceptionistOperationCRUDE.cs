@@ -14,6 +14,10 @@ namespace Diagnostic
     public partial class UcReceptionistOperationCRUDE : UserControl
     { DataAccess Da {  get; set; }
 
+        private bool isNew = false;   
+        private string newReceptionistId = ""; 
+
+
         public UcReceptionistOperationCRUDE()
         {
             InitializeComponent();
@@ -59,9 +63,12 @@ namespace Diagnostic
                 this.txtSalary.Text = this.dvgReceptionistTable.CurrentRow.Cells[3].Value.ToString();
                 string gender = ds.Tables[0].Rows[0][2].ToString();
                 this.txtPassword.Text = ds.Tables[0].Rows[0][4].ToString();
+                this.txtReceptionistId.Text= this.dvgReceptionistTable.CurrentRow.Cells[0].Value.ToString();
 
 
-               
+
+
+
                 if (gender == "Male")
                 {
                     this.rbtnMale.Checked = true;
@@ -86,28 +93,7 @@ namespace Diagnostic
 
         private void btnRegisterAndSave_Click(object sender, EventArgs e)
         {
-              this.AddReceptionist(); 
-        }
-        private bool IsValidToSave()
-        {
-            // Check if required text fields are empty
-            if (string.IsNullOrEmpty(this.txtboxname.Text) ||
-                string.IsNullOrEmpty(this.txtPhone.Text) ||
-                string.IsNullOrEmpty(this.txtEmail.Text)|| string.IsNullOrEmpty(this.txtAddress.Text)|| string.IsNullOrEmpty(this.txtSalary.Text))
-            {
-                return false;
-            }
-
-            // Check if at least one gender is selected
-            if (!this.rbtnFemale.Checked && !this.rbtnMale.Checked)
-            {
-                return false;
-            }
-
-            return true;
-        }
-        private void AddReceptionist()
-        {
+          
             try
             {
                 if (!this.IsValidToSave())
@@ -115,110 +101,183 @@ namespace Diagnostic
                     MessageBox.Show("Please fill all the empty fields");
                     return;
                 }
-                
-                string idd = this.dvgReceptionistTable.CurrentRow.Cells[0].Value.ToString();
-                string query = "select  * from patient where ReceptionistID ='" + idd + "'";
-                var ds = this.Da.ExecuteQuery(query);
+
                 string gender = "";
-                
-                if (this.rbtnMale.Checked)
-                {
-                    gender = "Male";
-                }
-                else if (this.rbtnFemale.Checked)
-                {
-                    gender = "Female";
-                }
+                if (this.rbtnMale.Checked) gender = "Male";
+                else if (this.rbtnFemale.Checked) gender = "Female";
+
                 string dob = this.dtpDateOfBirth.Text;
-                MessageBox.Show(dob);
+                string joinDate = System.DateTime.Today.ToString("yyyy-MM-dd");
 
-                if (ds.Tables[0].Rows.Count == 1)
+                
+                string receptionistId = this.txtReceptionistId.Text.Trim();
+                if (string.IsNullOrEmpty(receptionistId))
                 {
+                    MessageBox.Show("Receptionist ID is required");
+                    return;
+                }
 
-                    string updatequery = "UPDATE receptionist SET FullName = '" + this.txtboxname.Text + "',phone = '" + this.txtPhone.Text + "', email ='" + this.txtEmail.Text + "', address ='" + this.txtAddress.Text + "', gender ='" + gender + "',DOB ='" + dob + "' ,salary ='" + this.txtSalary.Text + "',pass ='" + this.txtPassword.Text + "' where receptionistid ='" + idd + "' ";
-                    int check = this.Da.ExecuteDMLQuery(updatequery);
-                    if (check == 1)
-                    {
-                        MessageBox.Show("Updated");
+                
+                string checkQuery = "SELECT * FROM Users WHERE UserId = '" + receptionistId + "'";
+                var dt = this.Da.ExecuteQueryTable(checkQuery);
 
-                    }
+                if (dt.Rows.Count == 1)
+                {
+                    
+                    string updateUser = "UPDATE Users " +
+                                        "SET Name = '" + this.txtboxname.Text + "', " +
+                                        "Password = '" + this.txtPassword.Text + "', " +
+                                        "Role = 'Receptionist' " +
+                                        "WHERE UserId = '" + receptionistId + "'";
+
+                    int userUpdate = this.Da.ExecuteDMLQuery(updateUser);
+
+                    string updateReceptionist = "UPDATE Receptionist SET " +
+                                                "FullName = '" + this.txtboxname.Text + "', " +
+                                                "Phone = '" + this.txtPhone.Text + "', " +
+                                                "Email = '" + this.txtEmail.Text + "', " +
+                                                "Address = '" + this.txtAddress.Text + "', " +
+                                                "Gender = '" + gender + "', " +
+                                                "DOB = '" + dob + "', " +
+                                                "Salary = '" + this.txtSalary.Text + "', " +
+                                                "Pass = '" + this.txtPassword.Text + "' " +
+                                                "WHERE ReceptionistId = '" + receptionistId + "'";
+
+                    int recUpdate = this.Da.ExecuteDMLQuery(updateReceptionist);
+
+                    if (userUpdate == 1 && recUpdate == 1)
+                        MessageBox.Show("Data has been updated successfully");
                     else
-                    {
-                        MessageBox.Show("Not Updated");
-                    }
-                    this.PopulateGridView();
-
+                        MessageBox.Show("Update failed for one or more tables");
                 }
                 else
-                {
-                    if (!this.IsValidToSave())
-                    {
-                        MessageBox.Show("Please fill all the empty fields");
-                        return;
-                    }
-
-                  
-                    var receptionistId = this.AutoIdGenerate();
-
-                    if (string.IsNullOrEmpty(receptionistId))
-                    {
-                        receptionistId = "U001"; 
-                    }
-
+                { 
                    
-                    gender = "";
-                    if (this.rbtnMale.Checked)
-                    {
-                        gender = "Male";
-                    }
-                    else if (this.rbtnFemale.Checked)
-                    {
-                        gender = "Female";
-                    }
+                    string insertUser = "INSERT INTO Users VALUES ('" + receptionistId + "', '" + this.txtboxname.Text + "', '" + this.txtPassword.Text + "', 'Receptionist')";
+                    int userInsert = this.Da.ExecuteDMLQuery(insertUser);
 
-                
-                    string dateofbirth = this.dtpDateOfBirth.Text;
-                    MessageBox.Show(dateofbirth);
+                    string insertReceptionist = "INSERT INTO Receptionist (ReceptionistId, FullName, Phone, Email, Address, Gender, DOB, JoinDate, Pass, Salary) " +
+                                                "VALUES ('" + receptionistId + "', '" + this.txtboxname.Text + "', '" + this.txtPhone.Text + "', '" + this.txtEmail.Text + "', '" + this.txtAddress.Text + "', '" + gender + "', '" + dob + "', '" + joinDate + "', '" + this.txtPassword.Text + "', '" + this.txtSalary.Text + "')";
 
-                    
-                    string joinDate = System.DateTime.Today.ToString("yyyy-MM-dd");
-                    query="insert into Users values ('"+ receptionistId + "' ,'"+this.txtboxname.Text+"','"+this.txtPassword.Text+"' ,'Receptionist' )";
-                    int check =Da.ExecuteDMLQuery(query);
-                    if (check == 1) 
-                        { MessageBox.Show("Succesful Insert into Users table"); }
-                        else
-                        {
-                        MessageBox.Show("Not Succesful Insert into Users table");
-                        return ;
+                    int recInsert = this.Da.ExecuteDMLQuery(insertReceptionist);
 
-                    }
-
-                   
-                    query = $@"INSERT INTO Receptionist (ReceptionistId, Fullname, Phone, Email, Address, Gender,Dob, JoinDate ,pass) VALUES  ('{receptionistId}', '{this.txtboxname.Text}', '{this.txtPhone.Text}', '{this.txtEmail.Text}', '{this.txtAddress.Text}', '{gender}', '{dateofbirth}', '{joinDate}' ,'{this.txtPassword.Text}')";
-
-                    int dss = this.Da.ExecuteDMLQuery(query);
-
-                    if (dss == 1)
-                    {
-                        MessageBox.Show("Successfully Inserted Receptionist");
-                    }
+                    if (userInsert == 1 && recInsert == 1)
+                        MessageBox.Show("Data has been inserted successfully");
                     else
-                    {
-                        MessageBox.Show("Insertion Unsuccessful");
-                    }
-
-                    this.PopulateGridView();
-
-
-
-
+                        MessageBox.Show("Insertion failed for one or more tables");
                 }
+
+                this.PopulateGridView();
+                this.ClearAll();
             }
             catch (Exception exc)
             {
-                MessageBox.Show("An error has occured: " + exc.Message);
+                MessageBox.Show("An error has occurred: " + exc.Message);
             }
         }
+
+        
+        private bool IsValidToSave()
+        {
+            
+            if (string.IsNullOrEmpty(this.txtboxname.Text) ||
+                string.IsNullOrEmpty(this.txtPhone.Text) ||
+                string.IsNullOrEmpty(this.txtEmail.Text)|| string.IsNullOrEmpty(this.txtAddress.Text)|| string.IsNullOrEmpty(this.txtSalary.Text))
+            {
+                return false;
+            }
+
+           
+            if (!this.rbtnFemale.Checked && !this.rbtnMale.Checked)
+            {
+                return false;
+            }
+
+            return true;
+        }
+        //private void AddReceptionist()
+        //{
+        //    try
+        //    {
+        //        if (!this.IsValidToSave())
+        //        {
+        //            MessageBox.Show("Please fill all the empty fields");
+        //            return;
+        //        }
+
+        //        string gender = "";
+        //        if (this.rbtnMale.Checked) gender = "Male";
+        //        else if (this.rbtnFemale.Checked) gender = "Female";
+
+        //        string dob = this.dtpDateOfBirth.Text;
+        //        string joinDate = System.DateTime.Today.ToString("yyyy-MM-dd");
+
+        //        if (isNew) 
+        //        {
+        
+        //            string receptionistId = newReceptionistId;
+        //            if (string.IsNullOrEmpty(receptionistId))
+        //            {
+        //                receptionistId = "U001";
+
+
+        //            }
+        //            string query = "INSERT INTO Users VALUES ('" + receptionistId + "', '" + this.txtboxname.Text + "', '" + this.txtPassword.Text + "', 'Receptionist')";
+        //            int check = this.Da.ExecuteDMLQuery(query);
+
+
+
+        //            if (check == 1)
+        //                MessageBox.Show("Inserted into Users table");
+        //            else
+        //            {
+        //                MessageBox.Show("Failed to insert into Users table");
+        //                return;
+        //            }
+
+                    
+        //            query = "INSERT INTO Receptionist (ReceptionistId, FullName, Phone, Email, Address, Gender, DOB, JoinDate, Pass, Salary) " +
+        //                    "VALUES ('" + receptionistId + "', '" + this.txtboxname.Text + "', '" + this.txtPhone.Text + "', '" + this.txtEmail.Text + "', '" + this.txtAddress.Text + "', '" + gender + "', '" + dob + "', '" + joinDate + "', '" + this.txtPassword.Text + "', '" + this.txtSalary.Text + "')";
+        //            int dss = this.Da.ExecuteDMLQuery(query);
+
+        //            if (dss == 1)
+        //                MessageBox.Show("Successfully Inserted Receptionist");
+        //            else
+        //                MessageBox.Show("Insertion into Receptionist table failed");
+
+        //            this.PopulateGridView();
+        //            isNew = false; 
+        //        }
+        //        else 
+        //        {
+        //            string idd = this.dvgReceptionistTable.CurrentRow.Cells[0].Value.ToString();
+
+
+        //            string updatequery =
+        //                "UPDATE Receptionist SET " +
+        //                "FullName = '" + this.txtboxname.Text + "', " +
+        //                "Phone = '" + this.txtPhone.Text + "', " +
+        //                "Email = '" + this.txtEmail.Text + "', " +
+        //                "Address = '" + this.txtAddress.Text + "', " +
+        //                "Gender = '" + gender + "', " +
+        //                "DOB = '" + dob + "', " +
+        //                "Salary = '" + this.txtSalary.Text + "', " +
+        //                "Pass = '" + this.txtPassword.Text + "' " +
+        //                "WHERE ReceptionistId = '" + idd + "'";
+
+        //            int check = this.Da.ExecuteDMLQuery(updatequery);
+        //            if (check == 1) MessageBox.Show("Updated successfully");
+        //            else MessageBox.Show("Update failed");
+
+        //            this.PopulateGridView();
+        //        }
+        //    }
+        //    catch (Exception exc)
+        //    {
+        //        MessageBox.Show("An error has occured: " + exc.Message);
+        //    }
+        //}
+
         private string AutoIdGenerate()
         {
             
@@ -245,7 +304,26 @@ namespace Diagnostic
 
         private void btnAddpatient_Click(object sender, EventArgs e)
         {
-            
+          
+            try
+            {
+                this.ClearAll();   
+                this.dvgReceptionistTable.ClearSelection();
+
+                
+                newReceptionistId = this.AutoIdGenerate();
+                isNew = true;
+                this.txtReceptionistId.Text= newReceptionistId;
+                //this.txtReceptionistId.Visible = false;
+                MessageBox.Show("New Receptionist ID generated: " + newReceptionistId, "Info");
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in Add button: " + ex.Message);
+            }
+        
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -324,6 +402,31 @@ namespace Diagnostic
             this.txtPhone.Text = "";
             this.txtSalary.Text = "";
             this.txtSearch.contentTextField.Text = "";
+        }
+
+        private void btnPatientSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string value = this.txtSearch.contentTextField.Text;
+
+                if (string.IsNullOrEmpty(value))
+                {
+                    MessageBox.Show("Please enter a receptionist name.");
+                    return;
+                }
+
+                
+                string query = "SELECT * FROM Receptionist WHERE FullName LIKE '" + value + "%'";
+
+                var ds = this.Da.ExecuteQuery(query);
+                this.dvgReceptionistTable.AutoGenerateColumns = true;
+                this.dvgReceptionistTable.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while searching receptionist: " + ex.Message);
+            }
         }
     }
 }

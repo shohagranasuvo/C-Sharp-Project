@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECC07C79-1CF2-47D0-85F6-3F6AAE063702}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Diagnostic</RootNamespace>
+    <AssemblyName>Diagnostic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CuoreUI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CuoreUI.Winforms.2025.8.27\lib\net472\CuoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentWPF, Version=0.10.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentWPF.0.10.2\lib\net45\FluentWPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Krypton.Toolkit, Version=95.25.8.235, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Toolkit.95.25.8.235\lib\net472\Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddReceptionist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddReceptionist.Designer.cs">
+      <DependentUpon>AddReceptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInterface.Designer.cs">
+      <DependentUpon>AdminInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmisFirstDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdmisFirstDashBoard.Designer.cs">
+      <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAdminTransactions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAdminTransactions.Designer.cs">
+      <DependentUpon>UCAdminTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcBillConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcBillConfirm.Designer.cs">
+      <DependentUpon>UcBillConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="DiagnosticDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiagnosticDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnosticDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiagnosticDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiagnosticDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DiagnosticDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogIn.Designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDiagnosticDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewDiagnosticDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UcReceptionist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcReceptionist.Designer.cs">
+      <DependentUpon>UcReceptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceptionistDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceptionistDashboard.Designer.cs">
+      <DependentUpon>ReceptionistDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcAdminDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcAdminDashBoard.Designer.cs">
+      <DependentUpon>UcAdminDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcBilling.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcBilling.Designer.cs">
+      <DependentUpon>UcBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcReceptionistOperationCRUDE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcReceptionistOperationCRUDE.Designer.cs">
+      <DependentUpon>UcReceptionistOperationCRUDE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcReciptionist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcReciptionist.Designer.cs">
+      <DependentUpon>UcReciptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcRegisterPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcRegisterPatient.Designer.cs">
+      <DependentUpon>UcRegisterPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcAdminOperationCRUDE.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcAdminOperationCRUDE.Designer.cs">
+      <DependentUpon>UcAdminOperationCRUDE.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddReceptionist.resx">
+      <DependentUpon>AddReceptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInterface.resx">
+      <DependentUpon>AdminInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmisFirstDashBoard.resx">
+      <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAdminTransactions.resx" />
+    <EmbeddedResource Include="UcBillConfirm.resx">
+      <DependentUpon>UcBillConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UcReceptionist.resx">
+      <DependentUpon>UcReceptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceptionistDashboard.resx">
+      <DependentUpon>ReceptionistDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcAdminDashBoard.resx">
+      <DependentUpon>UcAdminDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcAdminOperationCRUDE.resx">
+      <DependentUpon>UcAdminOperationCRUDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcBilling.resx">
+      <DependentUpon>UcBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcReceptionistOperationCRUDE.resx">
+      <DependentUpon>UcReceptionistOperationCRUDE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcReciptionist.resx">
+      <DependentUpon>UcReciptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcRegisterPatient.resx">
+      <DependentUpon>UcRegisterPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DiagnosticDataSet.xsc">
+      <DependentUpon>DiagnosticDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DiagnosticDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DiagnosticDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DiagnosticDataSet.xss">
+      <DependentUpon>DiagnosticDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DiagnosticDataSet1.xsc">
+      <DependentUpon>DiagnosticDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DiagnosticDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DiagnosticDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DiagnosticDataSet1.xss">
+      <DependentUpon>DiagnosticDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DiagnosticDataSet2.xsc">
+      <DependentUpon>DiagnosticDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DiagnosticDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DiagnosticDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DiagnosticDataSet2.xss">
+      <DependentUpon>DiagnosticDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NewDiagnosticDataSet.xsc">
+      <DependentUpon>NewDiagnosticDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewDiagnosticDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewDiagnosticDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NewDiagnosticDataSet.xss">
+      <DependentUpon>NewDiagnosticDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogInBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patients1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taka1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAddImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updated-User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditUserNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
