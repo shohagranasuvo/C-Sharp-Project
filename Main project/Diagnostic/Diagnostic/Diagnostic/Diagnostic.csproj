@@ -165,7 +165,9 @@
     <Compile Include="UcReceptionistOperationCRUDE.Designer.cs">
       <DependentUpon>UcReceptionistOperationCRUDE.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcReciptionist.cs" />
+    <Compile Include="UcReciptionist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UcReciptionist.Designer.cs">
       <DependentUpon>UcReciptionist.cs</DependentUpon>
     </Compile>

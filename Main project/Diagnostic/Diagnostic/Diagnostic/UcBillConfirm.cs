@@ -93,12 +93,14 @@ namespace Diagnostic
                 else
                 { MessageBox.Show("Failed to save bill"); }
 
+
+
                 foreach (ListViewItem item in lvSelectedItemView.Items)
                 {
 
                     string itemName = item.SubItems[1].Text;
                     string quantity = item.SubItems[2].Text;    
-                    string query1 = "select AccessoriesName ,Quantity from Accessories";//need to code
+                    string query1 = "select AccessoriesName ,Quantity from Accessories where ";//need to code
                     var ds = this.Da.ExecuteQuery(query1);
                     if(ds.Tables[0].Rows.Count > 0)
                     {
