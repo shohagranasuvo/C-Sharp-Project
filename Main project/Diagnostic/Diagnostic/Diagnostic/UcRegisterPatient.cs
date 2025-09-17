@@ -218,18 +218,21 @@ namespace Diagnostic
 
             if (!string.IsNullOrEmpty(oldId))
             {
-                pid = Convert.ToInt32(oldId) + 1;
+                Random rnd = new Random();
+
+
+                pid = Convert.ToInt32(oldId) + rnd.Next(1, 1000000);
             }
 
-            //MessageBox.Show("OldId: " + oldId);
-            //MessageBox.Show("NewId: " + pid);
+            MessageBox.Show("OldId: " + oldId);
+            MessageBox.Show("NewId: " + pid);
 
             return pid.ToString();
         }
 
         private bool IsValidToSave()
         {
-            // Check if required text fields are empty
+            
             if (string.IsNullOrEmpty(this.txtboxname.Text) ||
                 string.IsNullOrEmpty(this.txtPhone.Text) ||
                 string.IsNullOrEmpty(this.txtEmail.Text))
@@ -237,7 +240,7 @@ namespace Diagnostic
                 return false;
             }
 
-            // Check if at least one gender is selected
+           
             if (!this.rbtnFemale.Checked && !this.rbtnMale.Checked)
             {
                 return false;
@@ -423,6 +426,11 @@ namespace Diagnostic
             this.txtPhone.Text = "";
             this.txtEmail.Text = "";
            
+        }
+
+        private void btnSearch_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

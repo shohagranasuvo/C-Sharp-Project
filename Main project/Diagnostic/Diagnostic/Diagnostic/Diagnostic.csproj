@@ -89,6 +89,18 @@
     <Compile Include="AdmisFirstDashBoard.Designer.cs">
       <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCAdminCRUDAccessories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAdminCRUDAccessories.Designer.cs">
+      <DependentUpon>UCAdminCRUDAccessories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCAdminCRUDTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAdminCRUDTest.Designer.cs">
+      <DependentUpon>UCAdminCRUDTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCAdminTransactions.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,6 +203,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdmisFirstDashBoard.resx">
       <DependentUpon>AdmisFirstDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAdminCRUDAccessories.resx">
+      <DependentUpon>UCAdminCRUDAccessories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCAdminCRUDTest.resx">
+      <DependentUpon>UCAdminCRUDTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCAdminTransactions.resx">
       <Generator>ResXFileCodeGenerator</Generator>

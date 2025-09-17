@@ -71,14 +71,13 @@
             // 
             this.lblDashBoard.AutoSize = true;
             this.lblDashBoard.BackColor = System.Drawing.Color.Transparent;
-            this.lblDashBoard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDashBoard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblDashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDashBoard.ForeColor = System.Drawing.Color.Black;
             this.lblDashBoard.Location = new System.Drawing.Point(56, 231);
             this.lblDashBoard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDashBoard.Name = "lblDashBoard";
-            this.lblDashBoard.Size = new System.Drawing.Size(261, 53);
+            this.lblDashBoard.Size = new System.Drawing.Size(259, 51);
             this.lblDashBoard.TabIndex = 0;
             this.lblDashBoard.Text = "Dash Board";
             this.lblDashBoard.Click += new System.EventHandler(this.lblDashBoard_Click);

@@ -90,5 +90,21 @@ namespace Diagnostic
             this.pnlUserControl.Controls.Clear();
             this.pnlUserControl.Controls.Add(at);
         }
+
+        private void lblTest_Click(object sender, EventArgs e)
+        {
+           UCAdminCRUDTest act = new UCAdminCRUDTest();
+
+            this.pnlUserControl.Controls.Clear();
+            this.pnlUserControl.Controls.Add(act);
+        }
+
+        private void lblAccessories_Click(object sender, EventArgs e)
+        {
+            UCAdminCRUDAccessories aca = new UCAdminCRUDAccessories(); 
+            
+            this.pnlUserControl.Controls.Clear();
+            this.pnlUserControl.Controls.Add(aca);
+        }
     }
 }

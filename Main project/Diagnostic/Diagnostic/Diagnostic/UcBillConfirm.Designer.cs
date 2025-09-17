@@ -59,6 +59,7 @@
             // 
             // lvSelectedItemView
             // 
+            this.lvSelectedItemView.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lvSelectedItemView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ID,
             this.Name,
@@ -119,7 +120,7 @@
             // 
             this.lblTotalCost.AutoSize = true;
             this.lblTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalCost.Location = new System.Drawing.Point(90, 862);
+            this.lblTotalCost.Location = new System.Drawing.Point(92, 855);
             this.lblTotalCost.Name = "lblTotalCost";
             this.lblTotalCost.Size = new System.Drawing.Size(187, 31);
             this.lblTotalCost.TabIndex = 5;
@@ -138,7 +139,7 @@
             // 
             // cuiGradientPanel1
             // 
-            this.cuiGradientPanel1.BackColor = System.Drawing.Color.Silver;
+            this.cuiGradientPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.cuiGradientPanel1.Controls.Add(this.metroPanel1);
             this.cuiGradientPanel1.Controls.Add(this.lblTotalCost);
             this.cuiGradientPanel1.Controls.Add(this.lbltotaltaka);

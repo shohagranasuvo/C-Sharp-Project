@@ -28,30 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblAdminNotice = new System.Windows.Forms.Label();
+            this.lblTest = new System.Windows.Forms.Label();
             this.lblAdminProduct = new System.Windows.Forms.Label();
             this.lblAdminDashboard = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lblAdminUsers = new System.Windows.Forms.Label();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.cuiPanel1 = new CuoreUI.Controls.cuiPanel();
+            this.lblAccessories = new System.Windows.Forms.Label();
             this.btnLogOut = new CuoreUI.Controls.cuiButton();
             this.pnlUserControl = new CuoreUI.Controls.cuiGradientPanel();
             this.cuiPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblAdminNotice
+            // lblTest
             // 
-            this.lblAdminNotice.AutoSize = true;
-            this.lblAdminNotice.BackColor = System.Drawing.Color.Transparent;
-            this.lblAdminNotice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdminNotice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAdminNotice.Location = new System.Drawing.Point(48, 538);
-            this.lblAdminNotice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblAdminNotice.Name = "lblAdminNotice";
-            this.lblAdminNotice.Size = new System.Drawing.Size(147, 42);
-            this.lblAdminNotice.TabIndex = 5;
-            this.lblAdminNotice.Text = "Product";
+            this.lblTest.AutoSize = true;
+            this.lblTest.BackColor = System.Drawing.Color.Transparent;
+            this.lblTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTest.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblTest.Location = new System.Drawing.Point(48, 505);
+            this.lblTest.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTest.Name = "lblTest";
+            this.lblTest.Size = new System.Drawing.Size(91, 42);
+            this.lblTest.TabIndex = 5;
+            this.lblTest.Text = "Test";
+            this.lblTest.Click += new System.EventHandler(this.lblTest_Click);
             // 
             // lblAdminProduct
             // 
@@ -59,7 +61,7 @@
             this.lblAdminProduct.BackColor = System.Drawing.Color.Transparent;
             this.lblAdminProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdminProduct.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAdminProduct.Location = new System.Drawing.Point(48, 412);
+            this.lblAdminProduct.Location = new System.Drawing.Point(48, 393);
             this.lblAdminProduct.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminProduct.Name = "lblAdminProduct";
             this.lblAdminProduct.Size = new System.Drawing.Size(398, 42);
@@ -88,7 +90,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label13.Location = new System.Drawing.Point(36, 665);
+            this.label13.Location = new System.Drawing.Point(48, 729);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(233, 42);
@@ -102,7 +104,7 @@
             this.lblAdminUsers.BackColor = System.Drawing.Color.Transparent;
             this.lblAdminUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdminUsers.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAdminUsers.Location = new System.Drawing.Point(48, 285);
+            this.lblAdminUsers.Location = new System.Drawing.Point(48, 281);
             this.lblAdminUsers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminUsers.Name = "lblAdminUsers";
             this.lblAdminUsers.Size = new System.Drawing.Size(297, 42);
@@ -127,13 +129,14 @@
             // cuiPanel1
             // 
             this.cuiPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.cuiPanel1.Controls.Add(this.lblAccessories);
             this.cuiPanel1.Controls.Add(this.btnLogOut);
             this.cuiPanel1.Controls.Add(this.lblAdminDashboard);
             this.cuiPanel1.Controls.Add(this.lblAdminUsers);
             this.cuiPanel1.Controls.Add(this.label13);
             this.cuiPanel1.Controls.Add(this.lblWelcome);
             this.cuiPanel1.Controls.Add(this.lblAdminProduct);
-            this.cuiPanel1.Controls.Add(this.lblAdminNotice);
+            this.cuiPanel1.Controls.Add(this.lblTest);
             this.cuiPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.cuiPanel1.Location = new System.Drawing.Point(0, 0);
             this.cuiPanel1.Margin = new System.Windows.Forms.Padding(4);
@@ -144,6 +147,20 @@
             this.cuiPanel1.Rounding = new System.Windows.Forms.Padding(8);
             this.cuiPanel1.Size = new System.Drawing.Size(458, 1271);
             this.cuiPanel1.TabIndex = 17;
+            // 
+            // lblAccessories
+            // 
+            this.lblAccessories.AutoSize = true;
+            this.lblAccessories.BackColor = System.Drawing.Color.Transparent;
+            this.lblAccessories.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccessories.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblAccessories.Location = new System.Drawing.Point(48, 617);
+            this.lblAccessories.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAccessories.Name = "lblAccessories";
+            this.lblAccessories.Size = new System.Drawing.Size(221, 42);
+            this.lblAccessories.TabIndex = 9;
+            this.lblAccessories.Text = "Accessories";
+            this.lblAccessories.Click += new System.EventHandler(this.lblAccessories_Click);
             // 
             // btnLogOut
             // 
@@ -222,7 +239,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblAdminNotice;
+        private System.Windows.Forms.Label lblTest;
         private System.Windows.Forms.Label lblAdminProduct;
         private System.Windows.Forms.Label lblAdminDashboard;
         private System.Windows.Forms.Label lblAdminUsers;
@@ -231,5 +248,6 @@
         private CuoreUI.Controls.cuiPanel cuiPanel1;
         private CuoreUI.Controls.cuiGradientPanel pnlUserControl;
         private CuoreUI.Controls.cuiButton btnLogOut;
+        private System.Windows.Forms.Label lblAccessories;
     }
 }

@@ -139,7 +139,17 @@ namespace Diagnostic
 
         private void btnUpdatePatient_Click(object sender, EventArgs e)
         {
+            clearAll();
             PopulateGridView();
+        }
+        public void clearAll()
+        {
+            this.txtAdminName.Text = "";
+            this.txtId.Text = "";
+            this.TxtPass.Text = "";
+            this.txtNewname.Text = "";
+            this.txtNewpass.Text = "";
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

@@ -120,5 +120,10 @@ namespace Diagnostic
         {
 
         }
+
+        private void txtBoxForSearch_ContentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

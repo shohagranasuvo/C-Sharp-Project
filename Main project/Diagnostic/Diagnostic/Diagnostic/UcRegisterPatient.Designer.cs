@@ -32,20 +32,13 @@ namespace Diagnostic
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlRegisterPatient = new MetroFramework.Controls.MetroPanel();
             this.btnSearch = new CuoreUI.Controls.cuiGradientPanel();
             this.pnlGrideViewPatient = new MetroFramework.Controls.MetroPanel();
             this.dvgpatient = new MetroFramework.Controls.MetroGrid();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlRegisterPatientForm = new CuoreUI.Controls.cuiPanel();
             this.dtpDateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.btnRegisterAndSave = new System.Windows.Forms.Button();
@@ -54,7 +47,6 @@ namespace Diagnostic
             this.btnGender = new CuoreUI.Controls.cuiLabel();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.rbtnMale = new System.Windows.Forms.RadioButton();
-            this.btnAddpatient = new MetroFramework.Controls.MetroButton();
             this.txtAddress = new MetroFramework.Controls.MetroTextBox();
             this.txtEmail = new MetroFramework.Controls.MetroTextBox();
             this.txtPhone = new MetroFramework.Controls.MetroTextBox();
@@ -64,8 +56,16 @@ namespace Diagnostic
             this.btnEdit = new MetroFramework.Controls.MetroButton();
             this.btnDelete = new MetroFramework.Controls.MetroButton();
             this.btnUpdatePatient = new MetroFramework.Controls.MetroButton();
+            this.btnAddpatient = new MetroFramework.Controls.MetroButton();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlRegisterPatient.SuspendLayout();
             this.btnSearch.SuspendLayout();
             this.pnlGrideViewPatient.SuspendLayout();
@@ -113,6 +113,7 @@ namespace Diagnostic
             this.btnSearch.Rounding = new System.Windows.Forms.Padding(8);
             this.btnSearch.Size = new System.Drawing.Size(1732, 1267);
             this.btnSearch.TabIndex = 2;
+            this.btnSearch.Paint += new System.Windows.Forms.PaintEventHandler(this.btnSearch_Paint);
             // 
             // pnlGrideViewPatient
             // 
@@ -138,14 +139,14 @@ namespace Diagnostic
             this.dvgpatient.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dvgpatient.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dvgpatient.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvgpatient.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgpatient.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dvgpatient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgpatient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column7,
@@ -155,14 +156,14 @@ namespace Diagnostic
             this.Column4,
             this.Column6,
             this.Column5});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dvgpatient.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dvgpatient.DefaultCellStyle = dataGridViewCellStyle2;
             this.dvgpatient.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dvgpatient.EnableHeadersVisualStyles = false;
             this.dvgpatient.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -172,14 +173,14 @@ namespace Diagnostic
             this.dvgpatient.Name = "dvgpatient";
             this.dvgpatient.ReadOnly = true;
             this.dvgpatient.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dvgpatient.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dvgpatient.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dvgpatient.RowHeadersWidth = 82;
             this.dvgpatient.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dvgpatient.RowTemplate.Height = 33;
@@ -187,72 +188,6 @@ namespace Diagnostic
             this.dvgpatient.Size = new System.Drawing.Size(1112, 890);
             this.dvgpatient.TabIndex = 17;
             this.dvgpatient.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgpatient_CellClick);
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "PatientId";
-            this.Column7.FillWeight = 30F;
-            this.Column7.HeaderText = "ID";
-            this.Column7.MinimumWidth = 10;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 30;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "PatientName";
-            this.Column1.HeaderText = "Patient Name";
-            this.Column1.MinimumWidth = 10;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 200;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "phone";
-            this.Column2.HeaderText = "Phone";
-            this.Column2.MinimumWidth = 10;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Email";
-            this.Column3.HeaderText = "Email";
-            this.Column3.MinimumWidth = 10;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 200;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Gender";
-            this.Column4.FillWeight = 50F;
-            this.Column4.HeaderText = "Gender";
-            this.Column4.MinimumWidth = 10;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 50;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "Address";
-            this.Column6.FillWeight = 70F;
-            this.Column6.HeaderText = "Address";
-            this.Column6.MinimumWidth = 10;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 70;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "DateOfBirth";
-            this.Column5.HeaderText = "Date of Birth";
-            this.Column5.MinimumWidth = 10;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 200;
             // 
             // pnlRegisterPatientForm
             // 
@@ -295,12 +230,12 @@ namespace Diagnostic
             this.btnRegisterAndSave.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnRegisterAndSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegisterAndSave.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnRegisterAndSave.Location = new System.Drawing.Point(233, 616);
+            this.btnRegisterAndSave.Location = new System.Drawing.Point(141, 635);
             this.btnRegisterAndSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegisterAndSave.Name = "btnRegisterAndSave";
-            this.btnRegisterAndSave.Size = new System.Drawing.Size(212, 60);
+            this.btnRegisterAndSave.Size = new System.Drawing.Size(293, 60);
             this.btnRegisterAndSave.TabIndex = 10;
-            this.btnRegisterAndSave.Text = "Update";
+            this.btnRegisterAndSave.Text = "Edit and Save";
             this.btnRegisterAndSave.UseVisualStyleBackColor = false;
             this.btnRegisterAndSave.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -362,25 +297,6 @@ namespace Diagnostic
             this.rbtnMale.TabStop = true;
             this.rbtnMale.Text = "Male\r\n";
             this.rbtnMale.UseVisualStyleBackColor = true;
-            // 
-            // btnAddpatient
-            // 
-            this.btnAddpatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.btnAddpatient.BackgroundImage = global::Diagnostic.Properties.Resources.add_user;
-            this.btnAddpatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddpatient.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddpatient.ForeColor = System.Drawing.Color.Black;
-            this.btnAddpatient.Location = new System.Drawing.Point(20, 23);
-            this.btnAddpatient.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddpatient.Name = "btnAddpatient";
-            this.btnAddpatient.Size = new System.Drawing.Size(128, 87);
-            this.btnAddpatient.Style = MetroFramework.MetroColorStyle.Blue;
-            this.btnAddpatient.TabIndex = 11;
-            this.btnAddpatient.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.btnAddpatient.UseCustomBackColor = true;
-            this.btnAddpatient.UseCustomForeColor = true;
-            this.btnAddpatient.UseSelectable = true;
-            this.btnAddpatient.Click += new System.EventHandler(this.btnAddpatient_Click);
             // 
             // txtAddress
             // 
@@ -653,6 +569,25 @@ namespace Diagnostic
             this.btnUpdatePatient.UseSelectable = true;
             this.btnUpdatePatient.Click += new System.EventHandler(this.btnUpdatePatient_Click);
             // 
+            // btnAddpatient
+            // 
+            this.btnAddpatient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btnAddpatient.BackgroundImage = global::Diagnostic.Properties.Resources.add_user;
+            this.btnAddpatient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddpatient.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddpatient.ForeColor = System.Drawing.Color.Black;
+            this.btnAddpatient.Location = new System.Drawing.Point(20, 23);
+            this.btnAddpatient.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddpatient.Name = "btnAddpatient";
+            this.btnAddpatient.Size = new System.Drawing.Size(128, 87);
+            this.btnAddpatient.Style = MetroFramework.MetroColorStyle.Blue;
+            this.btnAddpatient.TabIndex = 11;
+            this.btnAddpatient.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.btnAddpatient.UseCustomBackColor = true;
+            this.btnAddpatient.UseCustomForeColor = true;
+            this.btnAddpatient.UseSelectable = true;
+            this.btnAddpatient.Click += new System.EventHandler(this.btnAddpatient_Click);
+            // 
             // directorySearcher1
             // 
             this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
@@ -664,6 +599,72 @@ namespace Diagnostic
             this.metroContextMenu1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.metroContextMenu1.Name = "metroContextMenu1";
             this.metroContextMenu1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "PatientId";
+            this.Column7.FillWeight = 50F;
+            this.Column7.HeaderText = "ID";
+            this.Column7.MinimumWidth = 10;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 50;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "PatientName";
+            this.Column1.HeaderText = "Patient Name";
+            this.Column1.MinimumWidth = 10;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 200;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "phone";
+            this.Column2.HeaderText = "Phone";
+            this.Column2.MinimumWidth = 10;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 200;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Email";
+            this.Column3.HeaderText = "Email";
+            this.Column3.MinimumWidth = 10;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 200;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Gender";
+            this.Column4.FillWeight = 50F;
+            this.Column4.HeaderText = "Gender";
+            this.Column4.MinimumWidth = 10;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 50;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Address";
+            this.Column6.FillWeight = 70F;
+            this.Column6.HeaderText = "Address";
+            this.Column6.MinimumWidth = 10;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 70;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "DateOfBirth";
+            this.Column5.HeaderText = "Date of Birth";
+            this.Column5.MinimumWidth = 10;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 200;
             // 
             // UcRegisterPatient
             // 
