@@ -391,7 +391,7 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "**Patient List**";
             // 
-            // UcPatient
+            // UcReciptionist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -416,7 +416,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label1);
-            this.Name = "UcPatient";
+            this.Name = "UcReciptionist";
             this.Size = new System.Drawing.Size(1226, 747);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -39,8 +39,6 @@ namespace Diagnostic
         {
 
 
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -311,8 +309,7 @@ namespace Diagnostic
                 pid = Convert.ToInt32(oldId)  + rnd.Next(1, 1000000);
             }
 
-            //MessageBox.Show("OldId: " + oldId);
-            //MessageBox.Show("NewId: " + pid);
+         
 
             return pid.ToString();
         }

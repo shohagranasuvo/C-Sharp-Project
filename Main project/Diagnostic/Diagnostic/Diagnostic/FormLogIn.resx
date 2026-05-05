@@ -159,9 +159,6 @@
   <data name="txtPassword.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="txtPassword.Text" xml:space="preserve">
-    <value>123</value>
-  </data>
   <data name="&gt;&gt;txtPassword.Name" xml:space="preserve">
     <value>txtPassword</value>
   </data>
@@ -185,9 +182,6 @@
   </data>
   <data name="txtName.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="txtName.Text" xml:space="preserve">
-    <value>U005</value>
   </data>
   <data name="&gt;&gt;txtName.Name" xml:space="preserve">
     <value>txtName</value>
